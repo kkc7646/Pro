@@ -1,0 +1,67 @@
+library std;
+library ieee;
+use ieee.std_logic_1164.all;
+library work;
+use work.Components.all;
+
+
+entity Final is
+	port(clock: in std_logic
+	     		 
+	);
+end entity;
+architecture Structf of Final is
+	signal T1,T2,T3,T4,T5,T6,T7,T8,T10,R7,IR_en,RF_en,Mem_en,a1_mux,t6_mux,t6flag,C,Z,flagset:std_logic ;
+	signal op_code :std_logic_vector(3 downto 0);
+	signal czflag :std_logic_vector(1 downto 0);
+	signal alu,mem_mux,a2_mux,a3_mux,d3_mux,t5_mux: std_logic_vector(1 downto 0);
+signal alu_a_mux,alu_b_mux : std_logic_vector(2 downto 0);
+begin
+
+   CP: controller 
+	    port map (opcode => op_code,
+					flagset => flagset,
+					cz => czflag ,
+					T6flag => t6flag,
+					c => C,
+					z=> Z ,
+					clock => clock ,
+					Mem_mux => mem_mux,
+					A1_mux => a1_mux,
+					A2_mux => a2_mux,
+					A3_mux => a3_mux,
+					D3_mux => d3_mux,
+					ALU_a_mux => alu_a_mux,
+					ALU_b_mux => alu_b_mux,
+					T5_mux => t5_mux,
+					T6_mux => t6_mux,
+					Mem_enable => Mem_en,IR_enable => IR_en,RF_enable => RF_en,R7_enable => R7,T1_enable=>T1,
+					T2_enable => T2,T3_enable => T3,T4_enable =>T4,T5_enable =>T5,T6_enable =>T6,T7_enable=>T7,
+					T8_enable => T8,T10_enable =>T10,
+					ALU_opcode => alu);
+
+    DP: DataPath
+	       port map (opcode => op_code,
+					flagset => flagset,
+					cz => czflag ,
+					T6flag => t6flag,
+					c => C,
+					z => Z ,
+					clock => clock ,
+					Mem_mux => mem_mux,
+					A1_mux => a1_mux,
+					A2_mux => a2_mux,
+					A3_mux => a3_mux,
+					D3_mux => d3_mux,
+					ALU_a_mux => alu_a_mux,
+					ALU_b_mux => alu_b_mux,
+					T5_mux => t5_mux,
+					T6_mux => t6_mux,
+					Mem_enable => Mem_en,IR_enable => IR_en,RF_enable => RF_en,R7_enable => R7,T1_enable=>T1,
+					T2_enable => T2,T3_enable => T3,T4_enable =>T4,T5_enable =>T5,T6_enable =>T6,T7_enable=>T7,
+					T8_enable => T8,T10_enable =>T10,
+					ALU_opcode => alu);
+
+
+end Structf;
+

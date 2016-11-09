@@ -1,0 +1,821 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/krishna/Desktop/Toplevel/simulation/modelsim
+Ealu
+Z1 w1478336946
+Z2 DPx4 work 10 components 0 22 d>kEDo_ELUIJ4WVYX?]e41
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z5 8/home/krishna/Desktop/Toplevel/ALU.vhd
+Z6 F/home/krishna/Desktop/Toplevel/ALU.vhd
+l0
+L6
+V3WGh1HkZ5kU1Sc5;=e22m2
+!s100 8^A0AIdA<JQ99;;e4QR=h0
+Z7 OV;C;10.4d;61
+31
+Z8 !s110 1478646546
+!i10b 1
+Z9 !s108 1478646546.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|/home/krishna/Desktop/Toplevel/ALU.vhd|
+Z11 !s107 /home/krishna/Desktop/Toplevel/ALU.vhd|
+!i113 1
+Z12 o-93 -work work
+Z13 tExplicit 1
+Astruct
+R2
+R3
+R4
+DEx4 work 3 alu 0 22 3WGh1HkZ5kU1Sc5;=e22m2
+l16
+L13
+V4aS:F?N9WMJ0I7MN21ROn2
+!s100 _EPGU@^XRH<K;b9VgoF>i0
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Pcomponents
+R3
+R4
+w1478637206
+R0
+8/home/krishna/Desktop/Toplevel/Components.vhd
+F/home/krishna/Desktop/Toplevel/Components.vhd
+l0
+L7
+Vd>kEDo_ELUIJ4WVYX?]e41
+!s100 `0n@LQA?oA<_T3jmmA?E;0
+R7
+31
+Z14 !s110 1478646545
+!i10b 1
+Z15 !s108 1478646545.000000
+!s90 -reportprogress|300|-93|-work|work|/home/krishna/Desktop/Toplevel/Components.vhd|
+!s107 /home/krishna/Desktop/Toplevel/Components.vhd|
+!i113 1
+R12
+R13
+Econtroller
+Z16 w1478636902
+R3
+R4
+R0
+Z17 8/home/krishna/Desktop/Toplevel/controller.vhd
+Z18 F/home/krishna/Desktop/Toplevel/controller.vhd
+l0
+L7
+VUZcTg7=J6TL>4Lh]OXVSK1
+!s100 5>C50UUV7ZcQMMdaEE[m52
+R7
+31
+R14
+!i10b 1
+R15
+Z19 !s90 -reportprogress|300|-93|-work|work|/home/krishna/Desktop/Toplevel/controller.vhd|
+Z20 !s107 /home/krishna/Desktop/Toplevel/controller.vhd|
+!i113 1
+R12
+R13
+Abehave
+R3
+R4
+DEx4 work 10 controller 0 22 UZcTg7=J6TL>4Lh]OXVSK1
+l32
+L28
+Vb4MZfKgWmH59PUKZ02nim2
+!s100 R@^bHCULW2NLDH^9AD0[F3
+R7
+31
+R14
+!i10b 1
+R15
+R19
+R20
+!i113 1
+R12
+R13
+Edatapath
+Z21 w1478638767
+R3
+R4
+R2
+R0
+Z22 8/home/krishna/Desktop/Toplevel/Datapath.vhd
+Z23 F/home/krishna/Desktop/Toplevel/Datapath.vhd
+l0
+L8
+VZ2ghNfK=N<K[ZMF<PC>4n3
+!s100 HVA=c5DGF_n^W`RDK`^BN1
+R7
+31
+R8
+!i10b 1
+R9
+Z24 !s90 -reportprogress|300|-93|-work|work|/home/krishna/Desktop/Toplevel/Datapath.vhd|
+Z25 !s107 /home/krishna/Desktop/Toplevel/Datapath.vhd|
+!i113 1
+R12
+R13
+Adataflow
+R3
+R4
+R2
+DEx4 work 8 datapath 0 22 Z2ghNfK=N<K[ZMF<PC>4n3
+l39
+L28
+Vfn1N=eSHnb[JBEHToKmIQ2
+!s100 :k5R^Oiec=e14`EjTVIAF3
+R7
+31
+R8
+!i10b 1
+R9
+R24
+R25
+!i113 1
+R12
+R13
+Edataregister
+Z26 w1478634864
+R3
+R4
+R0
+Z27 8/home/krishna/Desktop/Toplevel/DataRegister.vhd
+Z28 F/home/krishna/Desktop/Toplevel/DataRegister.vhd
+l0
+L6
+VEDmJ9b^]oNilQGf<TnlPa2
+!s100 N763A4gWcAM7Hc<E9aIPF1
+R7
+31
+R14
+!i10b 1
+R15
+Z29 !s90 -reportprogress|300|-93|-work|work|/home/krishna/Desktop/Toplevel/DataRegister.vhd|
+Z30 !s107 /home/krishna/Desktop/Toplevel/DataRegister.vhd|
+!i113 1
+R12
+R13
+Abehave
+R3
+R4
+DEx4 work 12 dataregister 0 22 EDmJ9b^]oNilQGf<TnlPa2
+l14
+L13
+V=e]MlaH[Hj7XBFI9^h]lG0
+!s100 glOKeKBDNHU_G:lfK9VcT2
+R7
+31
+R14
+!i10b 1
+R15
+R29
+R30
+!i113 1
+R12
+R13
+Efinal
+Z31 w1478023757
+R2
+R3
+R4
+R0
+Z32 8/home/krishna/Desktop/Toplevel/final.vhd
+Z33 F/home/krishna/Desktop/Toplevel/final.vhd
+l0
+L8
+V1abQn@g[LC]5gNWAWJ^;I0
+!s100 5_61:@<YLJ0JDaj^X=4YG1
+R7
+31
+R8
+!i10b 1
+R9
+Z34 !s90 -reportprogress|300|-93|-work|work|/home/krishna/Desktop/Toplevel/final.vhd|
+Z35 !s107 /home/krishna/Desktop/Toplevel/final.vhd|
+!i113 1
+R12
+R13
+Astructf
+R2
+R3
+R4
+DEx4 work 5 final 0 22 1abQn@g[LC]5gNWAWJ^;I0
+l19
+L13
+VH2Y4DkIjaJ^nN]n8[lEe92
+!s100 Qz;S2H>2@zLfNVK9kn1lC1
+R7
+31
+R8
+!i10b 1
+R9
+R34
+R35
+!i113 1
+R12
+R13
+Eflag
+Z36 w1478633138
+R3
+R4
+R0
+Z37 8/home/krishna/Desktop/Toplevel/flag.vhd
+Z38 F/home/krishna/Desktop/Toplevel/flag.vhd
+l0
+L5
+Vn^7HU7]M]nBWllzGgNhn:3
+!s100 bP@LS3YYhbUJW4?CNN3e_3
+R7
+31
+R8
+!i10b 1
+R9
+Z39 !s90 -reportprogress|300|-93|-work|work|/home/krishna/Desktop/Toplevel/flag.vhd|
+Z40 !s107 /home/krishna/Desktop/Toplevel/flag.vhd|
+!i113 1
+R12
+R13
+Abehave
+R3
+R4
+DEx4 work 4 flag 0 22 n^7HU7]M]nBWllzGgNhn:3
+l12
+L11
+V[Vmj6_fRhj^0c;fFL>j3E1
+!s100 2T4=`MPXgHHD@=N`H@lMJ3
+R7
+31
+R8
+!i10b 1
+R9
+R39
+R40
+!i113 1
+R12
+R13
+Eir_latch
+Z41 w1478637174
+R3
+R4
+R0
+Z42 8/home/krishna/Desktop/Toplevel/Ir_latch.vhd
+Z43 F/home/krishna/Desktop/Toplevel/Ir_latch.vhd
+l0
+L6
+V7T:lmlORzVbN7V6<SVU]i1
+!s100 M4Z5QYaE0T`GzkJgYCIHT1
+R7
+31
+R14
+!i10b 1
+R15
+Z44 !s90 -reportprogress|300|-93|-work|work|/home/krishna/Desktop/Toplevel/Ir_latch.vhd|
+Z45 !s107 /home/krishna/Desktop/Toplevel/Ir_latch.vhd|
+!i113 1
+R12
+R13
+Abehave
+R3
+R4
+DEx4 work 8 ir_latch 0 22 7T:lmlORzVbN7V6<SVU]i1
+l14
+L13
+V^ndQU<QF6dEZeKbACa7j_0
+!s100 [nP3`_fi5Mf7kSO0OFe1R1
+R7
+31
+R14
+!i10b 1
+R15
+R44
+R45
+!i113 1
+R12
+R13
+Ememory
+Z46 w1478645276
+Z47 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R3
+R4
+R0
+Z48 8/home/krishna/Desktop/Toplevel/memory.vhd
+Z49 F/home/krishna/Desktop/Toplevel/memory.vhd
+l0
+L5
+V@FAfODG@jFklo5AmQQK[c2
+!s100 ^z@3Foll4>i5=2=CGhY^_0
+R7
+31
+R14
+!i10b 1
+R15
+Z50 !s90 -reportprogress|300|-93|-work|work|/home/krishna/Desktop/Toplevel/memory.vhd|
+Z51 !s107 /home/krishna/Desktop/Toplevel/memory.vhd|
+!i113 1
+R12
+R13
+Astructure
+R47
+R3
+R4
+DEx4 work 6 memory 0 22 @FAfODG@jFklo5AmQQK[c2
+l17
+L14
+VLzG^a:MX5M7V:ZWIh4C9A0
+!s100 6::6Gje<IbZ?d7@gVD]:@2
+R7
+31
+R14
+!i10b 1
+R15
+R50
+R51
+!i113 1
+R12
+R13
+Emux21
+Z52 w1477744621
+R3
+R4
+R0
+Z53 8/home/krishna/Desktop/Toplevel/mux21.vhd
+Z54 F/home/krishna/Desktop/Toplevel/mux21.vhd
+l0
+L6
+V6`ZF:]IdIB0XioADj=hIZ3
+!s100 C=;A8lhXdmOWCkUm=T^lC0
+R7
+31
+R8
+!i10b 1
+R9
+Z55 !s90 -reportprogress|300|-93|-work|work|/home/krishna/Desktop/Toplevel/mux21.vhd|
+Z56 !s107 /home/krishna/Desktop/Toplevel/mux21.vhd|
+!i113 1
+R12
+R13
+Astruct1
+R3
+R4
+DEx4 work 5 mux21 0 22 6`ZF:]IdIB0XioADj=hIZ3
+l14
+L12
+VhcXWNTc9TJVLN;`Lz>fnm2
+!s100 cz`F_V1o7fYIV@mBaY;BA0
+R7
+31
+R8
+!i10b 1
+R9
+R55
+R56
+!i113 1
+R12
+R13
+Emux41
+Z57 w1478609868
+R3
+R4
+R0
+Z58 8/home/krishna/Desktop/Toplevel/mux41.vhd
+Z59 F/home/krishna/Desktop/Toplevel/mux41.vhd
+l0
+L7
+VSLdnDK81WPb`0mf9Q;@`01
+!s100 8^?`cLO<0eO2W6hHKf]j=0
+R7
+31
+R14
+!i10b 1
+R15
+Z60 !s90 -reportprogress|300|-93|-work|work|/home/krishna/Desktop/Toplevel/mux41.vhd|
+Z61 !s107 /home/krishna/Desktop/Toplevel/mux41.vhd|
+!i113 1
+R12
+R13
+Astruct2
+R3
+R4
+DEx4 work 5 mux41 0 22 SLdnDK81WPb`0mf9Q;@`01
+l15
+L13
+V@=j^Lc@bljLJQW@V_1Cme2
+!s100 c5HUWCSm1l^S3zhG]_[7P3
+R7
+31
+R14
+!i10b 1
+R15
+R60
+R61
+!i113 1
+R12
+R13
+Emux81
+Z62 w1477431429
+R3
+R4
+R0
+Z63 8/home/krishna/Desktop/Toplevel/mux81.vhd
+Z64 F/home/krishna/Desktop/Toplevel/mux81.vhd
+l0
+L5
+V:eo9z7inVkN1WlOhgQ>8j3
+!s100 hEno`zA11K:lcMOaPQZWS1
+R7
+31
+R8
+!i10b 1
+R9
+Z65 !s90 -reportprogress|300|-93|-work|work|/home/krishna/Desktop/Toplevel/mux81.vhd|
+Z66 !s107 /home/krishna/Desktop/Toplevel/mux81.vhd|
+!i113 1
+R12
+R13
+Astruct3
+R3
+R4
+DEx4 work 5 mux81 0 22 :eo9z7inVkN1WlOhgQ>8j3
+l13
+L11
+Vk2aZBKeiTBPUCMZ0Pl5K71
+!s100 LhhKA^ZKX^l[]]T0ba`4O2
+R7
+31
+R8
+!i10b 1
+R9
+R65
+R66
+!i113 1
+R12
+R13
+Epriorityencoder
+Z67 w1477722338
+R3
+R4
+R0
+Z68 8/home/krishna/Desktop/Toplevel/PriorityEncoder.vhd
+Z69 F/home/krishna/Desktop/Toplevel/PriorityEncoder.vhd
+l0
+L5
+VFO^5J69M5:FeY6OIZHTjN0
+!s100 YFLS?g;^N<]iHI4<:Mhj63
+R7
+31
+R8
+!i10b 1
+R9
+Z70 !s90 -reportprogress|300|-93|-work|work|/home/krishna/Desktop/Toplevel/PriorityEncoder.vhd|
+Z71 !s107 /home/krishna/Desktop/Toplevel/PriorityEncoder.vhd|
+!i113 1
+R12
+R13
+Astructure
+R3
+R4
+DEx4 work 15 priorityencoder 0 22 FO^5J69M5:FeY6OIZHTjN0
+l13
+L11
+VGB=?U7EJEU;<H8C]Z[k>G1
+!s100 n];JTV`UN?CAbgf<49eP@1
+R7
+31
+R8
+!i10b 1
+R9
+R70
+R71
+!i113 1
+R12
+R13
+Eregfile
+Z72 w1478567657
+R47
+R3
+R4
+R0
+Z73 8/home/krishna/Desktop/Toplevel/RegFile.vhd
+Z74 F/home/krishna/Desktop/Toplevel/RegFile.vhd
+l0
+L7
+VMN`BTk@TV2]GAGRhPoYH[3
+!s100 OFgoPYG^gGb:l?1EV1ZOz2
+R7
+31
+R8
+!i10b 1
+R9
+Z75 !s90 -reportprogress|300|-93|-work|work|/home/krishna/Desktop/Toplevel/RegFile.vhd|
+Z76 !s107 /home/krishna/Desktop/Toplevel/RegFile.vhd|
+!i113 1
+R12
+R13
+Astructure
+R47
+R3
+R4
+DEx4 work 7 regfile 0 22 MN`BTk@TV2]GAGRhPoYH[3
+l29
+L17
+VDZ`62L2WNif`XkQI9eeLG1
+!s100 QaSk=73ofgVZ`K<KN@l;l0
+R7
+31
+R8
+!i10b 1
+R9
+R75
+R76
+!i113 1
+R12
+R13
+Eshifter
+Z77 w1478231110
+R3
+R4
+R0
+Z78 8/home/krishna/Desktop/Toplevel/Shifter.vhd
+Z79 F/home/krishna/Desktop/Toplevel/Shifter.vhd
+l0
+L4
+VMA^hl^k@QHz9Z87`@i`Sz3
+!s100 3l6W4B0ld:N`^dON]`Fh72
+R7
+31
+R14
+!i10b 1
+R15
+Z80 !s90 -reportprogress|300|-93|-work|work|/home/krishna/Desktop/Toplevel/Shifter.vhd|
+Z81 !s107 /home/krishna/Desktop/Toplevel/Shifter.vhd|
+!i113 1
+R12
+R13
+Astructure
+R3
+R4
+DEx4 work 7 shifter 0 22 MA^hl^k@QHz9Z87`@i`Sz3
+l14
+L13
+V^BXZC2ZP]=_MT6Ua3SkRc1
+!s100 b<iM<_BjY2BNhSeC=og<e3
+R7
+31
+R14
+!i10b 1
+R15
+R80
+R81
+!i113 1
+R12
+R13
+Esign_extender_by_10
+Z82 w1478609185
+R3
+R4
+R0
+Z83 8/home/krishna/Desktop/Toplevel/Sign_Extender_by_10.vhd
+Z84 F/home/krishna/Desktop/Toplevel/Sign_Extender_by_10.vhd
+l0
+L5
+VAV@PnGMgWm5Rab]AY6deJ1
+!s100 nS`?5RjNV3dOjcJ;Z9L6;2
+R7
+31
+R8
+!i10b 1
+R9
+Z85 !s90 -reportprogress|300|-93|-work|work|/home/krishna/Desktop/Toplevel/Sign_Extender_by_10.vhd|
+Z86 !s107 /home/krishna/Desktop/Toplevel/Sign_Extender_by_10.vhd|
+!i113 1
+R12
+R13
+Astructure
+R3
+R4
+DEx4 work 19 sign_extender_by_10 0 22 AV@PnGMgWm5Rab]AY6deJ1
+l15
+L14
+V=eX]mL@M[]CO^eJ?jEe0m0
+!s100 TVicT=hhRTJg8GUNMTTiV1
+R7
+31
+R8
+!i10b 1
+R9
+R85
+R86
+!i113 1
+R12
+R13
+Esign_extender_by_7
+Z87 w1478609209
+R3
+R4
+R0
+Z88 8/home/krishna/Desktop/Toplevel/Sign_Extender_by_7.vhd
+Z89 F/home/krishna/Desktop/Toplevel/Sign_Extender_by_7.vhd
+l0
+L5
+Vj[:HaB8YF]=gGCo2aeh@Z0
+!s100 >a;R4WjhK@4Gh>FkGYN^R1
+R7
+31
+R14
+!i10b 1
+R15
+Z90 !s90 -reportprogress|300|-93|-work|work|/home/krishna/Desktop/Toplevel/Sign_Extender_by_7.vhd|
+Z91 !s107 /home/krishna/Desktop/Toplevel/Sign_Extender_by_7.vhd|
+!i113 1
+R12
+R13
+Astructure
+R3
+R4
+DEx4 work 18 sign_extender_by_7 0 22 j[:HaB8YF]=gGCo2aeh@Z0
+l15
+L14
+VBHLgV3Djdf[4NdKV3]o:G3
+!s100 K7CnDhj44YTmDNHEO[PN42
+R7
+31
+R14
+!i10b 1
+R15
+R90
+R91
+!i113 1
+R12
+R13
+Esixteen_bit_adder
+Z92 w1478022866
+R3
+R4
+R0
+Z93 8/home/krishna/Desktop/Toplevel/sixteen_bit_adder.vhd
+Z94 F/home/krishna/Desktop/Toplevel/sixteen_bit_adder.vhd
+l0
+L5
+VeF?kB5fG?ZncCdJz;40o00
+!s100 o[Ed;3[XP5h4I8^PSST=c2
+R7
+31
+R8
+!i10b 1
+R9
+Z95 !s90 -reportprogress|300|-93|-work|work|/home/krishna/Desktop/Toplevel/sixteen_bit_adder.vhd|
+Z96 !s107 /home/krishna/Desktop/Toplevel/sixteen_bit_adder.vhd|
+!i113 1
+R12
+R13
+Aformula
+R3
+R4
+DEx4 work 17 sixteen_bit_adder 0 22 eF?kB5fG?ZncCdJz;40o00
+l17
+L13
+V?TWBmB3]SFUNz1=49jEAV1
+!s100 SJSRj50751CSDMFzAz44f1
+R7
+31
+R8
+!i10b 1
+R9
+R95
+R96
+!i113 1
+R12
+R13
+Esixteen_bit_nand
+Z97 w1476535883
+R3
+R4
+R0
+Z98 8/home/krishna/Desktop/Toplevel/sixteen_bit_nand.vhd
+Z99 F/home/krishna/Desktop/Toplevel/sixteen_bit_nand.vhd
+l0
+L5
+VcG9PFaS5R=VlDQJbc3a8@2
+!s100 527;9R3<L3djSH@ie1[1<0
+R7
+31
+R14
+!i10b 1
+R15
+Z100 !s90 -reportprogress|300|-93|-work|work|/home/krishna/Desktop/Toplevel/sixteen_bit_nand.vhd|
+Z101 !s107 /home/krishna/Desktop/Toplevel/sixteen_bit_nand.vhd|
+!i113 1
+R12
+R13
+Aformula
+R3
+R4
+DEx4 work 16 sixteen_bit_nand 0 22 cG9PFaS5R=VlDQJbc3a8@2
+l15
+L13
+VCF7DAYj:?cmN^VGIXHB730
+!s100 Y?mZLII^6?daz=R>7eFo81
+R7
+31
+R14
+!i10b 1
+R15
+R100
+R101
+!i113 1
+R12
+R13
+Esixteen_bit_subtracter
+Z102 w1478287132
+R3
+R4
+R0
+Z103 8/home/krishna/Desktop/Toplevel/sixteen_bit_subtracter.vhd
+Z104 F/home/krishna/Desktop/Toplevel/sixteen_bit_subtracter.vhd
+l0
+L3
+VYhc;hK55Zm>0[S]ilB^ab0
+!s100 WE9BEWA;UD2H5mc8[AH:K2
+R7
+31
+R14
+!i10b 1
+R15
+Z105 !s90 -reportprogress|300|-93|-work|work|/home/krishna/Desktop/Toplevel/sixteen_bit_subtracter.vhd|
+Z106 !s107 /home/krishna/Desktop/Toplevel/sixteen_bit_subtracter.vhd|
+!i113 1
+R12
+R13
+Aformula
+R3
+R4
+DEx4 work 22 sixteen_bit_subtracter 0 22 Yhc;hK55Zm>0[S]ilB^ab0
+l18
+L7
+VjRWHIl6@6C_=2NHkY21VF1
+!s100 H^NEDMU0]HdAOGS^bgFk92
+R7
+31
+R14
+!i10b 1
+R15
+R105
+R106
+!i113 1
+R12
+R13
+Etestbench
+Z107 w1478618039
+R3
+R4
+R0
+Z108 8/home/krishna/Desktop/Toplevel/Testbench.vhd
+Z109 F/home/krishna/Desktop/Toplevel/Testbench.vhd
+l0
+L6
+VieGT@zEW:SUPK>B_`lYD>0
+!s100 :mzn1mF?<D@b`?cIjjn7=1
+R7
+31
+R8
+!i10b 1
+R9
+Z110 !s90 -reportprogress|300|-93|-work|work|/home/krishna/Desktop/Toplevel/Testbench.vhd|
+Z111 !s107 /home/krishna/Desktop/Toplevel/Testbench.vhd|
+!i113 1
+R12
+R13
+Abehave
+R3
+R4
+DEx4 work 9 testbench 0 22 ieGT@zEW:SUPK>B_`lYD>0
+l34
+L8
+VBXl>iW[U<1FOQ?IfI;MAI0
+!s100 ?7]:4MWI`AH<zYl@UL_7l1
+R7
+31
+R8
+!i10b 1
+R9
+R110
+R111
+!i113 1
+R12
+R13

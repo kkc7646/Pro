@@ -1,0 +1,1390 @@
+Analysis & Synthesis report for Final
+Tue Nov  8 23:07:51 2016
+Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |Final|controller:CP|fsm_state
+  9. Registers Removed During Synthesis
+ 10. Removed Registers Triggering Further Register Optimizations
+ 11. General Register Statistics
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 13. Parameter Settings for User Entity Instance: datapath:DP|IR_Latch:IR_latc
+ 14. Parameter Settings for User Entity Instance: datapath:DP|DataRegister:T1_latch
+ 15. Parameter Settings for User Entity Instance: datapath:DP|DataRegister:T2_latch
+ 16. Parameter Settings for User Entity Instance: datapath:DP|DataRegister:T3_latch
+ 17. Parameter Settings for User Entity Instance: datapath:DP|DataRegister:T4_latch
+ 18. Parameter Settings for User Entity Instance: datapath:DP|DataRegister:T5_latch
+ 19. Parameter Settings for User Entity Instance: datapath:DP|IR_Latch:T6_latch
+ 20. Parameter Settings for User Entity Instance: datapath:DP|DataRegister:T7_latch
+ 21. Parameter Settings for User Entity Instance: datapath:DP|DataRegister:T8_latch
+ 22. Parameter Settings for User Entity Instance: datapath:DP|DataRegister:T10_latch
+ 23. Parameter Settings for User Entity Instance: datapath:DP|mux41:Mem_mux_device
+ 24. Parameter Settings for User Entity Instance: datapath:DP|mux21:A1_mux_device
+ 25. Parameter Settings for User Entity Instance: datapath:DP|mux41:A2_mux_device
+ 26. Parameter Settings for User Entity Instance: datapath:DP|mux41:A3_mux_device
+ 27. Parameter Settings for User Entity Instance: datapath:DP|mux41:D3_mux_device
+ 28. Parameter Settings for User Entity Instance: datapath:DP|mux41:T5_mux_device
+ 29. Parameter Settings for User Entity Instance: datapath:DP|mux21:T6_mux_device
+ 30. Port Connectivity Checks: "datapath:DP|mux41:T5_mux_device"
+ 31. Port Connectivity Checks: "datapath:DP|mux41:A2_mux_device"
+ 32. Port Connectivity Checks: "datapath:DP|mux81:ALU_b_mux_device"
+ 33. Port Connectivity Checks: "datapath:DP|mux81:ALU_a_mux_device"
+ 34. Port Connectivity Checks: "datapath:DP|memory:DUT7"
+ 35. Port Connectivity Checks: "datapath:DP|ALU:DUT1|sixteen_bit_nand:DUT4"
+ 36. Port Connectivity Checks: "datapath:DP|ALU:DUT1|sixteen_bit_subtracter:DUT3|sixteen_bit_adder:dut1"
+ 37. Post-Synthesis Netlist Statistics for Top Partition
+ 38. Elapsed Time Per Partition
+ 39. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2016 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Tue Nov  8 23:07:51 2016       ;
+; Quartus Prime Version              ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
+; Revision Name                      ; Final                                       ;
+; Top-level Entity Name              ; Final                                       ;
+; Family                             ; Cyclone IV E                                ;
+; Total logic elements               ; 0                                           ;
+;     Total combinational functions  ; 0                                           ;
+;     Dedicated logic registers      ; 0                                           ;
+; Total registers                    ; 0                                           ;
+; Total pins                         ; 1                                           ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP4CE22F17C6       ;                    ;
+; Top-level entity name                                                      ; Final              ; Final              ;
+; Family name                                                                ; Cyclone IV E       ; Cyclone V          ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                     ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                              ; Library ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------+---------+
+; Ir_latch.vhd                     ; yes             ; User VHDL File  ; /home/krishna/Desktop/Toplevel/Ir_latch.vhd               ;         ;
+; Shifter.vhd                      ; yes             ; User VHDL File  ; /home/krishna/Desktop/Toplevel/Shifter.vhd                ;         ;
+; DataRegister.vhd                 ; yes             ; User VHDL File  ; /home/krishna/Desktop/Toplevel/DataRegister.vhd           ;         ;
+; sixteen_bit_nand.vhd             ; yes             ; User VHDL File  ; /home/krishna/Desktop/Toplevel/sixteen_bit_nand.vhd       ;         ;
+; final.vhd                        ; yes             ; User VHDL File  ; /home/krishna/Desktop/Toplevel/final.vhd                  ;         ;
+; Sign_Extender_by_7.vhd           ; yes             ; User VHDL File  ; /home/krishna/Desktop/Toplevel/Sign_Extender_by_7.vhd     ;         ;
+; memory.vhd                       ; yes             ; User VHDL File  ; /home/krishna/Desktop/Toplevel/memory.vhd                 ;         ;
+; sixteen_bit_subtracter.vhd       ; yes             ; User VHDL File  ; /home/krishna/Desktop/Toplevel/sixteen_bit_subtracter.vhd ;         ;
+; controller.vhd                   ; yes             ; User VHDL File  ; /home/krishna/Desktop/Toplevel/controller.vhd             ;         ;
+; mux41.vhd                        ; yes             ; User VHDL File  ; /home/krishna/Desktop/Toplevel/mux41.vhd                  ;         ;
+; ALU.vhd                          ; yes             ; User VHDL File  ; /home/krishna/Desktop/Toplevel/ALU.vhd                    ;         ;
+; Components.vhd                   ; yes             ; User VHDL File  ; /home/krishna/Desktop/Toplevel/Components.vhd             ;         ;
+; RegFile.vhd                      ; yes             ; User VHDL File  ; /home/krishna/Desktop/Toplevel/RegFile.vhd                ;         ;
+; PriorityEncoder.vhd              ; yes             ; User VHDL File  ; /home/krishna/Desktop/Toplevel/PriorityEncoder.vhd        ;         ;
+; mux81.vhd                        ; yes             ; User VHDL File  ; /home/krishna/Desktop/Toplevel/mux81.vhd                  ;         ;
+; Sign_Extender_by_10.vhd          ; yes             ; User VHDL File  ; /home/krishna/Desktop/Toplevel/Sign_Extender_by_10.vhd    ;         ;
+; sixteen_bit_adder.vhd            ; yes             ; User VHDL File  ; /home/krishna/Desktop/Toplevel/sixteen_bit_adder.vhd      ;         ;
+; Datapath.vhd                     ; yes             ; User VHDL File  ; /home/krishna/Desktop/Toplevel/Datapath.vhd               ;         ;
+; mux21.vhd                        ; yes             ; User VHDL File  ; /home/krishna/Desktop/Toplevel/mux21.vhd                  ;         ;
+; flag.vhd                         ; yes             ; User VHDL File  ; /home/krishna/Desktop/Toplevel/flag.vhd                   ;         ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------+---------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+;                                             ;       ;
+; Total combinational functions               ; 0     ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 0     ;
+;     -- 3 input functions                    ; 0     ;
+;     -- <=2 input functions                  ; 0     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 0     ;
+;     -- arithmetic mode                      ; 0     ;
+;                                             ;       ;
+; Total registers                             ; 0     ;
+;     -- Dedicated logic registers            ; 0     ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 1     ;
+;                                             ;       ;
+; Embedded Multiplier 9-bit elements          ; 0     ;
+;                                             ;       ;
+; Maximum fan-out node                        ; clock ;
+; Maximum fan-out                             ; 1     ;
+; Total fan-out                               ; 1     ;
+; Average fan-out                             ; 0.50  ;
++---------------------------------------------+-------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                       ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
+; |Final                     ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 1    ; 0            ; |Final              ; Final       ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |Final|controller:CP|fsm_state                                                                                                                                                                                                                                                                                                                                          ;
++---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+--------------+--------------+--------------+--------------+--------------+--------------+
+; Name          ; fsm_state.S29 ; fsm_state.S28 ; fsm_state.S27 ; fsm_state.S26 ; fsm_state.S25 ; fsm_state.S24 ; fsm_state.S23 ; fsm_state.S21 ; fsm_state.S20 ; fsm_state.S19 ; fsm_state.S18 ; fsm_state.S17 ; fsm_state.S16 ; fsm_state.S15 ; fsm_state.S14 ; fsm_state.S13 ; fsm_state.S12 ; fsm_state.S9 ; fsm_state.S8 ; fsm_state.S4 ; fsm_state.S3 ; fsm_state.S2 ; fsm_state.S1 ;
++---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+--------------+--------------+--------------+--------------+--------------+--------------+
+; fsm_state.S1  ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ;
+; fsm_state.S2  ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0            ; 0            ; 0            ; 0            ; 1            ; 1            ;
+; fsm_state.S3  ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0            ; 0            ; 0            ; 1            ; 0            ; 1            ;
+; fsm_state.S4  ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0            ; 0            ; 1            ; 0            ; 0            ; 1            ;
+; fsm_state.S8  ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0            ; 1            ; 0            ; 0            ; 0            ; 1            ;
+; fsm_state.S9  ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 1            ; 0            ; 0            ; 0            ; 0            ; 1            ;
+; fsm_state.S12 ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 1             ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ;
+; fsm_state.S13 ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 1             ; 0             ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ;
+; fsm_state.S14 ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 1             ; 0             ; 0             ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ;
+; fsm_state.S15 ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 1             ; 0             ; 0             ; 0             ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ;
+; fsm_state.S16 ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 1             ; 0             ; 0             ; 0             ; 0             ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ;
+; fsm_state.S17 ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 1             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ;
+; fsm_state.S18 ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 1             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ;
+; fsm_state.S19 ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 1             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ;
+; fsm_state.S20 ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 1             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ;
+; fsm_state.S21 ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 1             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ;
+; fsm_state.S23 ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 1             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ;
+; fsm_state.S24 ; 0             ; 0             ; 0             ; 0             ; 0             ; 1             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ;
+; fsm_state.S25 ; 0             ; 0             ; 0             ; 0             ; 1             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ;
+; fsm_state.S26 ; 0             ; 0             ; 0             ; 1             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ;
+; fsm_state.S27 ; 0             ; 0             ; 1             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ;
+; fsm_state.S28 ; 0             ; 1             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ;
+; fsm_state.S29 ; 1             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ;
++---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+--------------+--------------+--------------+--------------+--------------+--------------+
+
+
++----------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                     ;
++-----------------------------------------------+----------------------------------------+
+; Register name                                 ; Reason for Removal                     ;
++-----------------------------------------------+----------------------------------------+
+; datapath:DP|DataRegister:T8_latch|Dout[8..15] ; Stuck at GND due to stuck port data_in ;
+; datapath:DP|DataRegister:T8_latch|Dout[6]     ; Stuck at VCC due to stuck port data_in ;
+; datapath:DP|DataRegister:T3_latch|Dout[0..7]  ; Lost fanout                            ;
+; datapath:DP|RegFile:DUT2|T[7][0]              ; Lost fanout                            ;
+; datapath:DP|DataRegister:T5_latch|Dout[0]     ; Lost fanout                            ;
+; datapath:DP|DataRegister:T1_latch|Dout[0]     ; Lost fanout                            ;
+; datapath:DP|DataRegister:T7_latch|Dout[0]     ; Lost fanout                            ;
+; datapath:DP|DataRegister:T2_latch|Dout[0]     ; Lost fanout                            ;
+; datapath:DP|DataRegister:T8_latch|Dout[0]     ; Lost fanout                            ;
+; datapath:DP|DataRegister:T10_latch|Dout[0..2] ; Lost fanout                            ;
+; datapath:DP|RegFile:DUT2|T[7][1]              ; Lost fanout                            ;
+; datapath:DP|DataRegister:T5_latch|Dout[1]     ; Lost fanout                            ;
+; datapath:DP|DataRegister:T1_latch|Dout[1]     ; Lost fanout                            ;
+; datapath:DP|DataRegister:T7_latch|Dout[1]     ; Lost fanout                            ;
+; datapath:DP|DataRegister:T2_latch|Dout[1]     ; Lost fanout                            ;
+; datapath:DP|DataRegister:T8_latch|Dout[1]     ; Lost fanout                            ;
+; datapath:DP|RegFile:DUT2|T[7][2]              ; Lost fanout                            ;
+; datapath:DP|DataRegister:T5_latch|Dout[2]     ; Lost fanout                            ;
+; datapath:DP|DataRegister:T1_latch|Dout[2]     ; Lost fanout                            ;
+; datapath:DP|DataRegister:T7_latch|Dout[2]     ; Lost fanout                            ;
+; datapath:DP|DataRegister:T2_latch|Dout[2]     ; Lost fanout                            ;
+; datapath:DP|DataRegister:T8_latch|Dout[2]     ; Lost fanout                            ;
+; datapath:DP|RegFile:DUT2|T[7][3]              ; Lost fanout                            ;
+; datapath:DP|DataRegister:T5_latch|Dout[3]     ; Lost fanout                            ;
+; datapath:DP|DataRegister:T1_latch|Dout[3]     ; Lost fanout                            ;
+; datapath:DP|DataRegister:T7_latch|Dout[3]     ; Lost fanout                            ;
+; datapath:DP|DataRegister:T2_latch|Dout[3]     ; Lost fanout                            ;
+; datapath:DP|DataRegister:T8_latch|Dout[3]     ; Lost fanout                            ;
+; datapath:DP|RegFile:DUT2|T[7][4]              ; Lost fanout                            ;
+; datapath:DP|DataRegister:T5_latch|Dout[4]     ; Lost fanout                            ;
+; datapath:DP|DataRegister:T1_latch|Dout[4]     ; Lost fanout                            ;
+; datapath:DP|DataRegister:T7_latch|Dout[4]     ; Lost fanout                            ;
+; datapath:DP|DataRegister:T2_latch|Dout[4]     ; Lost fanout                            ;
+; datapath:DP|DataRegister:T8_latch|Dout[4]     ; Lost fanout                            ;
+; datapath:DP|DataRegister:T2_latch|Dout[5]     ; Lost fanout                            ;
+; datapath:DP|DataRegister:T7_latch|Dout[5]     ; Lost fanout                            ;
+; datapath:DP|DataRegister:T8_latch|Dout[5]     ; Lost fanout                            ;
+; datapath:DP|RegFile:DUT2|T[7][5]              ; Lost fanout                            ;
+; datapath:DP|DataRegister:T5_latch|Dout[5]     ; Lost fanout                            ;
+; datapath:DP|DataRegister:T1_latch|Dout[5]     ; Lost fanout                            ;
+; datapath:DP|DataRegister:T2_latch|Dout[6]     ; Lost fanout                            ;
+; datapath:DP|DataRegister:T7_latch|Dout[6]     ; Lost fanout                            ;
+; datapath:DP|RegFile:DUT2|T[7][6]              ; Lost fanout                            ;
+; datapath:DP|DataRegister:T5_latch|Dout[6]     ; Lost fanout                            ;
+; datapath:DP|DataRegister:T1_latch|Dout[6]     ; Lost fanout                            ;
+; datapath:DP|RegFile:DUT2|T[7][7]              ; Lost fanout                            ;
+; datapath:DP|DataRegister:T5_latch|Dout[7]     ; Lost fanout                            ;
+; datapath:DP|DataRegister:T1_latch|Dout[7]     ; Lost fanout                            ;
+; datapath:DP|DataRegister:T7_latch|Dout[7]     ; Lost fanout                            ;
+; datapath:DP|DataRegister:T2_latch|Dout[7]     ; Lost fanout                            ;
+; datapath:DP|DataRegister:T8_latch|Dout[7]     ; Lost fanout                            ;
+; datapath:DP|DataRegister:T2_latch|Dout[8..15] ; Lost fanout                            ;
+; datapath:DP|DataRegister:T3_latch|Dout[8]     ; Lost fanout                            ;
+; datapath:DP|RegFile:DUT2|T[7][8]              ; Lost fanout                            ;
+; datapath:DP|DataRegister:T5_latch|Dout[8]     ; Lost fanout                            ;
+; datapath:DP|DataRegister:T3_latch|Dout[9]     ; Lost fanout                            ;
+; datapath:DP|RegFile:DUT2|T[7][9]              ; Lost fanout                            ;
+; datapath:DP|DataRegister:T5_latch|Dout[9]     ; Lost fanout                            ;
+; datapath:DP|DataRegister:T3_latch|Dout[10]    ; Lost fanout                            ;
+; datapath:DP|RegFile:DUT2|T[7][10]             ; Lost fanout                            ;
+; datapath:DP|DataRegister:T5_latch|Dout[10]    ; Lost fanout                            ;
+; datapath:DP|DataRegister:T3_latch|Dout[11]    ; Lost fanout                            ;
+; datapath:DP|RegFile:DUT2|T[7][11]             ; Lost fanout                            ;
+; datapath:DP|DataRegister:T5_latch|Dout[11]    ; Lost fanout                            ;
+; datapath:DP|DataRegister:T3_latch|Dout[12]    ; Lost fanout                            ;
+; datapath:DP|RegFile:DUT2|T[7][12]             ; Lost fanout                            ;
+; datapath:DP|DataRegister:T5_latch|Dout[12]    ; Lost fanout                            ;
+; datapath:DP|DataRegister:T3_latch|Dout[13]    ; Lost fanout                            ;
+; datapath:DP|RegFile:DUT2|T[7][13]             ; Lost fanout                            ;
+; datapath:DP|DataRegister:T5_latch|Dout[13]    ; Lost fanout                            ;
+; datapath:DP|DataRegister:T3_latch|Dout[14]    ; Lost fanout                            ;
+; datapath:DP|RegFile:DUT2|T[7][14]             ; Lost fanout                            ;
+; datapath:DP|DataRegister:T5_latch|Dout[14]    ; Lost fanout                            ;
+; datapath:DP|DataRegister:T3_latch|Dout[15]    ; Lost fanout                            ;
+; datapath:DP|RegFile:DUT2|T[7][15]             ; Lost fanout                            ;
+; datapath:DP|DataRegister:T5_latch|Dout[15]    ; Lost fanout                            ;
+; datapath:DP|DataRegister:T4_latch|Dout[0..7]  ; Lost fanout                            ;
+; datapath:DP|DataRegister:T7_latch|Dout[8]     ; Lost fanout                            ;
+; datapath:DP|DataRegister:T1_latch|Dout[8]     ; Lost fanout                            ;
+; datapath:DP|DataRegister:T4_latch|Dout[8]     ; Lost fanout                            ;
+; datapath:DP|DataRegister:T7_latch|Dout[9]     ; Lost fanout                            ;
+; datapath:DP|DataRegister:T1_latch|Dout[9]     ; Lost fanout                            ;
+; datapath:DP|DataRegister:T4_latch|Dout[9]     ; Lost fanout                            ;
+; datapath:DP|DataRegister:T7_latch|Dout[10]    ; Lost fanout                            ;
+; datapath:DP|DataRegister:T1_latch|Dout[10]    ; Lost fanout                            ;
+; datapath:DP|DataRegister:T4_latch|Dout[10]    ; Lost fanout                            ;
+; datapath:DP|DataRegister:T7_latch|Dout[11]    ; Lost fanout                            ;
+; datapath:DP|DataRegister:T1_latch|Dout[11]    ; Lost fanout                            ;
+; datapath:DP|DataRegister:T4_latch|Dout[11]    ; Lost fanout                            ;
+; datapath:DP|DataRegister:T7_latch|Dout[12]    ; Lost fanout                            ;
+; datapath:DP|DataRegister:T1_latch|Dout[12]    ; Lost fanout                            ;
+; datapath:DP|DataRegister:T4_latch|Dout[12]    ; Lost fanout                            ;
+; datapath:DP|DataRegister:T7_latch|Dout[13]    ; Lost fanout                            ;
+; datapath:DP|DataRegister:T1_latch|Dout[13]    ; Lost fanout                            ;
+; datapath:DP|DataRegister:T4_latch|Dout[13]    ; Lost fanout                            ;
+; datapath:DP|DataRegister:T7_latch|Dout[14]    ; Lost fanout                            ;
+; datapath:DP|DataRegister:T1_latch|Dout[14]    ; Lost fanout                            ;
+; datapath:DP|DataRegister:T4_latch|Dout[14]    ; Lost fanout                            ;
+; datapath:DP|DataRegister:T7_latch|Dout[15]    ; Lost fanout                            ;
+; datapath:DP|DataRegister:T1_latch|Dout[15]    ; Lost fanout                            ;
+; datapath:DP|DataRegister:T4_latch|Dout[15]    ; Lost fanout                            ;
+; controller:CP|fsm_state.S1                    ; Lost fanout                            ;
+; controller:CP|fsm_state.S2                    ; Lost fanout                            ;
+; controller:CP|fsm_state.S3                    ; Lost fanout                            ;
+; controller:CP|fsm_state.S4                    ; Lost fanout                            ;
+; controller:CP|fsm_state.S8                    ; Lost fanout                            ;
+; controller:CP|fsm_state.S9                    ; Lost fanout                            ;
+; controller:CP|fsm_state.S12                   ; Lost fanout                            ;
+; controller:CP|fsm_state.S13                   ; Lost fanout                            ;
+; controller:CP|fsm_state.S14                   ; Lost fanout                            ;
+; controller:CP|fsm_state.S15                   ; Lost fanout                            ;
+; controller:CP|fsm_state.S16                   ; Lost fanout                            ;
+; controller:CP|fsm_state.S17                   ; Lost fanout                            ;
+; controller:CP|fsm_state.S18                   ; Lost fanout                            ;
+; controller:CP|fsm_state.S19                   ; Lost fanout                            ;
+; controller:CP|fsm_state.S20                   ; Lost fanout                            ;
+; controller:CP|fsm_state.S21                   ; Lost fanout                            ;
+; controller:CP|fsm_state.S23                   ; Lost fanout                            ;
+; controller:CP|fsm_state.S24                   ; Lost fanout                            ;
+; controller:CP|fsm_state.S25                   ; Lost fanout                            ;
+; controller:CP|fsm_state.S26                   ; Lost fanout                            ;
+; controller:CP|fsm_state.S27                   ; Lost fanout                            ;
+; controller:CP|fsm_state.S28                   ; Lost fanout                            ;
+; controller:CP|fsm_state.S29                   ; Lost fanout                            ;
+; Total Number of Removed Registers = 154       ;                                        ;
++-----------------------------------------------+----------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                                   ;
++--------------------------------------------+---------------------------+--------------------------------------------------------------------------------------+
+; Register name                              ; Reason for Removal        ; Registers Removed due to This Register                                               ;
++--------------------------------------------+---------------------------+--------------------------------------------------------------------------------------+
+; datapath:DP|DataRegister:T3_latch|Dout[1]  ; Lost Fanouts              ; datapath:DP|RegFile:DUT2|T[7][0], datapath:DP|DataRegister:T7_latch|Dout[0],         ;
+;                                            ;                           ; datapath:DP|RegFile:DUT2|T[7][1], datapath:DP|DataRegister:T5_latch|Dout[1],         ;
+;                                            ;                           ; datapath:DP|DataRegister:T1_latch|Dout[1],                                           ;
+;                                            ;                           ; datapath:DP|DataRegister:T7_latch|Dout[1],                                           ;
+;                                            ;                           ; datapath:DP|DataRegister:T4_latch|Dout[0],                                           ;
+;                                            ;                           ; datapath:DP|DataRegister:T4_latch|Dout[1], controller:CP|fsm_state.S1,               ;
+;                                            ;                           ; controller:CP|fsm_state.S2, controller:CP|fsm_state.S3, controller:CP|fsm_state.S4,  ;
+;                                            ;                           ; controller:CP|fsm_state.S8, controller:CP|fsm_state.S9, controller:CP|fsm_state.S13, ;
+;                                            ;                           ; controller:CP|fsm_state.S14, controller:CP|fsm_state.S15,                            ;
+;                                            ;                           ; controller:CP|fsm_state.S17, controller:CP|fsm_state.S18,                            ;
+;                                            ;                           ; controller:CP|fsm_state.S20, controller:CP|fsm_state.S21,                            ;
+;                                            ;                           ; controller:CP|fsm_state.S24, controller:CP|fsm_state.S25,                            ;
+;                                            ;                           ; controller:CP|fsm_state.S26, controller:CP|fsm_state.S28                             ;
+; datapath:DP|DataRegister:T8_latch|Dout[6]  ; Stuck at VCC              ; datapath:DP|DataRegister:T2_latch|Dout[5],                                           ;
+;                                            ; due to stuck port data_in ; datapath:DP|DataRegister:T7_latch|Dout[5], datapath:DP|RegFile:DUT2|T[7][5],         ;
+;                                            ;                           ; datapath:DP|DataRegister:T5_latch|Dout[5],                                           ;
+;                                            ;                           ; datapath:DP|DataRegister:T1_latch|Dout[5],                                           ;
+;                                            ;                           ; datapath:DP|DataRegister:T2_latch|Dout[6],                                           ;
+;                                            ;                           ; datapath:DP|DataRegister:T7_latch|Dout[6], datapath:DP|RegFile:DUT2|T[7][6],         ;
+;                                            ;                           ; datapath:DP|DataRegister:T5_latch|Dout[6],                                           ;
+;                                            ;                           ; datapath:DP|DataRegister:T1_latch|Dout[6],                                           ;
+;                                            ;                           ; datapath:DP|DataRegister:T4_latch|Dout[5],                                           ;
+;                                            ;                           ; datapath:DP|DataRegister:T4_latch|Dout[6]                                            ;
+; datapath:DP|DataRegister:T8_latch|Dout[8]  ; Stuck at GND              ; datapath:DP|DataRegister:T2_latch|Dout[0],                                           ;
+;                                            ; due to stuck port data_in ; datapath:DP|DataRegister:T10_latch|Dout[1],                                          ;
+;                                            ;                           ; datapath:DP|DataRegister:T10_latch|Dout[0],                                          ;
+;                                            ;                           ; datapath:DP|DataRegister:T2_latch|Dout[1],                                           ;
+;                                            ;                           ; datapath:DP|DataRegister:T2_latch|Dout[2],                                           ;
+;                                            ;                           ; datapath:DP|DataRegister:T2_latch|Dout[8],                                           ;
+;                                            ;                           ; datapath:DP|DataRegister:T3_latch|Dout[8],                                           ;
+;                                            ;                           ; datapath:DP|DataRegister:T7_latch|Dout[8],                                           ;
+;                                            ;                           ; datapath:DP|DataRegister:T4_latch|Dout[8]                                            ;
+; datapath:DP|DataRegister:T3_latch|Dout[0]  ; Lost Fanouts              ; datapath:DP|DataRegister:T5_latch|Dout[0],                                           ;
+;                                            ;                           ; datapath:DP|DataRegister:T1_latch|Dout[0], controller:CP|fsm_state.S12,              ;
+;                                            ;                           ; controller:CP|fsm_state.S19, controller:CP|fsm_state.S23,                            ;
+;                                            ;                           ; controller:CP|fsm_state.S27                                                          ;
+; datapath:DP|DataRegister:T3_latch|Dout[4]  ; Lost Fanouts              ; datapath:DP|RegFile:DUT2|T[7][4], datapath:DP|DataRegister:T5_latch|Dout[4],         ;
+;                                            ;                           ; datapath:DP|DataRegister:T1_latch|Dout[4],                                           ;
+;                                            ;                           ; datapath:DP|DataRegister:T7_latch|Dout[4],                                           ;
+;                                            ;                           ; datapath:DP|DataRegister:T2_latch|Dout[4],                                           ;
+;                                            ;                           ; datapath:DP|DataRegister:T4_latch|Dout[4]                                            ;
+; datapath:DP|DataRegister:T3_latch|Dout[3]  ; Lost Fanouts              ; datapath:DP|RegFile:DUT2|T[7][3], datapath:DP|DataRegister:T5_latch|Dout[3],         ;
+;                                            ;                           ; datapath:DP|DataRegister:T1_latch|Dout[3],                                           ;
+;                                            ;                           ; datapath:DP|DataRegister:T7_latch|Dout[3],                                           ;
+;                                            ;                           ; datapath:DP|DataRegister:T2_latch|Dout[3],                                           ;
+;                                            ;                           ; datapath:DP|DataRegister:T4_latch|Dout[3]                                            ;
+; datapath:DP|DataRegister:T3_latch|Dout[7]  ; Lost Fanouts              ; datapath:DP|RegFile:DUT2|T[7][7], datapath:DP|DataRegister:T5_latch|Dout[7],         ;
+;                                            ;                           ; datapath:DP|DataRegister:T1_latch|Dout[7],                                           ;
+;                                            ;                           ; datapath:DP|DataRegister:T7_latch|Dout[7],                                           ;
+;                                            ;                           ; datapath:DP|DataRegister:T4_latch|Dout[7]                                            ;
+; datapath:DP|DataRegister:T3_latch|Dout[2]  ; Lost Fanouts              ; datapath:DP|RegFile:DUT2|T[7][2], datapath:DP|DataRegister:T5_latch|Dout[2],         ;
+;                                            ;                           ; datapath:DP|DataRegister:T1_latch|Dout[2],                                           ;
+;                                            ;                           ; datapath:DP|DataRegister:T7_latch|Dout[2],                                           ;
+;                                            ;                           ; datapath:DP|DataRegister:T4_latch|Dout[2]                                            ;
+; datapath:DP|DataRegister:T8_latch|Dout[9]  ; Stuck at GND              ; datapath:DP|DataRegister:T2_latch|Dout[9],                                           ;
+;                                            ; due to stuck port data_in ; datapath:DP|DataRegister:T3_latch|Dout[9],                                           ;
+;                                            ;                           ; datapath:DP|DataRegister:T7_latch|Dout[9],                                           ;
+;                                            ;                           ; datapath:DP|DataRegister:T4_latch|Dout[9]                                            ;
+; datapath:DP|DataRegister:T8_latch|Dout[15] ; Stuck at GND              ; datapath:DP|DataRegister:T2_latch|Dout[15],                                          ;
+;                                            ; due to stuck port data_in ; datapath:DP|DataRegister:T3_latch|Dout[15],                                          ;
+;                                            ;                           ; datapath:DP|DataRegister:T7_latch|Dout[15],                                          ;
+;                                            ;                           ; datapath:DP|DataRegister:T4_latch|Dout[15]                                           ;
+; datapath:DP|DataRegister:T8_latch|Dout[14] ; Stuck at GND              ; datapath:DP|DataRegister:T2_latch|Dout[14],                                          ;
+;                                            ; due to stuck port data_in ; datapath:DP|DataRegister:T3_latch|Dout[14],                                          ;
+;                                            ;                           ; datapath:DP|DataRegister:T7_latch|Dout[14],                                          ;
+;                                            ;                           ; datapath:DP|DataRegister:T4_latch|Dout[14]                                           ;
+; datapath:DP|DataRegister:T8_latch|Dout[13] ; Stuck at GND              ; datapath:DP|DataRegister:T2_latch|Dout[13],                                          ;
+;                                            ; due to stuck port data_in ; datapath:DP|DataRegister:T3_latch|Dout[13],                                          ;
+;                                            ;                           ; datapath:DP|DataRegister:T7_latch|Dout[13],                                          ;
+;                                            ;                           ; datapath:DP|DataRegister:T4_latch|Dout[13]                                           ;
+; datapath:DP|DataRegister:T8_latch|Dout[12] ; Stuck at GND              ; datapath:DP|DataRegister:T2_latch|Dout[12],                                          ;
+;                                            ; due to stuck port data_in ; datapath:DP|DataRegister:T3_latch|Dout[12],                                          ;
+;                                            ;                           ; datapath:DP|DataRegister:T7_latch|Dout[12],                                          ;
+;                                            ;                           ; datapath:DP|DataRegister:T4_latch|Dout[12]                                           ;
+; datapath:DP|DataRegister:T8_latch|Dout[11] ; Stuck at GND              ; datapath:DP|DataRegister:T2_latch|Dout[11],                                          ;
+;                                            ; due to stuck port data_in ; datapath:DP|DataRegister:T3_latch|Dout[11],                                          ;
+;                                            ;                           ; datapath:DP|DataRegister:T7_latch|Dout[11],                                          ;
+;                                            ;                           ; datapath:DP|DataRegister:T4_latch|Dout[11]                                           ;
+; datapath:DP|DataRegister:T8_latch|Dout[10] ; Stuck at GND              ; datapath:DP|DataRegister:T2_latch|Dout[10],                                          ;
+;                                            ; due to stuck port data_in ; datapath:DP|DataRegister:T3_latch|Dout[10],                                          ;
+;                                            ;                           ; datapath:DP|DataRegister:T7_latch|Dout[10],                                          ;
+;                                            ;                           ; datapath:DP|DataRegister:T4_latch|Dout[10]                                           ;
+; datapath:DP|DataRegister:T5_latch|Dout[8]  ; Lost Fanouts              ; datapath:DP|DataRegister:T1_latch|Dout[8]                                            ;
+; datapath:DP|DataRegister:T5_latch|Dout[9]  ; Lost Fanouts              ; datapath:DP|DataRegister:T1_latch|Dout[9]                                            ;
+; datapath:DP|DataRegister:T5_latch|Dout[10] ; Lost Fanouts              ; datapath:DP|DataRegister:T1_latch|Dout[10]                                           ;
+; datapath:DP|DataRegister:T5_latch|Dout[11] ; Lost Fanouts              ; datapath:DP|DataRegister:T1_latch|Dout[11]                                           ;
+; datapath:DP|DataRegister:T5_latch|Dout[12] ; Lost Fanouts              ; datapath:DP|DataRegister:T1_latch|Dout[12]                                           ;
+; datapath:DP|DataRegister:T5_latch|Dout[13] ; Lost Fanouts              ; datapath:DP|DataRegister:T1_latch|Dout[13]                                           ;
+; datapath:DP|DataRegister:T5_latch|Dout[14] ; Lost Fanouts              ; datapath:DP|DataRegister:T1_latch|Dout[14]                                           ;
+; datapath:DP|DataRegister:T5_latch|Dout[15] ; Lost Fanouts              ; datapath:DP|DataRegister:T1_latch|Dout[15]                                           ;
++--------------------------------------------+---------------------------+--------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------+
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |Final|datapath:DP|DataRegister:T5_latch|Dout[8] ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |Final|datapath:DP|mux41:Mem_mux_device|x[12]    ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |Final|datapath:DP|mux41:A2_mux_device|x[1]      ;
+; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |Final|datapath:DP|mux41:D3_mux_device|x[4]      ;
+; 4:1                ; 9 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; No         ; |Final|datapath:DP|mux41:D3_mux_device|x[13]     ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |Final|datapath:DP|mux41:A3_mux_device|x[1]      ;
+; 3:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; No         ; |Final|datapath:DP|ALU:DUT1|s[14]                ;
+; 8:1                ; 16 bits   ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; No         ; |Final|datapath:DP|RegFile:DUT2|Mux11            ;
+; 8:1                ; 16 bits   ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; No         ; |Final|datapath:DP|RegFile:DUT2|Mux23            ;
+; 16:1               ; 16 bits   ; 160 LEs       ; 64 LEs               ; 96 LEs                 ; No         ; |Final|datapath:DP|mux81:ALU_a_mux_device|x[7]   ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |Final|datapath:DP|mux81:ALU_b_mux_device|x[5]   ;
+; 6:1                ; 8 bits    ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; No         ; |Final|datapath:DP|mux81:ALU_b_mux_device|x[15]  ;
+; 8:1                ; 5 bits    ; 25 LEs        ; 20 LEs               ; 5 LEs                  ; No         ; |Final|datapath:DP|mux81:ALU_b_mux_device|x[4]   ;
+; 21:1               ; 11 bits   ; 154 LEs       ; 121 LEs              ; 33 LEs                 ; No         ; |Final|controller:CP|Selector5                   ;
+; 36:1               ; 4 bits    ; 96 LEs        ; 24 LEs               ; 72 LEs                 ; No         ; |Final|controller:CP|Selector3                   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------+
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:DP|IR_Latch:IR_latc ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; data_width     ; 16    ; Signed Integer                                   ;
++----------------+-------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:DP|DataRegister:T1_latch ;
++----------------+-------+-------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                  ;
++----------------+-------+-------------------------------------------------------+
+; data_width     ; 16    ; Signed Integer                                        ;
++----------------+-------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:DP|DataRegister:T2_latch ;
++----------------+-------+-------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                  ;
++----------------+-------+-------------------------------------------------------+
+; data_width     ; 16    ; Signed Integer                                        ;
++----------------+-------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:DP|DataRegister:T3_latch ;
++----------------+-------+-------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                  ;
++----------------+-------+-------------------------------------------------------+
+; data_width     ; 16    ; Signed Integer                                        ;
++----------------+-------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:DP|DataRegister:T4_latch ;
++----------------+-------+-------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                  ;
++----------------+-------+-------------------------------------------------------+
+; data_width     ; 16    ; Signed Integer                                        ;
++----------------+-------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:DP|DataRegister:T5_latch ;
++----------------+-------+-------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                  ;
++----------------+-------+-------------------------------------------------------+
+; data_width     ; 16    ; Signed Integer                                        ;
++----------------+-------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:DP|IR_Latch:T6_latch ;
++----------------+-------+---------------------------------------------------+
+; Parameter Name ; Value ; Type                                              ;
++----------------+-------+---------------------------------------------------+
+; data_width     ; 16    ; Signed Integer                                    ;
++----------------+-------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:DP|DataRegister:T7_latch ;
++----------------+-------+-------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                  ;
++----------------+-------+-------------------------------------------------------+
+; data_width     ; 16    ; Signed Integer                                        ;
++----------------+-------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:DP|DataRegister:T8_latch ;
++----------------+-------+-------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                  ;
++----------------+-------+-------------------------------------------------------+
+; data_width     ; 16    ; Signed Integer                                        ;
++----------------+-------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:DP|DataRegister:T10_latch ;
++----------------+-------+--------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                   ;
++----------------+-------+--------------------------------------------------------+
+; data_width     ; 3     ; Signed Integer                                         ;
++----------------+-------+--------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:DP|mux41:Mem_mux_device ;
++----------------+-------+------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                 ;
++----------------+-------+------------------------------------------------------+
+; data_width     ; 16    ; Signed Integer                                       ;
++----------------+-------+------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:DP|mux21:A1_mux_device ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; data_width     ; 3     ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:DP|mux41:A2_mux_device ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; data_width     ; 3     ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:DP|mux41:A3_mux_device ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; data_width     ; 3     ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:DP|mux41:D3_mux_device ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; data_width     ; 16    ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:DP|mux41:T5_mux_device ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; data_width     ; 16    ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:DP|mux21:T6_mux_device ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; data_width     ; 16    ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------+
+; Port Connectivity Checks: "datapath:DP|mux41:T5_mux_device" ;
++------+-------+----------+-----------------------------------+
+; Port ; Type  ; Severity ; Details                           ;
++------+-------+----------+-----------------------------------+
+; a3   ; Input ; Info     ; Stuck at VCC                      ;
++------+-------+----------+-----------------------------------+
+
+
++-------------------------------------------------------------+
+; Port Connectivity Checks: "datapath:DP|mux41:A2_mux_device" ;
++------+-------+----------+-----------------------------------+
+; Port ; Type  ; Severity ; Details                           ;
++------+-------+----------+-----------------------------------+
+; a3   ; Input ; Info     ; Stuck at VCC                      ;
++------+-------+----------+-----------------------------------+
+
+
++----------------------------------------------------------------+
+; Port Connectivity Checks: "datapath:DP|mux81:ALU_b_mux_device" ;
++-----------+-------+----------+---------------------------------+
+; Port      ; Type  ; Severity ; Details                         ;
++-----------+-------+----------+---------------------------------+
+; a2[15..1] ; Input ; Info     ; Stuck at GND                    ;
+; a2[0]     ; Input ; Info     ; Stuck at VCC                    ;
+; a6        ; Input ; Info     ; Stuck at GND                    ;
+; a7        ; Input ; Info     ; Stuck at VCC                    ;
++-----------+-------+----------+---------------------------------+
+
+
++----------------------------------------------------------------+
+; Port Connectivity Checks: "datapath:DP|mux81:ALU_a_mux_device" ;
++------+-------+----------+--------------------------------------+
+; Port ; Type  ; Severity ; Details                              ;
++------+-------+----------+--------------------------------------+
+; a5   ; Input ; Info     ; Stuck at VCC                         ;
+; a6   ; Input ; Info     ; Stuck at VCC                         ;
+; a7   ; Input ; Info     ; Stuck at VCC                         ;
++------+-------+----------+--------------------------------------+
+
+
++-----------------------------------------------------+
+; Port Connectivity Checks: "datapath:DP|memory:DUT7" ;
++----------+-------+----------+-----------------------+
+; Port     ; Type  ; Severity ; Details               ;
++----------+-------+----------+-----------------------+
+; mem_read ; Input ; Info     ; Stuck at VCC          ;
++----------+-------+----------+-----------------------+
+
+
++------------------------------------------------------------------------+
+; Port Connectivity Checks: "datapath:DP|ALU:DUT1|sixteen_bit_nand:DUT4" ;
++----------+-------+----------+------------------------------------------+
+; Port     ; Type  ; Severity ; Details                                  ;
++----------+-------+----------+------------------------------------------+
+; b[15..1] ; Input ; Info     ; Stuck at GND                             ;
+; b[0]     ; Input ; Info     ; Stuck at VCC                             ;
++----------+-------+----------+------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "datapath:DP|ALU:DUT1|sixteen_bit_subtracter:DUT3|sixteen_bit_adder:dut1" ;
++----------+-------+----------+-----------------------------------------------------------------------+
+; Port     ; Type  ; Severity ; Details                                                               ;
++----------+-------+----------+-----------------------------------------------------------------------+
+; b[15..1] ; Input ; Info     ; Stuck at GND                                                          ;
+; b[0]     ; Input ; Info     ; Stuck at VCC                                                          ;
++----------+-------+----------+-----------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-------------------+---------------------------------+
+; Type              ; Count                           ;
++-------------------+---------------------------------+
+; boundary_port     ; 1                               ;
+;                   ;                                 ;
+; Max LUT depth     ; 0.00                            ;
+; Average LUT depth ; 0.00                            ;
++-------------------+---------------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
+    Info: Processing started: Tue Nov  8 23:07:25 2016
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off final -c Final
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 2 design units, including 1 entities, in source file Ir_latch.vhd
+    Info (12022): Found design unit 1: IR_Latch-Behave File: /home/krishna/Desktop/Toplevel/Ir_latch.vhd Line: 13
+    Info (12023): Found entity 1: IR_Latch File: /home/krishna/Desktop/Toplevel/Ir_latch.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file Shifter.vhd
+    Info (12022): Found design unit 1: Shifter-Structure File: /home/krishna/Desktop/Toplevel/Shifter.vhd Line: 13
+    Info (12023): Found entity 1: Shifter File: /home/krishna/Desktop/Toplevel/Shifter.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file DataRegister.vhd
+    Info (12022): Found design unit 1: DataRegister-Behave File: /home/krishna/Desktop/Toplevel/DataRegister.vhd Line: 13
+    Info (12023): Found entity 1: DataRegister File: /home/krishna/Desktop/Toplevel/DataRegister.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file sixteen_bit_nand.vhd
+    Info (12022): Found design unit 1: sixteen_bit_nand-Formula File: /home/krishna/Desktop/Toplevel/sixteen_bit_nand.vhd Line: 13
+    Info (12023): Found entity 1: sixteen_bit_nand File: /home/krishna/Desktop/Toplevel/sixteen_bit_nand.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file final.vhd
+    Info (12022): Found design unit 1: Final-Structf File: /home/krishna/Desktop/Toplevel/final.vhd Line: 13
+    Info (12023): Found entity 1: Final File: /home/krishna/Desktop/Toplevel/final.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file Sign_Extender_by_7.vhd
+    Info (12022): Found design unit 1: Sign_Extender_by_7-Structure File: /home/krishna/Desktop/Toplevel/Sign_Extender_by_7.vhd Line: 14
+    Info (12023): Found entity 1: Sign_Extender_by_7 File: /home/krishna/Desktop/Toplevel/Sign_Extender_by_7.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file memory.vhd
+    Info (12022): Found design unit 1: memory-Structure File: /home/krishna/Desktop/Toplevel/memory.vhd Line: 14
+    Info (12023): Found entity 1: memory File: /home/krishna/Desktop/Toplevel/memory.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file sixteen_bit_subtracter.vhd
+    Info (12022): Found design unit 1: sixteen_bit_subtracter-formula File: /home/krishna/Desktop/Toplevel/sixteen_bit_subtracter.vhd Line: 7
+    Info (12023): Found entity 1: sixteen_bit_subtracter File: /home/krishna/Desktop/Toplevel/sixteen_bit_subtracter.vhd Line: 3
+Info (12021): Found 2 design units, including 1 entities, in source file controller.vhd
+    Info (12022): Found design unit 1: controller-Behave File: /home/krishna/Desktop/Toplevel/controller.vhd Line: 28
+    Info (12023): Found entity 1: controller File: /home/krishna/Desktop/Toplevel/controller.vhd Line: 7
+Warning (12090): Entity "mux41" obtained from "mux41.vhd" instead of from Quartus Prime megafunction library File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file mux41.vhd
+    Info (12022): Found design unit 1: mux41-Struct2 File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 13
+    Info (12023): Found entity 1: mux41 File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file ALU.vhd
+    Info (12022): Found design unit 1: ALU-Struct File: /home/krishna/Desktop/Toplevel/ALU.vhd Line: 13
+    Info (12023): Found entity 1: ALU File: /home/krishna/Desktop/Toplevel/ALU.vhd Line: 6
+Info (12021): Found 1 design units, including 0 entities, in source file Components.vhd
+    Info (12022): Found design unit 1: Components File: /home/krishna/Desktop/Toplevel/Components.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file RegFile.vhd
+    Info (12022): Found design unit 1: RegFile-Structure File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 17
+    Info (12023): Found entity 1: RegFile File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file PriorityEncoder.vhd
+    Info (12022): Found design unit 1: PriorityEncoder-Structure File: /home/krishna/Desktop/Toplevel/PriorityEncoder.vhd Line: 11
+    Info (12023): Found entity 1: PriorityEncoder File: /home/krishna/Desktop/Toplevel/PriorityEncoder.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file mux81.vhd
+    Info (12022): Found design unit 1: mux81-Struct3 File: /home/krishna/Desktop/Toplevel/mux81.vhd Line: 11
+    Info (12023): Found entity 1: mux81 File: /home/krishna/Desktop/Toplevel/mux81.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file Sign_Extender_by_10.vhd
+    Info (12022): Found design unit 1: Sign_Extender_by_10-Structure File: /home/krishna/Desktop/Toplevel/Sign_Extender_by_10.vhd Line: 14
+    Info (12023): Found entity 1: Sign_Extender_by_10 File: /home/krishna/Desktop/Toplevel/Sign_Extender_by_10.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file sixteen_bit_adder.vhd
+    Info (12022): Found design unit 1: sixteen_bit_adder-Formula File: /home/krishna/Desktop/Toplevel/sixteen_bit_adder.vhd Line: 13
+    Info (12023): Found entity 1: sixteen_bit_adder File: /home/krishna/Desktop/Toplevel/sixteen_bit_adder.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file Datapath.vhd
+    Info (12022): Found design unit 1: datapath-dataflow File: /home/krishna/Desktop/Toplevel/Datapath.vhd Line: 28
+    Info (12023): Found entity 1: datapath File: /home/krishna/Desktop/Toplevel/Datapath.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file mux21.vhd
+    Info (12022): Found design unit 1: mux21-Struct1 File: /home/krishna/Desktop/Toplevel/mux21.vhd Line: 12
+    Info (12023): Found entity 1: mux21 File: /home/krishna/Desktop/Toplevel/mux21.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file flag.vhd
+    Info (12022): Found design unit 1: flag-Behave File: /home/krishna/Desktop/Toplevel/flag.vhd Line: 11
+    Info (12023): Found entity 1: flag File: /home/krishna/Desktop/Toplevel/flag.vhd Line: 5
+Info (12127): Elaborating entity "Final" for the top level hierarchy
+Info (12128): Elaborating entity "controller" for hierarchy "controller:CP" File: /home/krishna/Desktop/Toplevel/final.vhd Line: 21
+Warning (10631): VHDL Process Statement warning at controller.vhd(34): inferring latch(es) for signal or variable "Mem_mux", which holds its previous value in one or more paths through the process File: /home/krishna/Desktop/Toplevel/controller.vhd Line: 34
+Warning (10631): VHDL Process Statement warning at controller.vhd(34): inferring latch(es) for signal or variable "ALU_a_mux", which holds its previous value in one or more paths through the process File: /home/krishna/Desktop/Toplevel/controller.vhd Line: 34
+Warning (10631): VHDL Process Statement warning at controller.vhd(34): inferring latch(es) for signal or variable "ALU_b_mux", which holds its previous value in one or more paths through the process File: /home/krishna/Desktop/Toplevel/controller.vhd Line: 34
+Warning (10631): VHDL Process Statement warning at controller.vhd(34): inferring latch(es) for signal or variable "T5_mux", which holds its previous value in one or more paths through the process File: /home/krishna/Desktop/Toplevel/controller.vhd Line: 34
+Warning (10631): VHDL Process Statement warning at controller.vhd(34): inferring latch(es) for signal or variable "T6_mux", which holds its previous value in one or more paths through the process File: /home/krishna/Desktop/Toplevel/controller.vhd Line: 34
+Warning (10631): VHDL Process Statement warning at controller.vhd(34): inferring latch(es) for signal or variable "A1_mux", which holds its previous value in one or more paths through the process File: /home/krishna/Desktop/Toplevel/controller.vhd Line: 34
+Warning (10631): VHDL Process Statement warning at controller.vhd(34): inferring latch(es) for signal or variable "A2_mux", which holds its previous value in one or more paths through the process File: /home/krishna/Desktop/Toplevel/controller.vhd Line: 34
+Warning (10631): VHDL Process Statement warning at controller.vhd(34): inferring latch(es) for signal or variable "A3_mux", which holds its previous value in one or more paths through the process File: /home/krishna/Desktop/Toplevel/controller.vhd Line: 34
+Warning (10631): VHDL Process Statement warning at controller.vhd(34): inferring latch(es) for signal or variable "D3_mux", which holds its previous value in one or more paths through the process File: /home/krishna/Desktop/Toplevel/controller.vhd Line: 34
+Warning (10631): VHDL Process Statement warning at controller.vhd(34): inferring latch(es) for signal or variable "ALU_opcode", which holds its previous value in one or more paths through the process File: /home/krishna/Desktop/Toplevel/controller.vhd Line: 34
+Warning (10631): VHDL Process Statement warning at controller.vhd(34): inferring latch(es) for signal or variable "flagset", which holds its previous value in one or more paths through the process File: /home/krishna/Desktop/Toplevel/controller.vhd Line: 34
+Info (10041): Inferred latch for "flagset" at controller.vhd(34) File: /home/krishna/Desktop/Toplevel/controller.vhd Line: 34
+Info (10041): Inferred latch for "ALU_opcode[0]" at controller.vhd(34) File: /home/krishna/Desktop/Toplevel/controller.vhd Line: 34
+Info (10041): Inferred latch for "ALU_opcode[1]" at controller.vhd(34) File: /home/krishna/Desktop/Toplevel/controller.vhd Line: 34
+Info (10041): Inferred latch for "D3_mux[0]" at controller.vhd(34) File: /home/krishna/Desktop/Toplevel/controller.vhd Line: 34
+Info (10041): Inferred latch for "D3_mux[1]" at controller.vhd(34) File: /home/krishna/Desktop/Toplevel/controller.vhd Line: 34
+Info (10041): Inferred latch for "A3_mux[0]" at controller.vhd(34) File: /home/krishna/Desktop/Toplevel/controller.vhd Line: 34
+Info (10041): Inferred latch for "A3_mux[1]" at controller.vhd(34) File: /home/krishna/Desktop/Toplevel/controller.vhd Line: 34
+Info (10041): Inferred latch for "A2_mux[0]" at controller.vhd(34) File: /home/krishna/Desktop/Toplevel/controller.vhd Line: 34
+Info (10041): Inferred latch for "A2_mux[1]" at controller.vhd(34) File: /home/krishna/Desktop/Toplevel/controller.vhd Line: 34
+Info (10041): Inferred latch for "A1_mux" at controller.vhd(34) File: /home/krishna/Desktop/Toplevel/controller.vhd Line: 34
+Info (10041): Inferred latch for "T6_mux" at controller.vhd(34) File: /home/krishna/Desktop/Toplevel/controller.vhd Line: 34
+Info (10041): Inferred latch for "T5_mux[0]" at controller.vhd(34) File: /home/krishna/Desktop/Toplevel/controller.vhd Line: 34
+Info (10041): Inferred latch for "T5_mux[1]" at controller.vhd(34) File: /home/krishna/Desktop/Toplevel/controller.vhd Line: 34
+Info (10041): Inferred latch for "ALU_b_mux[0]" at controller.vhd(34) File: /home/krishna/Desktop/Toplevel/controller.vhd Line: 34
+Info (10041): Inferred latch for "ALU_b_mux[1]" at controller.vhd(34) File: /home/krishna/Desktop/Toplevel/controller.vhd Line: 34
+Info (10041): Inferred latch for "ALU_b_mux[2]" at controller.vhd(34) File: /home/krishna/Desktop/Toplevel/controller.vhd Line: 34
+Info (10041): Inferred latch for "ALU_a_mux[0]" at controller.vhd(34) File: /home/krishna/Desktop/Toplevel/controller.vhd Line: 34
+Info (10041): Inferred latch for "ALU_a_mux[1]" at controller.vhd(34) File: /home/krishna/Desktop/Toplevel/controller.vhd Line: 34
+Info (10041): Inferred latch for "ALU_a_mux[2]" at controller.vhd(34) File: /home/krishna/Desktop/Toplevel/controller.vhd Line: 34
+Info (10041): Inferred latch for "Mem_mux[0]" at controller.vhd(34) File: /home/krishna/Desktop/Toplevel/controller.vhd Line: 34
+Info (10041): Inferred latch for "Mem_mux[1]" at controller.vhd(34) File: /home/krishna/Desktop/Toplevel/controller.vhd Line: 34
+Info (12128): Elaborating entity "datapath" for hierarchy "datapath:DP" File: /home/krishna/Desktop/Toplevel/final.vhd Line: 43
+Info (12128): Elaborating entity "ALU" for hierarchy "datapath:DP|ALU:DUT1" File: /home/krishna/Desktop/Toplevel/Datapath.vhd Line: 41
+Warning (10631): VHDL Process Statement warning at ALU.vhd(17): inferring latch(es) for signal or variable "s", which holds its previous value in one or more paths through the process File: /home/krishna/Desktop/Toplevel/ALU.vhd Line: 17
+Warning (10631): VHDL Process Statement warning at ALU.vhd(17): inferring latch(es) for signal or variable "c", which holds its previous value in one or more paths through the process File: /home/krishna/Desktop/Toplevel/ALU.vhd Line: 17
+Warning (10631): VHDL Process Statement warning at ALU.vhd(17): inferring latch(es) for signal or variable "z", which holds its previous value in one or more paths through the process File: /home/krishna/Desktop/Toplevel/ALU.vhd Line: 17
+Info (10041): Inferred latch for "z" at ALU.vhd(17) File: /home/krishna/Desktop/Toplevel/ALU.vhd Line: 17
+Info (10041): Inferred latch for "c" at ALU.vhd(17) File: /home/krishna/Desktop/Toplevel/ALU.vhd Line: 17
+Info (10041): Inferred latch for "s[0]" at ALU.vhd(17) File: /home/krishna/Desktop/Toplevel/ALU.vhd Line: 17
+Info (10041): Inferred latch for "s[1]" at ALU.vhd(17) File: /home/krishna/Desktop/Toplevel/ALU.vhd Line: 17
+Info (10041): Inferred latch for "s[2]" at ALU.vhd(17) File: /home/krishna/Desktop/Toplevel/ALU.vhd Line: 17
+Info (10041): Inferred latch for "s[3]" at ALU.vhd(17) File: /home/krishna/Desktop/Toplevel/ALU.vhd Line: 17
+Info (10041): Inferred latch for "s[4]" at ALU.vhd(17) File: /home/krishna/Desktop/Toplevel/ALU.vhd Line: 17
+Info (10041): Inferred latch for "s[5]" at ALU.vhd(17) File: /home/krishna/Desktop/Toplevel/ALU.vhd Line: 17
+Info (10041): Inferred latch for "s[6]" at ALU.vhd(17) File: /home/krishna/Desktop/Toplevel/ALU.vhd Line: 17
+Info (10041): Inferred latch for "s[7]" at ALU.vhd(17) File: /home/krishna/Desktop/Toplevel/ALU.vhd Line: 17
+Info (10041): Inferred latch for "s[8]" at ALU.vhd(17) File: /home/krishna/Desktop/Toplevel/ALU.vhd Line: 17
+Info (10041): Inferred latch for "s[9]" at ALU.vhd(17) File: /home/krishna/Desktop/Toplevel/ALU.vhd Line: 17
+Info (10041): Inferred latch for "s[10]" at ALU.vhd(17) File: /home/krishna/Desktop/Toplevel/ALU.vhd Line: 17
+Info (10041): Inferred latch for "s[11]" at ALU.vhd(17) File: /home/krishna/Desktop/Toplevel/ALU.vhd Line: 17
+Info (10041): Inferred latch for "s[12]" at ALU.vhd(17) File: /home/krishna/Desktop/Toplevel/ALU.vhd Line: 17
+Info (10041): Inferred latch for "s[13]" at ALU.vhd(17) File: /home/krishna/Desktop/Toplevel/ALU.vhd Line: 17
+Info (10041): Inferred latch for "s[14]" at ALU.vhd(17) File: /home/krishna/Desktop/Toplevel/ALU.vhd Line: 17
+Info (10041): Inferred latch for "s[15]" at ALU.vhd(17) File: /home/krishna/Desktop/Toplevel/ALU.vhd Line: 17
+Info (12128): Elaborating entity "sixteen_bit_adder" for hierarchy "datapath:DP|ALU:DUT1|sixteen_bit_adder:DUT1" File: /home/krishna/Desktop/Toplevel/ALU.vhd Line: 44
+Info (12128): Elaborating entity "sixteen_bit_subtracter" for hierarchy "datapath:DP|ALU:DUT1|sixteen_bit_subtracter:DUT3" File: /home/krishna/Desktop/Toplevel/ALU.vhd Line: 45
+Info (12128): Elaborating entity "sixteen_bit_nand" for hierarchy "datapath:DP|ALU:DUT1|sixteen_bit_nand:DUT4" File: /home/krishna/Desktop/Toplevel/ALU.vhd Line: 46
+Info (12128): Elaborating entity "RegFile" for hierarchy "datapath:DP|RegFile:DUT2" File: /home/krishna/Desktop/Toplevel/Datapath.vhd Line: 45
+Warning (10631): VHDL Process Statement warning at RegFile.vhd(31): inferring latch(es) for signal or variable "D1", which holds its previous value in one or more paths through the process File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Warning (10631): VHDL Process Statement warning at RegFile.vhd(31): inferring latch(es) for signal or variable "D2", which holds its previous value in one or more paths through the process File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Warning (10631): VHDL Process Statement warning at RegFile.vhd(31): inferring latch(es) for signal or variable "T", which holds its previous value in one or more paths through the process File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[0][0]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[0][1]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[0][2]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[0][3]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[0][4]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[0][5]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[0][6]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[0][7]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[0][8]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[0][9]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[0][10]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[0][11]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[0][12]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[0][13]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[0][14]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[0][15]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[1][0]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[1][1]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[1][2]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[1][3]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[1][4]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[1][5]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[1][6]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[1][7]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[1][8]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[1][9]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[1][10]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[1][11]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[1][12]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[1][13]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[1][14]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[1][15]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[2][0]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[2][1]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[2][2]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[2][3]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[2][4]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[2][5]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[2][6]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[2][7]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[2][8]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[2][9]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[2][10]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[2][11]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[2][12]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[2][13]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[2][14]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[2][15]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[3][0]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[3][1]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[3][2]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[3][3]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[3][4]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[3][5]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[3][6]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[3][7]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[3][8]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[3][9]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[3][10]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[3][11]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[3][12]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[3][13]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[3][14]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[3][15]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[4][0]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[4][1]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[4][2]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[4][3]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[4][4]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[4][5]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[4][6]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[4][7]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[4][8]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[4][9]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[4][10]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[4][11]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[4][12]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[4][13]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[4][14]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[4][15]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[5][0]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[5][1]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[5][2]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[5][3]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[5][4]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[5][5]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[5][6]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[5][7]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[5][8]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[5][9]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[5][10]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[5][11]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[5][12]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[5][13]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[5][14]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[5][15]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[6][0]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[6][1]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[6][2]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[6][3]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[6][4]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[6][5]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[6][6]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[6][7]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[6][8]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[6][9]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[6][10]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[6][11]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[6][12]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[6][13]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[6][14]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "T[6][15]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "D2[0]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "D2[1]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "D2[2]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "D2[3]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "D2[4]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "D2[5]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "D2[6]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "D2[7]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "D2[8]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "D2[9]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "D2[10]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "D2[11]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "D2[12]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "D2[13]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "D2[14]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "D2[15]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "D1[0]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "D1[1]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "D1[2]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "D1[3]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "D1[4]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "D1[5]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "D1[6]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "D1[7]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "D1[8]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "D1[9]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "D1[10]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "D1[11]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "D1[12]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "D1[13]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "D1[14]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (10041): Inferred latch for "D1[15]" at RegFile.vhd(31) File: /home/krishna/Desktop/Toplevel/RegFile.vhd Line: 31
+Info (12128): Elaborating entity "Sign_Extender_by_7" for hierarchy "datapath:DP|Sign_Extender_by_7:DUT3" File: /home/krishna/Desktop/Toplevel/Datapath.vhd Line: 49
+Info (12128): Elaborating entity "Sign_Extender_by_10" for hierarchy "datapath:DP|Sign_Extender_by_10:DUT4" File: /home/krishna/Desktop/Toplevel/Datapath.vhd Line: 54
+Info (12128): Elaborating entity "Shifter" for hierarchy "datapath:DP|Shifter:DUT5" File: /home/krishna/Desktop/Toplevel/Datapath.vhd Line: 59
+Info (12128): Elaborating entity "PriorityEncoder" for hierarchy "datapath:DP|PriorityEncoder:DUT6" File: /home/krishna/Desktop/Toplevel/Datapath.vhd Line: 63
+Info (12128): Elaborating entity "memory" for hierarchy "datapath:DP|memory:DUT7" File: /home/krishna/Desktop/Toplevel/Datapath.vhd Line: 67
+Warning (10631): VHDL Process Statement warning at memory.vhd(18): inferring latch(es) for signal or variable "Dout", which holds its previous value in one or more paths through the process File: /home/krishna/Desktop/Toplevel/memory.vhd Line: 18
+Info (10041): Inferred latch for "Dout[0]" at memory.vhd(18) File: /home/krishna/Desktop/Toplevel/memory.vhd Line: 18
+Info (10041): Inferred latch for "Dout[1]" at memory.vhd(18) File: /home/krishna/Desktop/Toplevel/memory.vhd Line: 18
+Info (10041): Inferred latch for "Dout[2]" at memory.vhd(18) File: /home/krishna/Desktop/Toplevel/memory.vhd Line: 18
+Info (10041): Inferred latch for "Dout[3]" at memory.vhd(18) File: /home/krishna/Desktop/Toplevel/memory.vhd Line: 18
+Info (10041): Inferred latch for "Dout[4]" at memory.vhd(18) File: /home/krishna/Desktop/Toplevel/memory.vhd Line: 18
+Info (10041): Inferred latch for "Dout[5]" at memory.vhd(18) File: /home/krishna/Desktop/Toplevel/memory.vhd Line: 18
+Info (10041): Inferred latch for "Dout[6]" at memory.vhd(18) File: /home/krishna/Desktop/Toplevel/memory.vhd Line: 18
+Info (10041): Inferred latch for "Dout[7]" at memory.vhd(18) File: /home/krishna/Desktop/Toplevel/memory.vhd Line: 18
+Info (10041): Inferred latch for "Dout[8]" at memory.vhd(18) File: /home/krishna/Desktop/Toplevel/memory.vhd Line: 18
+Info (10041): Inferred latch for "Dout[9]" at memory.vhd(18) File: /home/krishna/Desktop/Toplevel/memory.vhd Line: 18
+Info (10041): Inferred latch for "Dout[10]" at memory.vhd(18) File: /home/krishna/Desktop/Toplevel/memory.vhd Line: 18
+Info (10041): Inferred latch for "Dout[11]" at memory.vhd(18) File: /home/krishna/Desktop/Toplevel/memory.vhd Line: 18
+Info (10041): Inferred latch for "Dout[12]" at memory.vhd(18) File: /home/krishna/Desktop/Toplevel/memory.vhd Line: 18
+Info (10041): Inferred latch for "Dout[13]" at memory.vhd(18) File: /home/krishna/Desktop/Toplevel/memory.vhd Line: 18
+Info (10041): Inferred latch for "Dout[14]" at memory.vhd(18) File: /home/krishna/Desktop/Toplevel/memory.vhd Line: 18
+Info (10041): Inferred latch for "Dout[15]" at memory.vhd(18) File: /home/krishna/Desktop/Toplevel/memory.vhd Line: 18
+Info (12128): Elaborating entity "IR_Latch" for hierarchy "datapath:DP|IR_Latch:IR_latc" File: /home/krishna/Desktop/Toplevel/Datapath.vhd Line: 80
+Warning (10631): VHDL Process Statement warning at Ir_latch.vhd(15): inferring latch(es) for signal or variable "Dout", which holds its previous value in one or more paths through the process File: /home/krishna/Desktop/Toplevel/Ir_latch.vhd Line: 15
+Info (10041): Inferred latch for "Dout[0]" at Ir_latch.vhd(15) File: /home/krishna/Desktop/Toplevel/Ir_latch.vhd Line: 15
+Info (10041): Inferred latch for "Dout[1]" at Ir_latch.vhd(15) File: /home/krishna/Desktop/Toplevel/Ir_latch.vhd Line: 15
+Info (10041): Inferred latch for "Dout[2]" at Ir_latch.vhd(15) File: /home/krishna/Desktop/Toplevel/Ir_latch.vhd Line: 15
+Info (10041): Inferred latch for "Dout[3]" at Ir_latch.vhd(15) File: /home/krishna/Desktop/Toplevel/Ir_latch.vhd Line: 15
+Info (10041): Inferred latch for "Dout[4]" at Ir_latch.vhd(15) File: /home/krishna/Desktop/Toplevel/Ir_latch.vhd Line: 15
+Info (10041): Inferred latch for "Dout[5]" at Ir_latch.vhd(15) File: /home/krishna/Desktop/Toplevel/Ir_latch.vhd Line: 15
+Info (10041): Inferred latch for "Dout[6]" at Ir_latch.vhd(15) File: /home/krishna/Desktop/Toplevel/Ir_latch.vhd Line: 15
+Info (10041): Inferred latch for "Dout[7]" at Ir_latch.vhd(15) File: /home/krishna/Desktop/Toplevel/Ir_latch.vhd Line: 15
+Info (10041): Inferred latch for "Dout[8]" at Ir_latch.vhd(15) File: /home/krishna/Desktop/Toplevel/Ir_latch.vhd Line: 15
+Info (10041): Inferred latch for "Dout[9]" at Ir_latch.vhd(15) File: /home/krishna/Desktop/Toplevel/Ir_latch.vhd Line: 15
+Info (10041): Inferred latch for "Dout[10]" at Ir_latch.vhd(15) File: /home/krishna/Desktop/Toplevel/Ir_latch.vhd Line: 15
+Info (10041): Inferred latch for "Dout[11]" at Ir_latch.vhd(15) File: /home/krishna/Desktop/Toplevel/Ir_latch.vhd Line: 15
+Info (10041): Inferred latch for "Dout[12]" at Ir_latch.vhd(15) File: /home/krishna/Desktop/Toplevel/Ir_latch.vhd Line: 15
+Info (10041): Inferred latch for "Dout[13]" at Ir_latch.vhd(15) File: /home/krishna/Desktop/Toplevel/Ir_latch.vhd Line: 15
+Info (10041): Inferred latch for "Dout[14]" at Ir_latch.vhd(15) File: /home/krishna/Desktop/Toplevel/Ir_latch.vhd Line: 15
+Info (10041): Inferred latch for "Dout[15]" at Ir_latch.vhd(15) File: /home/krishna/Desktop/Toplevel/Ir_latch.vhd Line: 15
+Info (12128): Elaborating entity "DataRegister" for hierarchy "datapath:DP|DataRegister:T1_latch" File: /home/krishna/Desktop/Toplevel/Datapath.vhd Line: 84
+Info (12128): Elaborating entity "flag" for hierarchy "datapath:DP|flag:T6_flag" File: /home/krishna/Desktop/Toplevel/Datapath.vhd Line: 108
+Info (12128): Elaborating entity "DataRegister" for hierarchy "datapath:DP|DataRegister:T10_latch" File: /home/krishna/Desktop/Toplevel/Datapath.vhd Line: 120
+Info (12128): Elaborating entity "mux81" for hierarchy "datapath:DP|mux81:ALU_a_mux_device" File: /home/krishna/Desktop/Toplevel/Datapath.vhd Line: 126
+Warning (10631): VHDL Process Statement warning at mux81.vhd(14): inferring latch(es) for signal or variable "x", which holds its previous value in one or more paths through the process File: /home/krishna/Desktop/Toplevel/mux81.vhd Line: 14
+Info (10041): Inferred latch for "x[0]" at mux81.vhd(18) File: /home/krishna/Desktop/Toplevel/mux81.vhd Line: 18
+Info (10041): Inferred latch for "x[1]" at mux81.vhd(18) File: /home/krishna/Desktop/Toplevel/mux81.vhd Line: 18
+Info (10041): Inferred latch for "x[2]" at mux81.vhd(18) File: /home/krishna/Desktop/Toplevel/mux81.vhd Line: 18
+Info (10041): Inferred latch for "x[3]" at mux81.vhd(18) File: /home/krishna/Desktop/Toplevel/mux81.vhd Line: 18
+Info (10041): Inferred latch for "x[4]" at mux81.vhd(18) File: /home/krishna/Desktop/Toplevel/mux81.vhd Line: 18
+Info (10041): Inferred latch for "x[5]" at mux81.vhd(18) File: /home/krishna/Desktop/Toplevel/mux81.vhd Line: 18
+Info (10041): Inferred latch for "x[6]" at mux81.vhd(18) File: /home/krishna/Desktop/Toplevel/mux81.vhd Line: 18
+Info (10041): Inferred latch for "x[7]" at mux81.vhd(18) File: /home/krishna/Desktop/Toplevel/mux81.vhd Line: 18
+Info (10041): Inferred latch for "x[8]" at mux81.vhd(18) File: /home/krishna/Desktop/Toplevel/mux81.vhd Line: 18
+Info (10041): Inferred latch for "x[9]" at mux81.vhd(18) File: /home/krishna/Desktop/Toplevel/mux81.vhd Line: 18
+Info (10041): Inferred latch for "x[10]" at mux81.vhd(18) File: /home/krishna/Desktop/Toplevel/mux81.vhd Line: 18
+Info (10041): Inferred latch for "x[11]" at mux81.vhd(18) File: /home/krishna/Desktop/Toplevel/mux81.vhd Line: 18
+Info (10041): Inferred latch for "x[12]" at mux81.vhd(18) File: /home/krishna/Desktop/Toplevel/mux81.vhd Line: 18
+Info (10041): Inferred latch for "x[13]" at mux81.vhd(18) File: /home/krishna/Desktop/Toplevel/mux81.vhd Line: 18
+Info (10041): Inferred latch for "x[14]" at mux81.vhd(18) File: /home/krishna/Desktop/Toplevel/mux81.vhd Line: 18
+Info (10041): Inferred latch for "x[15]" at mux81.vhd(18) File: /home/krishna/Desktop/Toplevel/mux81.vhd Line: 18
+Info (12128): Elaborating entity "mux41" for hierarchy "datapath:DP|mux41:Mem_mux_device" File: /home/krishna/Desktop/Toplevel/Datapath.vhd Line: 140
+Warning (10631): VHDL Process Statement warning at mux41.vhd(16): inferring latch(es) for signal or variable "x", which holds its previous value in one or more paths through the process File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 16
+Info (10041): Inferred latch for "x[0]" at mux41.vhd(20) File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Info (10041): Inferred latch for "x[1]" at mux41.vhd(20) File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Info (10041): Inferred latch for "x[2]" at mux41.vhd(20) File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Info (10041): Inferred latch for "x[3]" at mux41.vhd(20) File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Info (10041): Inferred latch for "x[4]" at mux41.vhd(20) File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Info (10041): Inferred latch for "x[5]" at mux41.vhd(20) File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Info (10041): Inferred latch for "x[6]" at mux41.vhd(20) File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Info (10041): Inferred latch for "x[7]" at mux41.vhd(20) File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Info (10041): Inferred latch for "x[8]" at mux41.vhd(20) File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Info (10041): Inferred latch for "x[9]" at mux41.vhd(20) File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Info (10041): Inferred latch for "x[10]" at mux41.vhd(20) File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Info (10041): Inferred latch for "x[11]" at mux41.vhd(20) File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Info (10041): Inferred latch for "x[12]" at mux41.vhd(20) File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Info (10041): Inferred latch for "x[13]" at mux41.vhd(20) File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Info (10041): Inferred latch for "x[14]" at mux41.vhd(20) File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Info (10041): Inferred latch for "x[15]" at mux41.vhd(20) File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Info (12128): Elaborating entity "mux21" for hierarchy "datapath:DP|mux21:A1_mux_device" File: /home/krishna/Desktop/Toplevel/Datapath.vhd Line: 145
+Warning (10631): VHDL Process Statement warning at mux21.vhd(15): inferring latch(es) for signal or variable "x", which holds its previous value in one or more paths through the process File: /home/krishna/Desktop/Toplevel/mux21.vhd Line: 15
+Info (10041): Inferred latch for "x[0]" at mux21.vhd(19) File: /home/krishna/Desktop/Toplevel/mux21.vhd Line: 19
+Info (10041): Inferred latch for "x[1]" at mux21.vhd(19) File: /home/krishna/Desktop/Toplevel/mux21.vhd Line: 19
+Info (10041): Inferred latch for "x[2]" at mux21.vhd(19) File: /home/krishna/Desktop/Toplevel/mux21.vhd Line: 19
+Info (12128): Elaborating entity "mux41" for hierarchy "datapath:DP|mux41:A2_mux_device" File: /home/krishna/Desktop/Toplevel/Datapath.vhd Line: 150
+Warning (10631): VHDL Process Statement warning at mux41.vhd(16): inferring latch(es) for signal or variable "x", which holds its previous value in one or more paths through the process File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 16
+Info (10041): Inferred latch for "x[0]" at mux41.vhd(20) File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Info (10041): Inferred latch for "x[1]" at mux41.vhd(20) File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Info (10041): Inferred latch for "x[2]" at mux41.vhd(20) File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Info (12128): Elaborating entity "mux21" for hierarchy "datapath:DP|mux21:T6_mux_device" File: /home/krishna/Desktop/Toplevel/Datapath.vhd Line: 172
+Warning (10631): VHDL Process Statement warning at mux21.vhd(15): inferring latch(es) for signal or variable "x", which holds its previous value in one or more paths through the process File: /home/krishna/Desktop/Toplevel/mux21.vhd Line: 15
+Info (10041): Inferred latch for "x[0]" at mux21.vhd(19) File: /home/krishna/Desktop/Toplevel/mux21.vhd Line: 19
+Info (10041): Inferred latch for "x[1]" at mux21.vhd(19) File: /home/krishna/Desktop/Toplevel/mux21.vhd Line: 19
+Info (10041): Inferred latch for "x[2]" at mux21.vhd(19) File: /home/krishna/Desktop/Toplevel/mux21.vhd Line: 19
+Info (10041): Inferred latch for "x[3]" at mux21.vhd(19) File: /home/krishna/Desktop/Toplevel/mux21.vhd Line: 19
+Info (10041): Inferred latch for "x[4]" at mux21.vhd(19) File: /home/krishna/Desktop/Toplevel/mux21.vhd Line: 19
+Info (10041): Inferred latch for "x[5]" at mux21.vhd(19) File: /home/krishna/Desktop/Toplevel/mux21.vhd Line: 19
+Info (10041): Inferred latch for "x[6]" at mux21.vhd(19) File: /home/krishna/Desktop/Toplevel/mux21.vhd Line: 19
+Info (10041): Inferred latch for "x[7]" at mux21.vhd(19) File: /home/krishna/Desktop/Toplevel/mux21.vhd Line: 19
+Info (10041): Inferred latch for "x[8]" at mux21.vhd(19) File: /home/krishna/Desktop/Toplevel/mux21.vhd Line: 19
+Info (10041): Inferred latch for "x[9]" at mux21.vhd(19) File: /home/krishna/Desktop/Toplevel/mux21.vhd Line: 19
+Info (10041): Inferred latch for "x[10]" at mux21.vhd(19) File: /home/krishna/Desktop/Toplevel/mux21.vhd Line: 19
+Info (10041): Inferred latch for "x[11]" at mux21.vhd(19) File: /home/krishna/Desktop/Toplevel/mux21.vhd Line: 19
+Info (10041): Inferred latch for "x[12]" at mux21.vhd(19) File: /home/krishna/Desktop/Toplevel/mux21.vhd Line: 19
+Info (10041): Inferred latch for "x[13]" at mux21.vhd(19) File: /home/krishna/Desktop/Toplevel/mux21.vhd Line: 19
+Info (10041): Inferred latch for "x[14]" at mux21.vhd(19) File: /home/krishna/Desktop/Toplevel/mux21.vhd Line: 19
+Info (10041): Inferred latch for "x[15]" at mux21.vhd(19) File: /home/krishna/Desktop/Toplevel/mux21.vhd Line: 19
+Warning (14026): LATCH primitive "datapath:DP|mux41:T5_mux_device|x[0]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:T5_mux_device|x[1]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:T5_mux_device|x[2]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:T5_mux_device|x[3]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:T5_mux_device|x[4]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:T5_mux_device|x[5]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:T5_mux_device|x[6]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:T5_mux_device|x[7]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:T5_mux_device|x[8]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:T5_mux_device|x[9]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:T5_mux_device|x[10]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:T5_mux_device|x[11]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:T5_mux_device|x[12]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:T5_mux_device|x[13]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:T5_mux_device|x[14]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:T5_mux_device|x[15]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:D3_mux_device|x[0]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:D3_mux_device|x[1]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:D3_mux_device|x[2]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:D3_mux_device|x[3]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:D3_mux_device|x[4]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:D3_mux_device|x[5]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:D3_mux_device|x[6]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:D3_mux_device|x[7]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:D3_mux_device|x[8]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:D3_mux_device|x[9]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:D3_mux_device|x[10]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:D3_mux_device|x[11]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:D3_mux_device|x[12]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:D3_mux_device|x[13]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:D3_mux_device|x[14]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:D3_mux_device|x[15]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:A3_mux_device|x[0]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:A3_mux_device|x[1]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:A3_mux_device|x[2]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:A2_mux_device|x[0]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:A2_mux_device|x[1]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:A2_mux_device|x[2]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:Mem_mux_device|x[0]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:Mem_mux_device|x[1]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:Mem_mux_device|x[2]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:Mem_mux_device|x[3]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:Mem_mux_device|x[4]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:Mem_mux_device|x[5]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:Mem_mux_device|x[6]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:Mem_mux_device|x[7]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:Mem_mux_device|x[8]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:Mem_mux_device|x[9]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:Mem_mux_device|x[10]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:Mem_mux_device|x[11]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:Mem_mux_device|x[12]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:Mem_mux_device|x[13]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:Mem_mux_device|x[14]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:Mem_mux_device|x[15]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|ALU:DUT1|s[0]" is permanently enabled File: /home/krishna/Desktop/Toplevel/ALU.vhd Line: 17
+Warning (14026): LATCH primitive "datapath:DP|ALU:DUT1|s[1]" is permanently enabled File: /home/krishna/Desktop/Toplevel/ALU.vhd Line: 17
+Warning (14026): LATCH primitive "datapath:DP|ALU:DUT1|s[2]" is permanently enabled File: /home/krishna/Desktop/Toplevel/ALU.vhd Line: 17
+Warning (14026): LATCH primitive "datapath:DP|ALU:DUT1|s[3]" is permanently enabled File: /home/krishna/Desktop/Toplevel/ALU.vhd Line: 17
+Warning (14026): LATCH primitive "datapath:DP|ALU:DUT1|s[4]" is permanently enabled File: /home/krishna/Desktop/Toplevel/ALU.vhd Line: 17
+Warning (14026): LATCH primitive "datapath:DP|ALU:DUT1|s[5]" is permanently enabled File: /home/krishna/Desktop/Toplevel/ALU.vhd Line: 17
+Warning (14026): LATCH primitive "datapath:DP|ALU:DUT1|s[6]" is permanently enabled File: /home/krishna/Desktop/Toplevel/ALU.vhd Line: 17
+Warning (14026): LATCH primitive "datapath:DP|ALU:DUT1|s[7]" is permanently enabled File: /home/krishna/Desktop/Toplevel/ALU.vhd Line: 17
+Warning (14026): LATCH primitive "datapath:DP|ALU:DUT1|s[8]" is permanently enabled File: /home/krishna/Desktop/Toplevel/ALU.vhd Line: 17
+Warning (14026): LATCH primitive "datapath:DP|ALU:DUT1|s[9]" is permanently enabled File: /home/krishna/Desktop/Toplevel/ALU.vhd Line: 17
+Warning (14026): LATCH primitive "datapath:DP|ALU:DUT1|s[10]" is permanently enabled File: /home/krishna/Desktop/Toplevel/ALU.vhd Line: 17
+Warning (14026): LATCH primitive "datapath:DP|ALU:DUT1|s[11]" is permanently enabled File: /home/krishna/Desktop/Toplevel/ALU.vhd Line: 17
+Warning (14026): LATCH primitive "datapath:DP|ALU:DUT1|s[12]" is permanently enabled File: /home/krishna/Desktop/Toplevel/ALU.vhd Line: 17
+Warning (14026): LATCH primitive "datapath:DP|ALU:DUT1|s[13]" is permanently enabled File: /home/krishna/Desktop/Toplevel/ALU.vhd Line: 17
+Warning (14026): LATCH primitive "datapath:DP|ALU:DUT1|s[14]" is permanently enabled File: /home/krishna/Desktop/Toplevel/ALU.vhd Line: 17
+Warning (14026): LATCH primitive "datapath:DP|ALU:DUT1|s[15]" is permanently enabled File: /home/krishna/Desktop/Toplevel/ALU.vhd Line: 17
+Warning (14026): LATCH primitive "datapath:DP|mux41:T5_mux_device|x[0]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:T5_mux_device|x[1]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:T5_mux_device|x[2]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:T5_mux_device|x[3]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:T5_mux_device|x[4]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:T5_mux_device|x[5]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:T5_mux_device|x[6]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:T5_mux_device|x[7]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:T5_mux_device|x[8]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:T5_mux_device|x[9]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:T5_mux_device|x[10]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:T5_mux_device|x[11]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:T5_mux_device|x[12]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:T5_mux_device|x[13]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:T5_mux_device|x[14]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:T5_mux_device|x[15]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:D3_mux_device|x[0]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:D3_mux_device|x[1]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:D3_mux_device|x[2]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:D3_mux_device|x[3]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:D3_mux_device|x[4]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:D3_mux_device|x[5]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:D3_mux_device|x[6]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:D3_mux_device|x[7]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:D3_mux_device|x[8]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:D3_mux_device|x[9]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:D3_mux_device|x[10]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:D3_mux_device|x[11]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:D3_mux_device|x[12]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:D3_mux_device|x[13]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:D3_mux_device|x[14]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:D3_mux_device|x[15]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:A3_mux_device|x[0]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:A3_mux_device|x[1]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:A3_mux_device|x[2]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:A2_mux_device|x[0]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:A2_mux_device|x[1]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:A2_mux_device|x[2]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:Mem_mux_device|x[0]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:Mem_mux_device|x[1]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:Mem_mux_device|x[2]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:Mem_mux_device|x[3]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:Mem_mux_device|x[4]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:Mem_mux_device|x[5]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:Mem_mux_device|x[6]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:Mem_mux_device|x[7]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:Mem_mux_device|x[8]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:Mem_mux_device|x[9]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:Mem_mux_device|x[10]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:Mem_mux_device|x[11]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:Mem_mux_device|x[12]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:Mem_mux_device|x[13]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:Mem_mux_device|x[14]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|mux41:Mem_mux_device|x[15]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux41.vhd Line: 20
+Warning (14026): LATCH primitive "datapath:DP|ALU:DUT1|s[0]" is permanently enabled File: /home/krishna/Desktop/Toplevel/ALU.vhd Line: 17
+Warning (14026): LATCH primitive "datapath:DP|ALU:DUT1|s[1]" is permanently enabled File: /home/krishna/Desktop/Toplevel/ALU.vhd Line: 17
+Warning (14026): LATCH primitive "datapath:DP|ALU:DUT1|s[2]" is permanently enabled File: /home/krishna/Desktop/Toplevel/ALU.vhd Line: 17
+Warning (14026): LATCH primitive "datapath:DP|ALU:DUT1|s[3]" is permanently enabled File: /home/krishna/Desktop/Toplevel/ALU.vhd Line: 17
+Warning (14026): LATCH primitive "datapath:DP|ALU:DUT1|s[4]" is permanently enabled File: /home/krishna/Desktop/Toplevel/ALU.vhd Line: 17
+Warning (14026): LATCH primitive "datapath:DP|ALU:DUT1|s[5]" is permanently enabled File: /home/krishna/Desktop/Toplevel/ALU.vhd Line: 17
+Warning (14026): LATCH primitive "datapath:DP|ALU:DUT1|s[6]" is permanently enabled File: /home/krishna/Desktop/Toplevel/ALU.vhd Line: 17
+Warning (14026): LATCH primitive "datapath:DP|ALU:DUT1|s[7]" is permanently enabled File: /home/krishna/Desktop/Toplevel/ALU.vhd Line: 17
+Warning (14026): LATCH primitive "datapath:DP|ALU:DUT1|s[8]" is permanently enabled File: /home/krishna/Desktop/Toplevel/ALU.vhd Line: 17
+Warning (14026): LATCH primitive "datapath:DP|ALU:DUT1|s[9]" is permanently enabled File: /home/krishna/Desktop/Toplevel/ALU.vhd Line: 17
+Warning (14026): LATCH primitive "datapath:DP|ALU:DUT1|s[10]" is permanently enabled File: /home/krishna/Desktop/Toplevel/ALU.vhd Line: 17
+Warning (14026): LATCH primitive "datapath:DP|ALU:DUT1|s[11]" is permanently enabled File: /home/krishna/Desktop/Toplevel/ALU.vhd Line: 17
+Warning (14026): LATCH primitive "datapath:DP|ALU:DUT1|s[12]" is permanently enabled File: /home/krishna/Desktop/Toplevel/ALU.vhd Line: 17
+Warning (14026): LATCH primitive "datapath:DP|ALU:DUT1|s[13]" is permanently enabled File: /home/krishna/Desktop/Toplevel/ALU.vhd Line: 17
+Warning (14026): LATCH primitive "datapath:DP|ALU:DUT1|s[14]" is permanently enabled File: /home/krishna/Desktop/Toplevel/ALU.vhd Line: 17
+Warning (14026): LATCH primitive "datapath:DP|ALU:DUT1|s[15]" is permanently enabled File: /home/krishna/Desktop/Toplevel/ALU.vhd Line: 17
+Warning (14026): LATCH primitive "datapath:DP|mux81:ALU_a_mux_device|x[0]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux81.vhd Line: 18
+Warning (14026): LATCH primitive "datapath:DP|mux81:ALU_b_mux_device|x[0]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux81.vhd Line: 18
+Warning (14026): LATCH primitive "datapath:DP|mux81:ALU_a_mux_device|x[1]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux81.vhd Line: 18
+Warning (14026): LATCH primitive "datapath:DP|mux81:ALU_b_mux_device|x[1]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux81.vhd Line: 18
+Warning (14026): LATCH primitive "datapath:DP|mux81:ALU_a_mux_device|x[2]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux81.vhd Line: 18
+Warning (14026): LATCH primitive "datapath:DP|mux81:ALU_b_mux_device|x[2]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux81.vhd Line: 18
+Warning (14026): LATCH primitive "datapath:DP|mux81:ALU_a_mux_device|x[3]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux81.vhd Line: 18
+Warning (14026): LATCH primitive "datapath:DP|mux81:ALU_b_mux_device|x[3]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux81.vhd Line: 18
+Warning (14026): LATCH primitive "datapath:DP|mux81:ALU_a_mux_device|x[4]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux81.vhd Line: 18
+Warning (14026): LATCH primitive "datapath:DP|mux81:ALU_b_mux_device|x[4]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux81.vhd Line: 18
+Warning (14026): LATCH primitive "datapath:DP|mux81:ALU_a_mux_device|x[5]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux81.vhd Line: 18
+Warning (14026): LATCH primitive "datapath:DP|mux81:ALU_b_mux_device|x[5]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux81.vhd Line: 18
+Warning (14026): LATCH primitive "datapath:DP|mux81:ALU_a_mux_device|x[6]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux81.vhd Line: 18
+Warning (14026): LATCH primitive "datapath:DP|mux81:ALU_b_mux_device|x[6]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux81.vhd Line: 18
+Warning (14026): LATCH primitive "datapath:DP|mux81:ALU_a_mux_device|x[7]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux81.vhd Line: 18
+Warning (14026): LATCH primitive "datapath:DP|mux81:ALU_b_mux_device|x[7]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux81.vhd Line: 18
+Warning (14026): LATCH primitive "datapath:DP|mux81:ALU_a_mux_device|x[8]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux81.vhd Line: 18
+Warning (14026): LATCH primitive "datapath:DP|mux81:ALU_b_mux_device|x[8]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux81.vhd Line: 18
+Warning (14026): LATCH primitive "datapath:DP|mux81:ALU_a_mux_device|x[9]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux81.vhd Line: 18
+Warning (14026): LATCH primitive "datapath:DP|mux81:ALU_b_mux_device|x[9]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux81.vhd Line: 18
+Warning (14026): LATCH primitive "datapath:DP|mux81:ALU_a_mux_device|x[10]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux81.vhd Line: 18
+Warning (14026): LATCH primitive "datapath:DP|mux81:ALU_b_mux_device|x[10]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux81.vhd Line: 18
+Warning (14026): LATCH primitive "datapath:DP|mux81:ALU_a_mux_device|x[11]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux81.vhd Line: 18
+Warning (14026): LATCH primitive "datapath:DP|mux81:ALU_b_mux_device|x[11]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux81.vhd Line: 18
+Warning (14026): LATCH primitive "datapath:DP|mux81:ALU_a_mux_device|x[12]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux81.vhd Line: 18
+Warning (14026): LATCH primitive "datapath:DP|mux81:ALU_b_mux_device|x[12]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux81.vhd Line: 18
+Warning (14026): LATCH primitive "datapath:DP|mux81:ALU_a_mux_device|x[13]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux81.vhd Line: 18
+Warning (14026): LATCH primitive "datapath:DP|mux81:ALU_b_mux_device|x[13]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux81.vhd Line: 18
+Warning (14026): LATCH primitive "datapath:DP|mux81:ALU_a_mux_device|x[14]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux81.vhd Line: 18
+Warning (14026): LATCH primitive "datapath:DP|mux81:ALU_b_mux_device|x[14]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux81.vhd Line: 18
+Warning (14026): LATCH primitive "datapath:DP|mux81:ALU_a_mux_device|x[15]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux81.vhd Line: 18
+Warning (14026): LATCH primitive "datapath:DP|mux81:ALU_b_mux_device|x[15]" is permanently enabled File: /home/krishna/Desktop/Toplevel/mux81.vhd Line: 18
+Info (17049): 145 registers lost all their fanouts during netlist optimizations.
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "clock" File: /home/krishna/Desktop/Toplevel/final.vhd Line: 9
+Info (21057): Implemented 1 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 1 input pins
+    Info (21059): Implemented 0 output pins
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 200 warnings
+    Info: Peak virtual memory: 1242 megabytes
+    Info: Processing ended: Tue Nov  8 23:07:51 2016
+    Info: Elapsed time: 00:00:26
+    Info: Total CPU time (on all processors): 00:00:52
+
+

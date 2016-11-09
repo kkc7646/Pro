@@ -1,0 +1,27 @@
+library ieee;
+use ieee.std_logic_1164.all;
+entity sixteen_bit_subtracter is
+   port (A, B: in std_logic_vector(15 downto 0); RESULT: out std_logic_vector(15 downto 0));
+end entity;
+
+architecture formula of sixteen_bit_subtracter is
+component sixteen_bit_adder is
+port(  
+	A,B: in std_logic_vector(15 downto 0);
+	RESULT: out std_logic_vector(15 downto 0)
+       
+ );
+end component sixteen_bit_adder;
+
+signal B1,B2 ,C:std_logic_vector(15 downto 0);
+constant zero15 :std_logic_vector(14 downto 0):=(others=>'0');
+begin
+
+B1<= not(B);
+C(15 downto 1)<=zero15;
+C(0)<='1';
+dut1: sixteen_bit_adder port map(A=>B1,B=>C,RESULT=>B2);
+dut2: sixteen_bit_adder port map(A=>A,B=>B2,RESULT=>RESULT);
+
+
+end Formula;

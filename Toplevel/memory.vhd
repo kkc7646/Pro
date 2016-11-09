@@ -1,0 +1,26 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use IEEE.NUMERIC_STD.ALL;
+
+entity memory is
+	port(
+			A			      : in  std_logic_vector(15 downto 0);
+			Dout				: out std_logic_vector(15 downto 0);
+			Din            : in std_logic_vector(15 downto 0);		
+			clock,mem_Write,mem_read : in  std_logic
+			);
+end memory;
+
+architecture Structure of memory is
+type memory_16 is array (65535 downto 0) of std_logic_vector (15 downto 0);------------1kB of memory
+signal T:memory_16 :=(0 => "1000001000000001",1 => "0100100110000101",2 => "0001110000111101", 3 => "0100110110000101",4 => "0100001101010101",5 => "0001000010000000",6 => "0010000001011000",7 => "0010011011011000",8 => "0001011011000000",9 => "0000100010100001",10 => "0000000000000000",11 => "0010110110110010",12 => "1100110101111010",13 => "0101100101010110",29 => "0001011011000001",30 => "0001110110010111",31 => "0101000110000100",32 => "0100000110000000",33 => "0100001110000001",34 => "1100101001001011",35 => "0000000010010000",36 => "0000011100100010",37 => "0001001001111111",38 => "0001111111111011",46 => "0101010110000010",47 => "0101100110000011",48 => "0001011011111111",49 => "0101011110000101",50 => "0100111110000100",others => "0000000000000000");
+begin
+	process(clock,mem_Write,mem_read,Din,A,T)
+	begin
+		if((mem_Write) = '1') then
+			T(to_integer(unsigned(A)))<= Din;
+		elsif(mem_read = '1') then
+			Dout <= T(to_integer(unsigned(A)));
+		end if;
+	end process;
+end Structure;
