@@ -12,3 +12,4 @@ begin
 			Iout(15 downto 7) <= Iin(8 downto 0);
 			Iout(6 downto 0) <= "0000000";
 end Structure;
+

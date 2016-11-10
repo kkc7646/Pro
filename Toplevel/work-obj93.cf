@@ -1,63 +1,63 @@
 v 3
-file . "Ir_latch.vhd" "20161108203254.000" "20161108205932.171":
-  entity ir_latch at 1( 0) + 0 on 1975;
-  architecture behave of ir_latch at 13( 304) + 0 on 1976;
-file . "Testbench.vhd" "20161108151359.000" "20161108205932.500":
-  entity testbench at 1( 0) + 0 on 2001;
-  architecture behave of testbench at 8( 109) + 0 on 2002;
-file . "sixteen_bit_nand.vhd" "20161015125123.000" "20161108205932.458":
-  entity sixteen_bit_nand at 1( 0) + 0 on 1997;
-  architecture formula of sixteen_bit_nand at 13( 198) + 0 on 1998;
-file . "Sign_Extender_by_7.vhd" "20161108124649.000" "20161108205932.412":
-  entity sign_extender_by_7 at 1( 0) + 0 on 1993;
-  architecture structure of sign_extender_by_7 at 14( 282) + 0 on 1994;
-file . "Shifter.vhd" "20161104034510.000" "20161108205932.376":
-  entity shifter at 1( 0) + 0 on 1989;
-  architecture structure of shifter at 13( 202) + 0 on 1990;
-file . "PriorityEncoder.vhd" "20161029062538.000" "20161108205932.281":
-  entity priorityencoder at 1( 0) + 0 on 1985;
-  architecture structure of priorityencoder at 11( 233) + 0 on 1986;
-file . "mux41.vhd" "20161108125748.000" "20161108205932.235":
-  entity mux41 at 2( 72) + 0 on 1981;
-  architecture struct2 of mux41 at 13( 352) + 0 on 1982;
-file . "memory.vhd" "20161108204516.000" "20161108205932.189":
-  entity memory at 1( 0) + 0 on 1977;
-  architecture structure of memory at 14( 316) + 0 on 1978;
-file . "final.vhd" "20161101180917.000" "20161108205932.124":
-  entity final at 1( 0) + 0 on 1971;
-  architecture structf of final at 13( 165) + 0 on 1972;
-file . "Datapath.vhd" "20161108205927.000" "20161108205931.981":
-  entity datapath at 1( 0) + 0 on 1967;
-  architecture dataflow of datapath at 28( 853) + 0 on 1968;
-file . "Components.vhd" "20161108203326.000" "20161108205931.724":
-  package components at 1( 0) + 0 on 1964;
-file . "ALU.vhd" "20161105090906.000" "20161108205934.530":
-  entity alu at 1( 0) + 0 on 2003;
-  architecture struct of alu at 13( 266) + 0 on 2004;
-file . "controller.vhd" "20161108202822.000" "20161108205931.744":
-  entity controller at 4( 141) + 0 on 1965;
-  architecture behave of controller at 28( 960) + 0 on 1966;
-file . "DataRegister.vhd" "20161108195424.000" "20161108205932.106":
-  entity dataregister at 1( 0) + 0 on 1969;
-  architecture behave of dataregister at 13( 308) + 0 on 1970;
-file . "flag.vhd" "20161108192538.000" "20161108205932.153":
-  entity flag at 1( 0) + 0 on 1973;
-  architecture behave of flag at 11( 176) + 0 on 1974;
-file . "mux21.vhd" "20161029123701.000" "20161108205932.215":
-  entity mux21 at 2( 69) + 0 on 1979;
-  architecture struct1 of mux21 at 12( 314) + 0 on 1980;
-file . "mux81.vhd" "20161025213709.000" "20161108205932.257":
-  entity mux81 at 2( 76) + 0 on 1983;
-  architecture struct3 of mux81 at 11( 291) + 0 on 1984;
-file . "RegFile.vhd" "20161108011417.000" "20161108205932.340":
-  entity regfile at 1( 0) + 0 on 1987;
-  architecture structure of regfile at 17( 351) + 0 on 1988;
-file . "Sign_Extender_by_10.vhd" "20161108124625.000" "20161108205932.393":
-  entity sign_extender_by_10 at 1( 0) + 0 on 1991;
-  architecture structure of sign_extender_by_10 at 14( 284) + 0 on 1992;
-file . "sixteen_bit_adder.vhd" "20161101175426.000" "20161108205932.429":
-  entity sixteen_bit_adder at 1( 0) + 0 on 1995;
-  architecture formula of sixteen_bit_adder at 13( 200) + 0 on 1996;
-file . "sixteen_bit_subtracter.vhd" "20161104191852.000" "20161108205932.476":
-  entity sixteen_bit_subtracter at 1( 0) + 0 on 1999;
-  architecture formula of sixteen_bit_subtracter at 7( 182) + 0 on 2000;
+file . "sixteen_bit_subtracter.vhd" "20161109040823.000" "20161110204116.780":
+  entity sixteen_bit_subtracter at 1( 0) + 0 on 49;
+  architecture formula of sixteen_bit_subtracter at 11( 235) + 0 on 50;
+file . "sixteen_bit_adder.vhd" "20161109040538.000" "20161110204116.733":
+  entity sixteen_bit_adder at 1( 0) + 0 on 45;
+  architecture formula of sixteen_bit_adder at 9( 193) + 0 on 46;
+file . "Sign_Extender_by_10.vhd" "20161109040439.000" "20161110204116.692":
+  entity sign_extender_by_10 at 1( 0) + 0 on 41;
+  architecture structure of sign_extender_by_10 at 10( 222) + 0 on 42;
+file . "RegFile.vhd" "20161109040942.000" "20161110204116.645":
+  entity regfile at 1( 0) + 0 on 37;
+  architecture structure of regfile at 12( 330) + 0 on 38;
+file . "mux81.vhd" "20161109035840.000" "20161110204116.562":
+  entity mux81 at 2( 76) + 0 on 33;
+  architecture struct3 of mux81 at 11( 331) + 0 on 34;
+file . "mux21.vhd" "20161109035610.000" "20161110204116.521":
+  entity mux21 at 2( 69) + 0 on 29;
+  architecture struct1 of mux21 at 12( 318) + 0 on 30;
+file . "Ir_latch.vhd" "20161109035404.000" "20161110204116.453":
+  entity ir_latch at 1( 0) + 0 on 25;
+  architecture behave of ir_latch at 13( 307) + 0 on 26;
+file . "final.vhd" "20161109035135.000" "20161110204116.410":
+  entity final at 1( 0) + 0 on 21;
+  architecture structf of final at 11( 153) + 0 on 22;
+file . "Datapath.vhd" "20161109034635.000" "20161110204116.238":
+  entity datapath at 1( 0) + 0 on 17;
+  architecture dataflow of datapath at 28( 1187) + 0 on 18;
+file . "Components.vhd" "20161109033632.000" "20161110204115.974":
+  package components at 1( 0) + 0 on 14;
+file . "ALU.vhd" "20161110202223.000" "20161110204138.985":
+  entity alu at 1( 0) + 0 on 53;
+  architecture struct of alu at 13( 309) + 0 on 54;
+file . "controller.vhd" "20161109033727.000" "20161110204115.993":
+  entity controller at 2( 98) + 0 on 15;
+  architecture behave of controller at 27( 1271) + 0 on 16;
+file . "DataRegister.vhd" "20161108195424.000" "20161110204116.389":
+  entity dataregister at 1( 0) + 0 on 19;
+  architecture behave of dataregister at 13( 308) + 0 on 20;
+file . "flag.vhd" "20161109035249.000" "20161110204116.437":
+  entity flag at 1( 0) + 0 on 23;
+  architecture behave of flag at 11( 185) + 0 on 24;
+file . "memory.vhd" "20161109042455.000" "20161110204116.489":
+  entity memory at 1( 0) + 0 on 27;
+  architecture structure of memory at 12( 342) + 0 on 28;
+file . "mux41.vhd" "20161109035718.000" "20161110204116.540":
+  entity mux41 at 2( 72) + 0 on 31;
+  architecture struct2 of mux41 at 14( 375) + 0 on 32;
+file . "PriorityEncoder.vhd" "20161109035943.000" "20161110204116.586":
+  entity priorityencoder at 1( 0) + 0 on 35;
+  architecture structure of priorityencoder at 11( 242) + 0 on 36;
+file . "Shifter.vhd" "20161109040345.000" "20161110204116.675":
+  entity shifter at 1( 0) + 0 on 39;
+  architecture structure of shifter at 10( 195) + 0 on 40;
+file . "Sign_Extender_by_7.vhd" "20161109040339.000" "20161110204116.713":
+  entity sign_extender_by_7 at 1( 0) + 0 on 43;
+  architecture structure of sign_extender_by_7 at 10( 216) + 0 on 44;
+file . "sixteen_bit_nand.vhd" "20161109040616.000" "20161110204116.762":
+  entity sixteen_bit_nand at 1( 0) + 0 on 47;
+  architecture formula of sixteen_bit_nand at 9( 191) + 0 on 48;
+file . "Testbench.vhd" "20161108151359.000" "20161110204116.805":
+  entity testbench at 1( 0) + 0 on 51;
+  architecture behave of testbench at 8( 109) + 0 on 52;
