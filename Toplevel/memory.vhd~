@@ -10,7 +10,7 @@ entity memory is
 end memory;
 
 architecture Structure of memory is
-type memory_16 is array (511 downto 0) of std_logic_vector (15 downto 0);------------1kB of memory
+type memory_16 is array (65535 downto 0) of std_logic_vector (15 downto 0);------------1kB of memory
 signal T:memory_16 :=(0 => "1000001000000001",  ---JAL R1 0001H
 											1 => "0100100110000101",  ---LW  R4 R6 0005H
 											2 => "0001110000111101",  ---ADI R6 R0 111101B

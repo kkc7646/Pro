@@ -19,10 +19,11 @@ begin
 			D1 <= T(to_integer(unsigned(A1)));
 			D2 <= T(to_integer(unsigned(A2)));
 		end if;
+		if rising_edge(clock) then
 		if (RF_Write = '1') then
 			T(to_integer(unsigned(A3)))<=D3;
 		elsif(R7_En = '1') then
-			if rising_edge(clock) then 
+			--if rising_edge(clock) then 
 				T(7) <= R7_in;
 			end if;
 		end if;

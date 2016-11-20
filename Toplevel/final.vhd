@@ -14,9 +14,9 @@ architecture Structf of Final is
 				 t6_mux,t6flag,C,Z,flagset    : std_logic;
 	signal op_code                      : std_logic_vector(3 downto 0);
 	signal czflag                       : std_logic_vector(1 downto 0);
-	signal alu,mem_mux,a2_mux,a3_mux,
+	signal alu,mem_mux,a2_mux,
 				 d3_mux,t5_mux                : std_logic_vector(1 downto 0);
-  signal alu_a_mux,alu_b_mux          : std_logic_vector(2 downto 0);
+  signal alu_a_mux,alu_b_mux,a3_mux       : std_logic_vector(2 downto 0);
 begin
 
   CP: controller 

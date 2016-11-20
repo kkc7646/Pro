@@ -7,26 +7,26 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 d/home/krishna/Desktop/Toplevel/simulation/modelsim
+Z0 d/home/krishna/GIT/Toplevel/simulation/modelsim
 Ealu
-Z1 w1478336946
-Z2 DPx4 work 10 components 0 22 d>kEDo_ELUIJ4WVYX?]e41
+Z1 w1479467547
+Z2 DPx4 work 10 components 0 22 iR;zVM;n8FU;hHOc0WPR?2
 Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 R0
-Z5 8/home/krishna/Desktop/Toplevel/ALU.vhd
-Z6 F/home/krishna/Desktop/Toplevel/ALU.vhd
+Z5 8/home/krishna/GIT/Toplevel/ALU.vhd
+Z6 F/home/krishna/GIT/Toplevel/ALU.vhd
 l0
 L6
-V3WGh1HkZ5kU1Sc5;=e22m2
-!s100 8^A0AIdA<JQ99;;e4QR=h0
+V_[QPCMUP8fEX5Sb>DCOGb1
+!s100 IkfOc_;;5O4G4[P]^]ZTY2
 Z7 OV;C;10.4d;61
 31
-Z8 !s110 1478646546
+Z8 !s110 1479596030
 !i10b 1
-Z9 !s108 1478646546.000000
-Z10 !s90 -reportprogress|300|-93|-work|work|/home/krishna/Desktop/Toplevel/ALU.vhd|
-Z11 !s107 /home/krishna/Desktop/Toplevel/ALU.vhd|
+Z9 !s108 1479596030.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|/home/krishna/GIT/Toplevel/ALU.vhd|
+Z11 !s107 /home/krishna/GIT/Toplevel/ALU.vhd|
 !i113 1
 Z12 o-93 -work work
 Z13 tExplicit 1
@@ -34,11 +34,11 @@ Astruct
 R2
 R3
 R4
-DEx4 work 3 alu 0 22 3WGh1HkZ5kU1Sc5;=e22m2
+DEx4 work 3 alu 0 22 _[QPCMUP8fEX5Sb>DCOGb1
 l16
 L13
-V4aS:F?N9WMJ0I7MN21ROn2
-!s100 _EPGU@^XRH<K;b9VgoF>i0
+VBk8`ER_LTW0o;zhR>LMTO3
+!s100 Tnaj3LaA@<AUb^[V6S;?L0
 R7
 31
 R8
@@ -52,53 +52,53 @@ R13
 Pcomponents
 R3
 R4
-w1478637206
+w1479499094
 R0
-8/home/krishna/Desktop/Toplevel/Components.vhd
-F/home/krishna/Desktop/Toplevel/Components.vhd
+8/home/krishna/GIT/Toplevel/Components.vhd
+F/home/krishna/GIT/Toplevel/Components.vhd
 l0
-L7
-Vd>kEDo_ELUIJ4WVYX?]e41
-!s100 `0n@LQA?oA<_T3jmmA?E;0
+L6
+ViR;zVM;n8FU;hHOc0WPR?2
+!s100 8WkP16]3^]nW]KjhZO9LZ2
 R7
 31
-Z14 !s110 1478646545
+Z14 !s110 1479596029
 !i10b 1
-Z15 !s108 1478646545.000000
-!s90 -reportprogress|300|-93|-work|work|/home/krishna/Desktop/Toplevel/Components.vhd|
-!s107 /home/krishna/Desktop/Toplevel/Components.vhd|
+Z15 !s108 1479596029.000000
+!s90 -reportprogress|300|-93|-work|work|/home/krishna/GIT/Toplevel/Components.vhd|
+!s107 /home/krishna/GIT/Toplevel/Components.vhd|
 !i113 1
 R12
 R13
 Econtroller
-Z16 w1478636902
+Z16 w1479512450
 R3
 R4
 R0
-Z17 8/home/krishna/Desktop/Toplevel/controller.vhd
-Z18 F/home/krishna/Desktop/Toplevel/controller.vhd
+Z17 8/home/krishna/GIT/Toplevel/controller.vhd
+Z18 F/home/krishna/GIT/Toplevel/controller.vhd
 l0
-L7
-VUZcTg7=J6TL>4Lh]OXVSK1
-!s100 5>C50UUV7ZcQMMdaEE[m52
+L6
+VUH5oIWUzN:YS:F3X;d7`U2
+!s100 B70L:DY6[:OB]QVgPZk2z1
 R7
 31
 R14
 !i10b 1
 R15
-Z19 !s90 -reportprogress|300|-93|-work|work|/home/krishna/Desktop/Toplevel/controller.vhd|
-Z20 !s107 /home/krishna/Desktop/Toplevel/controller.vhd|
+Z19 !s90 -reportprogress|300|-93|-work|work|/home/krishna/GIT/Toplevel/controller.vhd|
+Z20 !s107 /home/krishna/GIT/Toplevel/controller.vhd|
 !i113 1
 R12
 R13
 Abehave
 R3
 R4
-DEx4 work 10 controller 0 22 UZcTg7=J6TL>4Lh]OXVSK1
-l32
-L28
-Vb4MZfKgWmH59PUKZ02nim2
-!s100 R@^bHCULW2NLDH^9AD0[F3
+DEx4 work 10 controller 0 22 UH5oIWUzN:YS:F3X;d7`U2
+l30
+L27
+VhQ0Kmk9jP0c7OimD9DhL<2
+!s100 12i`H@<I27]mAgfVJ61OT1
 R7
 31
 R14
@@ -110,24 +110,24 @@ R20
 R12
 R13
 Edatapath
-Z21 w1478638767
+Z21 w1479497491
 R3
 R4
 R2
 R0
-Z22 8/home/krishna/Desktop/Toplevel/Datapath.vhd
-Z23 F/home/krishna/Desktop/Toplevel/Datapath.vhd
+Z22 8/home/krishna/GIT/Toplevel/Datapath.vhd
+Z23 F/home/krishna/GIT/Toplevel/Datapath.vhd
 l0
-L8
-VZ2ghNfK=N<K[ZMF<PC>4n3
-!s100 HVA=c5DGF_n^W`RDK`^BN1
+L7
+V^Y<6GM5I^F;N^L_ioHamd1
+!s100 J^^@F93o7FhFCT^3B4HK70
 R7
 31
 R8
 !i10b 1
 R9
-Z24 !s90 -reportprogress|300|-93|-work|work|/home/krishna/Desktop/Toplevel/Datapath.vhd|
-Z25 !s107 /home/krishna/Desktop/Toplevel/Datapath.vhd|
+Z24 !s90 -reportprogress|300|-93|-work|work|/home/krishna/GIT/Toplevel/Datapath.vhd|
+Z25 !s107 /home/krishna/GIT/Toplevel/Datapath.vhd|
 !i113 1
 R12
 R13
@@ -135,11 +135,11 @@ Adataflow
 R3
 R4
 R2
-DEx4 work 8 datapath 0 22 Z2ghNfK=N<K[ZMF<PC>4n3
-l39
+DEx4 work 8 datapath 0 22 ^Y<6GM5I^F;N^L_ioHamd1
+l36
 L28
-Vfn1N=eSHnb[JBEHToKmIQ2
-!s100 :k5R^Oiec=e14`EjTVIAF3
+Vg1gZUNz<2m5L:RHh^5cV52
+!s100 zFDCXiTnF8?8e?YnaTKLf2
 R7
 31
 R8
@@ -155,8 +155,8 @@ Z26 w1478634864
 R3
 R4
 R0
-Z27 8/home/krishna/Desktop/Toplevel/DataRegister.vhd
-Z28 F/home/krishna/Desktop/Toplevel/DataRegister.vhd
+Z27 8/home/krishna/GIT/Toplevel/DataRegister.vhd
+Z28 F/home/krishna/GIT/Toplevel/DataRegister.vhd
 l0
 L6
 VEDmJ9b^]oNilQGf<TnlPa2
@@ -166,8 +166,8 @@ R7
 R14
 !i10b 1
 R15
-Z29 !s90 -reportprogress|300|-93|-work|work|/home/krishna/Desktop/Toplevel/DataRegister.vhd|
-Z30 !s107 /home/krishna/Desktop/Toplevel/DataRegister.vhd|
+Z29 !s90 -reportprogress|300|-93|-work|work|/home/krishna/GIT/Toplevel/DataRegister.vhd|
+Z30 !s107 /home/krishna/GIT/Toplevel/DataRegister.vhd|
 !i113 1
 R12
 R13
@@ -190,24 +190,24 @@ R30
 R12
 R13
 Efinal
-Z31 w1478023757
+Z31 w1479497555
 R2
 R3
 R4
 R0
-Z32 8/home/krishna/Desktop/Toplevel/final.vhd
-Z33 F/home/krishna/Desktop/Toplevel/final.vhd
+Z32 8/home/krishna/GIT/Toplevel/final.vhd
+Z33 F/home/krishna/GIT/Toplevel/final.vhd
 l0
-L8
-V1abQn@g[LC]5gNWAWJ^;I0
-!s100 5_61:@<YLJ0JDaj^X=4YG1
+L7
+V[9Jf]cPSRSNdP=B^U:aYX1
+!s100 MiH3LcK]DA0lTKL2MIR8`2
 R7
 31
-R8
+R14
 !i10b 1
-R9
-Z34 !s90 -reportprogress|300|-93|-work|work|/home/krishna/Desktop/Toplevel/final.vhd|
-Z35 !s107 /home/krishna/Desktop/Toplevel/final.vhd|
+R15
+Z34 !s90 -reportprogress|300|-93|-work|work|/home/krishna/GIT/Toplevel/final.vhd|
+Z35 !s107 /home/krishna/GIT/Toplevel/final.vhd|
 !i113 1
 R12
 R13
@@ -215,89 +215,89 @@ Astructf
 R2
 R3
 R4
-DEx4 work 5 final 0 22 1abQn@g[LC]5gNWAWJ^;I0
-l19
-L13
-VH2Y4DkIjaJ^nN]n8[lEe92
-!s100 Qz;S2H>2@zLfNVK9kn1lC1
+DEx4 work 5 final 0 22 [9Jf]cPSRSNdP=B^U:aYX1
+l20
+L11
+ViHVlA1^zz3h>a68gQE`ae1
+!s100 _9`7d9OaL`cOBXzBPUFGe0
 R7
 31
-R8
+R14
 !i10b 1
-R9
+R15
 R34
 R35
 !i113 1
 R12
 R13
 Eflag
-Z36 w1478633138
+Z36 w1478663569
 R3
 R4
 R0
-Z37 8/home/krishna/Desktop/Toplevel/flag.vhd
-Z38 F/home/krishna/Desktop/Toplevel/flag.vhd
+Z37 8/home/krishna/GIT/Toplevel/flag.vhd
+Z38 F/home/krishna/GIT/Toplevel/flag.vhd
 l0
 L5
-Vn^7HU7]M]nBWllzGgNhn:3
-!s100 bP@LS3YYhbUJW4?CNN3e_3
+V7;D68UQZLaPdTE1=UiY[;3
+!s100 5d?O@@T@4dH_a>9iJc6^[1
 R7
 31
-R8
+R14
 !i10b 1
-R9
-Z39 !s90 -reportprogress|300|-93|-work|work|/home/krishna/Desktop/Toplevel/flag.vhd|
-Z40 !s107 /home/krishna/Desktop/Toplevel/flag.vhd|
+R15
+Z39 !s90 -reportprogress|300|-93|-work|work|/home/krishna/GIT/Toplevel/flag.vhd|
+Z40 !s107 /home/krishna/GIT/Toplevel/flag.vhd|
 !i113 1
 R12
 R13
 Abehave
 R3
 R4
-DEx4 work 4 flag 0 22 n^7HU7]M]nBWllzGgNhn:3
+DEx4 work 4 flag 0 22 7;D68UQZLaPdTE1=UiY[;3
 l12
 L11
-V[Vmj6_fRhj^0c;fFL>j3E1
-!s100 2T4=`MPXgHHD@=N`H@lMJ3
+V<`CZHf_a`f27=RA@@_D?U1
+!s100 Hz^h;>_fh]ljYj4aUA:f?0
 R7
 31
-R8
+R14
 !i10b 1
-R9
+R15
 R39
 R40
 !i113 1
 R12
 R13
 Eir_latch
-Z41 w1478637174
+Z41 w1478663644
 R3
 R4
 R0
-Z42 8/home/krishna/Desktop/Toplevel/Ir_latch.vhd
-Z43 F/home/krishna/Desktop/Toplevel/Ir_latch.vhd
+Z42 8/home/krishna/GIT/Toplevel/Ir_latch.vhd
+Z43 F/home/krishna/GIT/Toplevel/Ir_latch.vhd
 l0
 L6
-V7T:lmlORzVbN7V6<SVU]i1
-!s100 M4Z5QYaE0T`GzkJgYCIHT1
+VY=AEB?`h]ooOUDgod:_1c2
+!s100 XHonEZP>9K5OQU]1CgGN73
 R7
 31
 R14
 !i10b 1
 R15
-Z44 !s90 -reportprogress|300|-93|-work|work|/home/krishna/Desktop/Toplevel/Ir_latch.vhd|
-Z45 !s107 /home/krishna/Desktop/Toplevel/Ir_latch.vhd|
+Z44 !s90 -reportprogress|300|-93|-work|work|/home/krishna/GIT/Toplevel/Ir_latch.vhd|
+Z45 !s107 /home/krishna/GIT/Toplevel/Ir_latch.vhd|
 !i113 1
 R12
 R13
 Abehave
 R3
 R4
-DEx4 work 8 ir_latch 0 22 7T:lmlORzVbN7V6<SVU]i1
+DEx4 work 8 ir_latch 0 22 Y=AEB?`h]ooOUDgod:_1c2
 l14
 L13
-V^ndQU<QF6dEZeKbACa7j_0
-!s100 [nP3`_fi5Mf7kSO0OFe1R1
+VbXnk@kQHV7fGN=DO@AV]n1
+!s100 F@F=aVXbUnKdAe5dcg8DV2
 R7
 31
 R14
@@ -309,24 +309,24 @@ R45
 R12
 R13
 Ememory
-Z46 w1478645276
+Z46 w1479581303
 Z47 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 R3
 R4
 R0
-Z48 8/home/krishna/Desktop/Toplevel/memory.vhd
-Z49 F/home/krishna/Desktop/Toplevel/memory.vhd
+Z48 8/home/krishna/GIT/Toplevel/memory.vhd
+Z49 F/home/krishna/GIT/Toplevel/memory.vhd
 l0
 L5
-V@FAfODG@jFklo5AmQQK[c2
-!s100 ^z@3Foll4>i5=2=CGhY^_0
+V>E7S_zkXglMC`;R>lXfBh3
+!s100 Q==FLiD4Q?BZjZILmQz9j1
 R7
 31
 R14
 !i10b 1
 R15
-Z50 !s90 -reportprogress|300|-93|-work|work|/home/krishna/Desktop/Toplevel/memory.vhd|
-Z51 !s107 /home/krishna/Desktop/Toplevel/memory.vhd|
+Z50 !s90 -reportprogress|300|-93|-work|work|/home/krishna/GIT/Toplevel/memory.vhd|
+Z51 !s107 /home/krishna/GIT/Toplevel/memory.vhd|
 !i113 1
 R12
 R13
@@ -334,11 +334,11 @@ Astructure
 R47
 R3
 R4
-DEx4 work 6 memory 0 22 @FAfODG@jFklo5AmQQK[c2
-l17
-L14
-VLzG^a:MX5M7V:ZWIh4C9A0
-!s100 6::6Gje<IbZ?d7@gVD]:@2
+DEx4 work 6 memory 0 22 >E7S_zkXglMC`;R>lXfBh3
+l49
+L12
+VgXOz_mBnYjC3PeaF=5jH;2
+!s100 BQajVk<^L99Pk2J;XklF`0
 R7
 31
 R14
@@ -350,73 +350,73 @@ R51
 R12
 R13
 Emux21
-Z52 w1477744621
+Z52 w1478663770
 R3
 R4
 R0
-Z53 8/home/krishna/Desktop/Toplevel/mux21.vhd
-Z54 F/home/krishna/Desktop/Toplevel/mux21.vhd
+Z53 8/home/krishna/GIT/Toplevel/mux21.vhd
+Z54 F/home/krishna/GIT/Toplevel/mux21.vhd
 l0
 L6
-V6`ZF:]IdIB0XioADj=hIZ3
-!s100 C=;A8lhXdmOWCkUm=T^lC0
+V6TN`BNIKLhG^JSggoTS4c2
+!s100 LE[6=6EE>KWG1C3^E]^hI2
 R7
 31
-R8
+R14
 !i10b 1
-R9
-Z55 !s90 -reportprogress|300|-93|-work|work|/home/krishna/Desktop/Toplevel/mux21.vhd|
-Z56 !s107 /home/krishna/Desktop/Toplevel/mux21.vhd|
+R15
+Z55 !s90 -reportprogress|300|-93|-work|work|/home/krishna/GIT/Toplevel/mux21.vhd|
+Z56 !s107 /home/krishna/GIT/Toplevel/mux21.vhd|
 !i113 1
 R12
 R13
 Astruct1
 R3
 R4
-DEx4 work 5 mux21 0 22 6`ZF:]IdIB0XioADj=hIZ3
-l14
+DEx4 work 5 mux21 0 22 6TN`BNIKLhG^JSggoTS4c2
+l13
 L12
-VhcXWNTc9TJVLN;`Lz>fnm2
-!s100 cz`F_V1o7fYIV@mBaY;BA0
+VP9BfU<GL^=E[`8hfACbZT0
+!s100 V6:IKmnHPG0FLcQBl^`Kf2
 R7
 31
-R8
+R14
 !i10b 1
-R9
+R15
 R55
 R56
 !i113 1
 R12
 R13
 Emux41
-Z57 w1478609868
+Z57 w1478663838
 R3
 R4
 R0
-Z58 8/home/krishna/Desktop/Toplevel/mux41.vhd
-Z59 F/home/krishna/Desktop/Toplevel/mux41.vhd
+Z58 8/home/krishna/GIT/Toplevel/mux41.vhd
+Z59 F/home/krishna/GIT/Toplevel/mux41.vhd
 l0
 L7
-VSLdnDK81WPb`0mf9Q;@`01
-!s100 8^?`cLO<0eO2W6hHKf]j=0
+VXSa;T1^iEeKfanW98Wi?k0
+!s100 <Uz3QS^89=O?jSTP_8kOa1
 R7
 31
 R14
 !i10b 1
 R15
-Z60 !s90 -reportprogress|300|-93|-work|work|/home/krishna/Desktop/Toplevel/mux41.vhd|
-Z61 !s107 /home/krishna/Desktop/Toplevel/mux41.vhd|
+Z60 !s90 -reportprogress|300|-93|-work|work|/home/krishna/GIT/Toplevel/mux41.vhd|
+Z61 !s107 /home/krishna/GIT/Toplevel/mux41.vhd|
 !i113 1
 R12
 R13
 Astruct2
 R3
 R4
-DEx4 work 5 mux41 0 22 SLdnDK81WPb`0mf9Q;@`01
+DEx4 work 5 mux41 0 22 XSa;T1^iEeKfanW98Wi?k0
 l15
-L13
-V@=j^Lc@bljLJQW@V_1Cme2
-!s100 c5HUWCSm1l^S3zhG]_[7P3
+L14
+V1<^:]O39HaoT`iEJ3?l^A0
+!s100 DSgQ7h75D=4WkX<jTAnII1
 R7
 31
 R14
@@ -428,102 +428,102 @@ R61
 R12
 R13
 Emux81
-Z62 w1477431429
+Z62 w1479497432
 R3
 R4
 R0
-Z63 8/home/krishna/Desktop/Toplevel/mux81.vhd
-Z64 F/home/krishna/Desktop/Toplevel/mux81.vhd
+Z63 8/home/krishna/GIT/Toplevel/mux81.vhd
+Z64 F/home/krishna/GIT/Toplevel/mux81.vhd
 l0
 L5
-V:eo9z7inVkN1WlOhgQ>8j3
-!s100 hEno`zA11K:lcMOaPQZWS1
+V3^:m=^KdeZW>ReQHgBa_h0
+!s100 f<mc98e>nTgV<agWJJ@2:0
 R7
 31
-R8
+R14
 !i10b 1
-R9
-Z65 !s90 -reportprogress|300|-93|-work|work|/home/krishna/Desktop/Toplevel/mux81.vhd|
-Z66 !s107 /home/krishna/Desktop/Toplevel/mux81.vhd|
+R15
+Z65 !s90 -reportprogress|300|-93|-work|work|/home/krishna/GIT/Toplevel/mux81.vhd|
+Z66 !s107 /home/krishna/GIT/Toplevel/mux81.vhd|
 !i113 1
 R12
 R13
 Astruct3
 R3
 R4
-DEx4 work 5 mux81 0 22 :eo9z7inVkN1WlOhgQ>8j3
+DEx4 work 5 mux81 0 22 3^:m=^KdeZW>ReQHgBa_h0
 l13
-L11
-Vk2aZBKeiTBPUCMZ0Pl5K71
-!s100 LhhKA^ZKX^l[]]T0ba`4O2
+L12
+V?1Ymg:DKKaa`bY@9L=Nel3
+!s100 0znz]Z<YK9a97N?NX2T;I0
 R7
 31
-R8
+R14
 !i10b 1
-R9
+R15
 R65
 R66
 !i113 1
 R12
 R13
 Epriorityencoder
-Z67 w1477722338
+Z67 w1478663983
 R3
 R4
 R0
-Z68 8/home/krishna/Desktop/Toplevel/PriorityEncoder.vhd
-Z69 F/home/krishna/Desktop/Toplevel/PriorityEncoder.vhd
+Z68 8/home/krishna/GIT/Toplevel/PriorityEncoder.vhd
+Z69 F/home/krishna/GIT/Toplevel/PriorityEncoder.vhd
 l0
 L5
-VFO^5J69M5:FeY6OIZHTjN0
-!s100 YFLS?g;^N<]iHI4<:Mhj63
+V]bIB]e3>Ilb98D]K1Bf]z3
+!s100 UiEnD5ZBnPJa5][0]j@LX3
 R7
 31
-R8
+R14
 !i10b 1
-R9
-Z70 !s90 -reportprogress|300|-93|-work|work|/home/krishna/Desktop/Toplevel/PriorityEncoder.vhd|
-Z71 !s107 /home/krishna/Desktop/Toplevel/PriorityEncoder.vhd|
+R15
+Z70 !s90 -reportprogress|300|-93|-work|work|/home/krishna/GIT/Toplevel/PriorityEncoder.vhd|
+Z71 !s107 /home/krishna/GIT/Toplevel/PriorityEncoder.vhd|
 !i113 1
 R12
 R13
 Astructure
 R3
 R4
-DEx4 work 15 priorityencoder 0 22 FO^5J69M5:FeY6OIZHTjN0
+DEx4 work 15 priorityencoder 0 22 ]bIB]e3>Ilb98D]K1Bf]z3
 l13
 L11
-VGB=?U7EJEU;<H8C]Z[k>G1
-!s100 n];JTV`UN?CAbgf<49eP@1
+VlcMKB?dhR8;EzlHKb]?Yb0
+!s100 ]I1dd@e_fDiZRj[fGFABl0
 R7
 31
-R8
+R14
 !i10b 1
-R9
+R15
 R70
 R71
 !i113 1
 R12
 R13
 Eregfile
-Z72 w1478567657
+Z72 w1478825408
 R47
 R3
 R4
 R0
-Z73 8/home/krishna/Desktop/Toplevel/RegFile.vhd
-Z74 F/home/krishna/Desktop/Toplevel/RegFile.vhd
+Z73 8/home/krishna/GIT/Toplevel/RegFile.vhd
+Z74 F/home/krishna/GIT/Toplevel/RegFile.vhd
 l0
-L7
-VMN`BTk@TV2]GAGRhPoYH[3
-!s100 OFgoPYG^gGb:l?1EV1ZOz2
+L5
+Vl@gDiOj9N114dEU@mSG>32
+!s100 >K>=f_Nol_0^Y9;?^UAMC3
 R7
 31
-R8
+R14
 !i10b 1
-R9
-Z75 !s90 -reportprogress|300|-93|-work|work|/home/krishna/Desktop/Toplevel/RegFile.vhd|
-Z76 !s107 /home/krishna/Desktop/Toplevel/RegFile.vhd|
+R15
+Z75 !s90 -reportprogress|300|-93|-work|work|/home/krishna/GIT/Toplevel/RegFile.vhd|
+Z76 !s107 /home/krishna/GIT/Toplevel/RegFile.vhd|
 !i113 1
 R12
 R13
@@ -531,50 +531,50 @@ Astructure
 R47
 R3
 R4
-DEx4 work 7 regfile 0 22 MN`BTk@TV2]GAGRhPoYH[3
-l29
-L17
-VDZ`62L2WNif`XkQI9eeLG1
-!s100 QaSk=73ofgVZ`K<KN@l;l0
+DEx4 work 7 regfile 0 22 l@gDiOj9N114dEU@mSG>32
+l15
+L12
+VK^Zd82zjne^eme;jGc`3S0
+!s100 bSccBkAJI8mdT5:0=cUfL2
 R7
 31
-R8
+R14
 !i10b 1
-R9
+R15
 R75
 R76
 !i113 1
 R12
 R13
 Eshifter
-Z77 w1478231110
+Z77 w1478664225
 R3
 R4
 R0
-Z78 8/home/krishna/Desktop/Toplevel/Shifter.vhd
-Z79 F/home/krishna/Desktop/Toplevel/Shifter.vhd
+Z78 8/home/krishna/GIT/Toplevel/Shifter.vhd
+Z79 F/home/krishna/GIT/Toplevel/Shifter.vhd
 l0
 L4
-VMA^hl^k@QHz9Z87`@i`Sz3
-!s100 3l6W4B0ld:N`^dON]`Fh72
+V<KR7jz>]2TV^7JQz;VG`m2
+!s100 DV@1O96hhJb>oP8`n_if33
 R7
 31
 R14
 !i10b 1
 R15
-Z80 !s90 -reportprogress|300|-93|-work|work|/home/krishna/Desktop/Toplevel/Shifter.vhd|
-Z81 !s107 /home/krishna/Desktop/Toplevel/Shifter.vhd|
+Z80 !s90 -reportprogress|300|-93|-work|work|/home/krishna/GIT/Toplevel/Shifter.vhd|
+Z81 !s107 /home/krishna/GIT/Toplevel/Shifter.vhd|
 !i113 1
 R12
 R13
 Astructure
 R3
 R4
-DEx4 work 7 shifter 0 22 MA^hl^k@QHz9Z87`@i`Sz3
-l14
-L13
-V^BXZC2ZP]=_MT6Ua3SkRc1
-!s100 b<iM<_BjY2BNhSeC=og<e3
+DEx4 work 7 shifter 0 22 <KR7jz>]2TV^7JQz;VG`m2
+l11
+L10
+Vgn`Pz0lj_2AQ;?C^kVkR_3
+!s100 TjIUR<Y4YYE;U^2^2dRn32
 R7
 31
 R14
@@ -586,73 +586,73 @@ R81
 R12
 R13
 Esign_extender_by_10
-Z82 w1478609185
+Z82 w1478664279
 R3
 R4
 R0
-Z83 8/home/krishna/Desktop/Toplevel/Sign_Extender_by_10.vhd
-Z84 F/home/krishna/Desktop/Toplevel/Sign_Extender_by_10.vhd
+Z83 8/home/krishna/GIT/Toplevel/Sign_Extender_by_10.vhd
+Z84 F/home/krishna/GIT/Toplevel/Sign_Extender_by_10.vhd
 l0
-L5
-VAV@PnGMgWm5Rab]AY6deJ1
-!s100 nS`?5RjNV3dOjcJ;Z9L6;2
+L4
+VDF<6@2?DlH`QBPgS`V8D20
+!s100 jGOz;]2MB?m;EA3l95_UC1
 R7
 31
-R8
+R14
 !i10b 1
-R9
-Z85 !s90 -reportprogress|300|-93|-work|work|/home/krishna/Desktop/Toplevel/Sign_Extender_by_10.vhd|
-Z86 !s107 /home/krishna/Desktop/Toplevel/Sign_Extender_by_10.vhd|
+R15
+Z85 !s90 -reportprogress|300|-93|-work|work|/home/krishna/GIT/Toplevel/Sign_Extender_by_10.vhd|
+Z86 !s107 /home/krishna/GIT/Toplevel/Sign_Extender_by_10.vhd|
 !i113 1
 R12
 R13
 Astructure
 R3
 R4
-DEx4 work 19 sign_extender_by_10 0 22 AV@PnGMgWm5Rab]AY6deJ1
-l15
-L14
-V=eX]mL@M[]CO^eJ?jEe0m0
-!s100 TVicT=hhRTJg8GUNMTTiV1
+DEx4 work 19 sign_extender_by_10 0 22 DF<6@2?DlH`QBPgS`V8D20
+l11
+L10
+VaeiLAn_I]?BXfih[za96b3
+!s100 3K>?[a@;n?]GoO2QfjJng1
 R7
 31
-R8
+R14
 !i10b 1
-R9
+R15
 R85
 R86
 !i113 1
 R12
 R13
 Esign_extender_by_7
-Z87 w1478609209
+Z87 w1478664219
 R3
 R4
 R0
-Z88 8/home/krishna/Desktop/Toplevel/Sign_Extender_by_7.vhd
-Z89 F/home/krishna/Desktop/Toplevel/Sign_Extender_by_7.vhd
+Z88 8/home/krishna/GIT/Toplevel/Sign_Extender_by_7.vhd
+Z89 F/home/krishna/GIT/Toplevel/Sign_Extender_by_7.vhd
 l0
-L5
-Vj[:HaB8YF]=gGCo2aeh@Z0
-!s100 >a;R4WjhK@4Gh>FkGYN^R1
+L4
+VAE49LFAzZnhNe[hSlnbK_3
+!s100 2FSkel[URdMP;T`81jkaS0
 R7
 31
 R14
 !i10b 1
 R15
-Z90 !s90 -reportprogress|300|-93|-work|work|/home/krishna/Desktop/Toplevel/Sign_Extender_by_7.vhd|
-Z91 !s107 /home/krishna/Desktop/Toplevel/Sign_Extender_by_7.vhd|
+Z90 !s90 -reportprogress|300|-93|-work|work|/home/krishna/GIT/Toplevel/Sign_Extender_by_7.vhd|
+Z91 !s107 /home/krishna/GIT/Toplevel/Sign_Extender_by_7.vhd|
 !i113 1
 R12
 R13
 Astructure
 R3
 R4
-DEx4 work 18 sign_extender_by_7 0 22 j[:HaB8YF]=gGCo2aeh@Z0
-l15
-L14
-VBHLgV3Djdf[4NdKV3]o:G3
-!s100 K7CnDhj44YTmDNHEO[PN42
+DEx4 work 18 sign_extender_by_7 0 22 AE49LFAzZnhNe[hSlnbK_3
+l11
+L10
+VMMRCSUbF@]k68YlBgH25e1
+!s100 U2Mf1>kZE8SciBUI[[1>90
 R7
 31
 R14
@@ -664,73 +664,73 @@ R91
 R12
 R13
 Esixteen_bit_adder
-Z92 w1478022866
+Z92 w1478664338
 R3
 R4
 R0
-Z93 8/home/krishna/Desktop/Toplevel/sixteen_bit_adder.vhd
-Z94 F/home/krishna/Desktop/Toplevel/sixteen_bit_adder.vhd
+Z93 8/home/krishna/GIT/Toplevel/sixteen_bit_adder.vhd
+Z94 F/home/krishna/GIT/Toplevel/sixteen_bit_adder.vhd
 l0
-L5
-VeF?kB5fG?ZncCdJz;40o00
-!s100 o[Ed;3[XP5h4I8^PSST=c2
+L4
+VL2Z_LihedL]f0RmifV8Bm2
+!s100 <OfaN7iJR<?J>k6FoHj260
 R7
 31
-R8
+R14
 !i10b 1
-R9
-Z95 !s90 -reportprogress|300|-93|-work|work|/home/krishna/Desktop/Toplevel/sixteen_bit_adder.vhd|
-Z96 !s107 /home/krishna/Desktop/Toplevel/sixteen_bit_adder.vhd|
+R15
+Z95 !s90 -reportprogress|300|-93|-work|work|/home/krishna/GIT/Toplevel/sixteen_bit_adder.vhd|
+Z96 !s107 /home/krishna/GIT/Toplevel/sixteen_bit_adder.vhd|
 !i113 1
 R12
 R13
 Aformula
 R3
 R4
-DEx4 work 17 sixteen_bit_adder 0 22 eF?kB5fG?ZncCdJz;40o00
-l17
-L13
-V?TWBmB3]SFUNz1=49jEAV1
-!s100 SJSRj50751CSDMFzAz44f1
+DEx4 work 17 sixteen_bit_adder 0 22 L2Z_LihedL]f0RmifV8Bm2
+l11
+L9
+V6dJX:QYV82kNIDccSEgzk1
+!s100 lI7`2Iz7J3>XFT9G0]7@I2
 R7
 31
-R8
+R14
 !i10b 1
-R9
+R15
 R95
 R96
 !i113 1
 R12
 R13
 Esixteen_bit_nand
-Z97 w1476535883
+Z97 w1478664376
 R3
 R4
 R0
-Z98 8/home/krishna/Desktop/Toplevel/sixteen_bit_nand.vhd
-Z99 F/home/krishna/Desktop/Toplevel/sixteen_bit_nand.vhd
+Z98 8/home/krishna/GIT/Toplevel/sixteen_bit_nand.vhd
+Z99 F/home/krishna/GIT/Toplevel/sixteen_bit_nand.vhd
 l0
-L5
-VcG9PFaS5R=VlDQJbc3a8@2
-!s100 527;9R3<L3djSH@ie1[1<0
+L4
+VW4DT8W=5_6_^V7YaiAX9>3
+!s100 0DW]a_La6a@b0XYBhh`ZC2
 R7
 31
 R14
 !i10b 1
 R15
-Z100 !s90 -reportprogress|300|-93|-work|work|/home/krishna/Desktop/Toplevel/sixteen_bit_nand.vhd|
-Z101 !s107 /home/krishna/Desktop/Toplevel/sixteen_bit_nand.vhd|
+Z100 !s90 -reportprogress|300|-93|-work|work|/home/krishna/GIT/Toplevel/sixteen_bit_nand.vhd|
+Z101 !s107 /home/krishna/GIT/Toplevel/sixteen_bit_nand.vhd|
 !i113 1
 R12
 R13
 Aformula
 R3
 R4
-DEx4 work 16 sixteen_bit_nand 0 22 cG9PFaS5R=VlDQJbc3a8@2
-l15
-L13
-VCF7DAYj:?cmN^VGIXHB730
-!s100 Y?mZLII^6?daz=R>7eFo81
+DEx4 work 16 sixteen_bit_nand 0 22 W4DT8W=5_6_^V7YaiAX9>3
+l10
+L9
+VDJKE[2SSjZPJVM2]^9la02
+!s100 ^CFUXHDm2OVRJPb]PNhN13
 R7
 31
 R14
@@ -742,37 +742,39 @@ R101
 R12
 R13
 Esixteen_bit_subtracter
-Z102 w1478287132
+Z102 w1478664503
+R2
 R3
 R4
 R0
-Z103 8/home/krishna/Desktop/Toplevel/sixteen_bit_subtracter.vhd
-Z104 F/home/krishna/Desktop/Toplevel/sixteen_bit_subtracter.vhd
+Z103 8/home/krishna/GIT/Toplevel/sixteen_bit_subtracter.vhd
+Z104 F/home/krishna/GIT/Toplevel/sixteen_bit_subtracter.vhd
 l0
-L3
-VYhc;hK55Zm>0[S]ilB^ab0
-!s100 WE9BEWA;UD2H5mc8[AH:K2
+L6
+VV2DNc[agigKmLmIjE34bV2
+!s100 BT:DSUN]Peb4_hL4O<o6M1
 R7
 31
-R14
+R8
 !i10b 1
 R15
-Z105 !s90 -reportprogress|300|-93|-work|work|/home/krishna/Desktop/Toplevel/sixteen_bit_subtracter.vhd|
-Z106 !s107 /home/krishna/Desktop/Toplevel/sixteen_bit_subtracter.vhd|
+Z105 !s90 -reportprogress|300|-93|-work|work|/home/krishna/GIT/Toplevel/sixteen_bit_subtracter.vhd|
+Z106 !s107 /home/krishna/GIT/Toplevel/sixteen_bit_subtracter.vhd|
 !i113 1
 R12
 R13
 Aformula
+R2
 R3
 R4
-DEx4 work 22 sixteen_bit_subtracter 0 22 Yhc;hK55Zm>0[S]ilB^ab0
-l18
-L7
-VjRWHIl6@6C_=2NHkY21VF1
-!s100 H^NEDMU0]HdAOGS^bgFk92
+DEx4 work 22 sixteen_bit_subtracter 0 22 V2DNc[agigKmLmIjE34bV2
+l14
+L11
+V2^FRie_=XPFb0VlFg<iOI0
+!s100 oY<SSI2J=T`O^25:fBI``0
 R7
 31
-R14
+R8
 !i10b 1
 R15
 R105
@@ -785,8 +787,8 @@ Z107 w1478618039
 R3
 R4
 R0
-Z108 8/home/krishna/Desktop/Toplevel/Testbench.vhd
-Z109 F/home/krishna/Desktop/Toplevel/Testbench.vhd
+Z108 8/home/krishna/GIT/Toplevel/Testbench.vhd
+Z109 F/home/krishna/GIT/Toplevel/Testbench.vhd
 l0
 L6
 VieGT@zEW:SUPK>B_`lYD>0
@@ -796,8 +798,8 @@ R7
 R8
 !i10b 1
 R9
-Z110 !s90 -reportprogress|300|-93|-work|work|/home/krishna/Desktop/Toplevel/Testbench.vhd|
-Z111 !s107 /home/krishna/Desktop/Toplevel/Testbench.vhd|
+Z110 !s90 -reportprogress|300|-93|-work|work|/home/krishna/GIT/Toplevel/Testbench.vhd|
+Z111 !s107 /home/krishna/GIT/Toplevel/Testbench.vhd|
 !i113 1
 R12
 R13

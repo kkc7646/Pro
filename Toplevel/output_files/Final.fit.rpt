@@ -1,5 +1,5 @@
 Fitter report for Final
-Tue Nov  8 23:08:02 2016
+Sat Nov 19 18:48:48 2016
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -58,7 +58,7 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Tue Nov  8 23:08:01 2016       ;
+; Fitter Status                      ; Successful - Sat Nov 19 18:48:48 2016       ;
 ; Quartus Prime Version              ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
 ; Revision Name                      ; Final                                       ;
 ; Top-level Entity Name              ; Final                                       ;
@@ -195,7 +195,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in /home/krishna/Desktop/Toplevel/output_files/Final.pin.
+The pin-out file can be found in /home/krishna/GIT/Toplevel/output_files/Final.pin.
 
 
 +-------------------------------------------------------------------+
@@ -834,23 +834,23 @@ Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
-Info (11888): Total time spent on timing analysis during the Fitter is 0.01 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.00 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
-Info (144001): Generated suppressed messages file /home/krishna/Desktop/Toplevel/output_files/Final.fit.smsg
+Info (144001): Generated suppressed messages file /home/krishna/GIT/Toplevel/output_files/Final.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 1390 megabytes
-    Info: Processing ended: Tue Nov  8 23:08:02 2016
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:07
+    Info: Peak virtual memory: 1393 megabytes
+    Info: Processing ended: Sat Nov 19 18:48:49 2016
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:05
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in /home/krishna/Desktop/Toplevel/output_files/Final.fit.smsg.
+The suppressed messages can be found in /home/krishna/GIT/Toplevel/output_files/Final.fit.smsg.
 
 

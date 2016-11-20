@@ -20,6 +20,7 @@ begin
 			D2 <= T(to_integer(unsigned(A2)));
 		end if;
 		if (RF_Write = '1') then
+			wait for 5ns;
 			T(to_integer(unsigned(A3)))<=D3;
 		elsif(R7_En = '1') then
 			if rising_edge(clock) then 

@@ -20,9 +20,10 @@ package Components is
    end component;
 ------------------------mux81-----------------------------------------------
 	 component mux81 is
-		 port(a0,a1,a2,a3,a4,a5,a6,a7 : in std_logic_vector(15 downto 0);
+		 generic(data_width:integer);
+		 port(a0,a1,a2,a3,a4,a5,a6,a7 : in std_logic_vector(data_width-1 downto 0);
 					s0,s1,s2                : in std_logic;
-		      c                       : out std_logic_vector(15 downto 0));
+		      c                       : out std_logic_vector(data_width-1 downto 0));
 	 end component; 
 -----------------------16bit adder--------------------------------------------
    component sixteen_bit_adder is
@@ -110,8 +111,8 @@ package Components is
 				 T6flag,c,z,clock 						  : in std_logic;
 				 Mem_mux											  : out std_logic_vector(1 downto 0);
 				 A1_mux												  : out std_logic;
-				 A2_mux,A3_mux,D3_mux,T5_mux	  : out std_logic_vector(1 downto 0);
-				 ALU_a_mux,ALU_b_mux					  : out std_logic_vector(2 downto 0);
+				 A2_mux,D3_mux,T5_mux	          : out std_logic_vector(1 downto 0);
+				 ALU_a_mux,ALU_b_mux,A3_mux 	  : out std_logic_vector(2 downto 0);
 				 T6_mux,Mem_enable,IR_enable,
 				 RF_enable,R7_enable,T1_enable,
 				 T2_enable,T3_enable,T4_enable,
@@ -123,8 +124,8 @@ package Components is
 	component datapath is
 		port(clock                         : in std_logic;
 				 A1_mux                        : in std_logic;
-				 A2_mux,A3_mux,D3_mux,Mem_mux  : in std_logic_vector(1 downto 0);
-				 ALU_a_mux,ALU_b_mux           : in std_logic_vector(2 downto 0);
+				 A2_mux,D3_mux,Mem_mux         : in std_logic_vector(1 downto 0);
+				 ALU_a_mux,ALU_b_mux,A3_mux    : in std_logic_vector(2 downto 0);
 				 T5_mux,ALU_opcode             : in std_logic_vector(1 downto 0);
 				 T6_mux,Mem_enable,IR_enable,
 				 RF_enable,R7_enable,T1_enable,

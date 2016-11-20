@@ -11,7 +11,7 @@ entity controller is
 			 Mem_mux                         : out std_logic_vector(1 downto 0);
 			 A1_mux                          : out std_logic;
 			 A2_mux                          : out std_logic_vector(1 downto 0);
-			 A3_mux                          : out std_logic_vector(1 downto 0);
+			 A3_mux                          : out std_logic_vector(2 downto 0);
 			 D3_mux                          : out std_logic_vector(1 downto 0);
 			 ALU_a_mux                       : out std_logic_vector(2 downto 0);
 			 ALU_b_mux                       : out std_logic_vector(2 downto 0);
@@ -37,7 +37,7 @@ architecture Behave of controller is
      
      when S1 => 
     		Mem_mux<="10"; ALU_a_mux <= "000"; ALU_b_mux <= "010"; Mem_enable <='0'; T5_mux <= "00";
-    		T6_mux <= '0';A1_mux <= '0'; A2_mux <= "00"; A3_mux <= "00"; D3_mux <= "00";
+    		T6_mux <= '0';A1_mux <= '0'; A2_mux <= "00"; A3_mux <= "000"; D3_mux <= "00";
 				IR_enable <='1'; RF_enable <= '0'; R7_enable <= '1'; T1_enable <= '0'; T2_enable <= '0';
 				T3_enable<='0'; T4_enable<='0'; T5_enable<= '0' ;T6_enable <='0'; T7_enable<='1' ; 		
 				T8_enable<='0';	T10_enable <='0'; ALU_opcode <="00";
@@ -85,7 +85,7 @@ architecture Behave of controller is
 				next_state := S4;
 				
      when S4 =>
-      A3_mux <= "00" ;D3_mux <= "00" ;
+      A3_mux <= "000" ;D3_mux <= "00" ;
 			Mem_enable <= '0'; IR_enable <='0'; RF_enable <= '1'; R7_enable <= '0';
 			T1_enable <='0' ; T2_enable <= '0' ; T3_enable  <= '0'; 
 			T4_enable <='0' ; T5_enable <= '0' ; T6_enable  <= '0';
@@ -94,7 +94,7 @@ architecture Behave of controller is
 				next_state := S1;
 				
      when S8 => 
-    	A3_mux <= "10" ;D3_mux <= "00" ;
+    	A3_mux <= "010" ;D3_mux <= "00" ;
 			Mem_enable <= '0'; IR_enable <='0'; RF_enable <= '1'; R7_enable <= '0';
 			T1_enable <='0' ; T2_enable <= '0' ; T3_enable  <= '0'; 
 			T4_enable <='0' ; T5_enable <= '0' ; T6_enable  <= '0';
@@ -149,7 +149,7 @@ architecture Behave of controller is
 				next_state := S15;
 				
 		 when S15 => 
-    	A3_mux <= "01" ;D3_mux <= "01" ;
+    	A3_mux <= "001" ;D3_mux <= "01" ;
 			Mem_enable <= '0'; IR_enable <='0'; RF_enable <= '1'; R7_enable <= '0';
 			T1_enable <='0' ; T2_enable <= '0' ; T3_enable  <= '0'; 
 			T4_enable <='0' ; T5_enable <= '0' ; T6_enable  <= '0';
@@ -167,7 +167,7 @@ architecture Behave of controller is
 				next_state := S1;
 
      when S17 =>
-      A3_mux <= "01" ;D3_mux <= "10" ;
+      A3_mux <= "001" ;D3_mux <= "10" ;
 			Mem_enable <= '0'; IR_enable <='0'; RF_enable <= '1'; R7_enable <= '0';
 			T1_enable <='0' ; T2_enable <= '0' ; T3_enable  <= '0'; 
 			T4_enable <='0' ; T5_enable <= '0' ; T6_enable  <= '0';
@@ -176,7 +176,7 @@ architecture Behave of controller is
 				next_state := S1;
 
      when S18 =>
-      A3_mux <= "01" ;D3_mux <= "11" ;
+      A3_mux <= "001" ;D3_mux <= "11" ;
 			Mem_enable <= '0'; IR_enable <='0'; RF_enable <= '1'; R7_enable <= '0';
 			T1_enable <='0' ; T2_enable <= '0' ; T3_enable  <= '0'; 
 			T4_enable <='0' ; T5_enable <= '0' ; T6_enable  <= '0';
@@ -207,8 +207,8 @@ architecture Behave of controller is
 				next_state := S1;
 
 	 	 when S21 => 
-    	ALU_a_mux <= "010" ;ALU_b_mux <= "000" ; ALU_opcode <= "11" ;
-			Mem_enable <= '0'; IR_enable <='0'; RF_enable <= '0'; R7_enable <= cz(0);
+    	ALU_a_mux <= "010" ;ALU_b_mux <= "000" ; ALU_opcode <= "01" ;A3_mux <= "100" ;D3_mux <= "00" ;
+			Mem_enable <= '0'; IR_enable <='0'; RF_enable <= z; R7_enable <= '0';
 			T1_enable <='0' ; T2_enable <= '0' ; T3_enable  <= '0'; 
 			T4_enable <='0' ; T5_enable <= '0' ; T6_enable  <= '0';
 			T7_enable <='0' ; T8_enable <= '0' ; T10_enable <= '0'; 
@@ -229,7 +229,7 @@ architecture Behave of controller is
 					end if;
 
      when S24 =>
-      Mem_mux <= "11"; ALU_a_mux <= "100" ;ALU_b_mux <= "101" ; ALU_opcode <= "00" ;
+      Mem_mux <= "11"; ALU_a_mux <= "100" ;ALU_b_mux <= "101" ; ALU_opcode <= "11" ;
 			Mem_enable <= '0'; IR_enable <='0'; RF_enable <= '0'; R7_enable <= '0';
 			T1_enable <='0' ; T2_enable <= '0' ; T3_enable  <= '1'; 
 			T4_enable <='1' ; T5_enable <= '0' ; T6_enable  <= '0';
@@ -238,8 +238,8 @@ architecture Behave of controller is
 				next_state := S25;
 
      when S25 =>
-      A3_mux <= "11" ;D3_mux <= "01" ;      
-			Mem_enable <= '0'; IR_enable <='0'; RF_enable <= '0'; R7_enable <= '0';
+      A3_mux <= "011" ;D3_mux <= "01" ; T6_mux <= '1';     
+			Mem_enable <= '0'; IR_enable <='0'; RF_enable <= '1'; R7_enable <= '0';
 			T1_enable <='0' ; T2_enable <= '0' ; T3_enable  <= '0'; 
 			T4_enable <='0' ; T5_enable <= '0' ; T6_enable  <= '1';
 			T7_enable <='0' ; T8_enable <= '0' ; T10_enable <= '0'; 

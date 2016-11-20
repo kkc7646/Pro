@@ -1,5 +1,5 @@
 Flow report for Final
-Tue Nov  8 23:08:11 2016
+Sat Nov 19 18:48:56 2016
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Tue Nov  8 23:08:11 2016       ;
+; Flow Status                        ; Successful - Sat Nov 19 18:48:56 2016       ;
 ; Quartus Prime Version              ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
 ; Revision Name                      ; Final                                       ;
 ; Top-level Entity Name              ; Final                                       ;
@@ -65,7 +65,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/08/2016 23:07:26 ;
+; Start date & time ; 11/19/2016 18:48:26 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Final               ;
 +-------------------+---------------------+
@@ -76,17 +76,18 @@ agreement for further details.
 +--------------------------------------+---------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                      ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
 +--------------------------------------+---------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 44883562255516.147864644603920        ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                ; 44883562255516.147958130607514        ; --            ; --          ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME             ; dut                                   ; --            ; --          ; Testbench      ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; Testbench                             ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Vhdl                                  ; --            ; --          ; eda_simulation ;
-; EDA_RUN_TOOL_AUTOMATICALLY           ; On                                    ; --            ; --          ; eda_simulation ;
+; EDA_RUN_TOOL_AUTOMATICALLY           ; Off                                   ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (VHDL)                ; <None>        ; --          ; --             ;
 ; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                       ; --            ; --          ; eda_simulation ;
 ; EDA_TEST_BENCH_FILE                  ; Testbench.vhd                         ; --            ; --          ; Testbench      ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; Testbench                             ; --            ; --          ; Testbench      ;
 ; EDA_TEST_BENCH_NAME                  ; Testbench                             ; --            ; --          ; eda_simulation ;
 ; EDA_TIME_SCALE                       ; 1 ps                                  ; --            ; --          ; eda_simulation ;
+; ENABLE_SIGNALTAP                     ; Off                                   ; --            ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP               ; 85                                    ; --            ; --          ; --             ;
 ; MIN_CORE_JUNCTION_TEMP               ; 0                                     ; --            ; --          ; --             ;
 ; PARTITION_COLOR                      ; 16764057                              ; --            ; --          ; Top            ;
@@ -103,12 +104,12 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:25     ; 1.0                     ; 1237 MB             ; 00:00:52                           ;
-; Fitter                    ; 00:00:08     ; 1.0                     ; 1390 MB             ; 00:00:06                           ;
-; Assembler                 ; 00:00:02     ; 1.0                     ; 1066 MB             ; 00:00:01                           ;
-; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 1101 MB             ; 00:00:02                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 1308 MB             ; 00:00:01                           ;
-; Total                     ; 00:00:38     ; --                      ; --                  ; 00:01:02                           ;
+; Analysis & Synthesis      ; 00:00:14     ; 1.0                     ; 1236 MB             ; 00:00:31                           ;
+; Fitter                    ; 00:00:07     ; 1.0                     ; 1393 MB             ; 00:00:04                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 1065 MB             ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 1099 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 1311 MB             ; 00:00:00                           ;
+; Total                     ; 00:00:25     ; --                      ; --                  ; 00:00:37                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -117,11 +118,11 @@ agreement for further details.
 +---------------------------+------------------+----------------+------------+----------------+
 ; Module Name               ; Machine Hostname ; OS Name        ; OS Version ; Processor type ;
 +---------------------------+------------------+----------------+------------+----------------+
-; Analysis & Synthesis      ; Jarvis           ; Ubuntu 14.04.4 ; 14         ; x86_64         ;
-; Fitter                    ; Jarvis           ; Ubuntu 14.04.4 ; 14         ; x86_64         ;
-; Assembler                 ; Jarvis           ; Ubuntu 14.04.4 ; 14         ; x86_64         ;
-; TimeQuest Timing Analyzer ; Jarvis           ; Ubuntu 14.04.4 ; 14         ; x86_64         ;
-; EDA Netlist Writer        ; Jarvis           ; Ubuntu 14.04.4 ; 14         ; x86_64         ;
+; Analysis & Synthesis      ; Jarvis           ; Ubuntu 14.04.5 ; 14         ; x86_64         ;
+; Fitter                    ; Jarvis           ; Ubuntu 14.04.5 ; 14         ; x86_64         ;
+; Assembler                 ; Jarvis           ; Ubuntu 14.04.5 ; 14         ; x86_64         ;
+; TimeQuest Timing Analyzer ; Jarvis           ; Ubuntu 14.04.5 ; 14         ; x86_64         ;
+; EDA Netlist Writer        ; Jarvis           ; Ubuntu 14.04.5 ; 14         ; x86_64         ;
 +---------------------------+------------------+----------------+------------+----------------+
 
 

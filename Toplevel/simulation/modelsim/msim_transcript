@@ -9,246 +9,248 @@
 # Copying /home/krishna/Quartus_16.0/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vcom -93 -work work {/home/krishna/Desktop/Toplevel/Ir_latch.vhd}
+# vcom -93 -work work {/home/krishna/GIT/Toplevel/Ir_latch.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 23:09:05 on Nov 08,2016
-# vcom -reportprogress 300 -93 -work work /home/krishna/Desktop/Toplevel/Ir_latch.vhd 
+# Start time: 22:53:49 on Nov 19,2016
+# vcom -reportprogress 300 -93 -work work /home/krishna/GIT/Toplevel/Ir_latch.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity IR_Latch
 # -- Compiling architecture Behave of IR_Latch
-# End time: 23:09:05 on Nov 08,2016, Elapsed time: 0:00:00
+# End time: 22:53:49 on Nov 19,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {/home/krishna/Desktop/Toplevel/Shifter.vhd}
+# vcom -93 -work work {/home/krishna/GIT/Toplevel/Shifter.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 23:09:05 on Nov 08,2016
-# vcom -reportprogress 300 -93 -work work /home/krishna/Desktop/Toplevel/Shifter.vhd 
+# Start time: 22:53:49 on Nov 19,2016
+# vcom -reportprogress 300 -93 -work work /home/krishna/GIT/Toplevel/Shifter.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity Shifter
 # -- Compiling architecture Structure of Shifter
-# End time: 23:09:05 on Nov 08,2016, Elapsed time: 0:00:00
+# End time: 22:53:49 on Nov 19,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {/home/krishna/Desktop/Toplevel/DataRegister.vhd}
+# vcom -93 -work work {/home/krishna/GIT/Toplevel/DataRegister.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 23:09:05 on Nov 08,2016
-# vcom -reportprogress 300 -93 -work work /home/krishna/Desktop/Toplevel/DataRegister.vhd 
+# Start time: 22:53:49 on Nov 19,2016
+# vcom -reportprogress 300 -93 -work work /home/krishna/GIT/Toplevel/DataRegister.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity DataRegister
 # -- Compiling architecture Behave of DataRegister
-# End time: 23:09:05 on Nov 08,2016, Elapsed time: 0:00:00
+# End time: 22:53:49 on Nov 19,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {/home/krishna/Desktop/Toplevel/sixteen_bit_nand.vhd}
+# vcom -93 -work work {/home/krishna/GIT/Toplevel/sixteen_bit_nand.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 23:09:05 on Nov 08,2016
-# vcom -reportprogress 300 -93 -work work /home/krishna/Desktop/Toplevel/sixteen_bit_nand.vhd 
+# Start time: 22:53:49 on Nov 19,2016
+# vcom -reportprogress 300 -93 -work work /home/krishna/GIT/Toplevel/sixteen_bit_nand.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity sixteen_bit_nand
 # -- Compiling architecture Formula of sixteen_bit_nand
-# End time: 23:09:05 on Nov 08,2016, Elapsed time: 0:00:00
+# End time: 22:53:49 on Nov 19,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {/home/krishna/Desktop/Toplevel/Sign_Extender_by_7.vhd}
+# vcom -93 -work work {/home/krishna/GIT/Toplevel/Sign_Extender_by_7.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 23:09:05 on Nov 08,2016
-# vcom -reportprogress 300 -93 -work work /home/krishna/Desktop/Toplevel/Sign_Extender_by_7.vhd 
+# Start time: 22:53:49 on Nov 19,2016
+# vcom -reportprogress 300 -93 -work work /home/krishna/GIT/Toplevel/Sign_Extender_by_7.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity Sign_Extender_by_7
 # -- Compiling architecture Structure of Sign_Extender_by_7
-# End time: 23:09:05 on Nov 08,2016, Elapsed time: 0:00:00
+# End time: 22:53:49 on Nov 19,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {/home/krishna/Desktop/Toplevel/memory.vhd}
+# vcom -93 -work work {/home/krishna/GIT/Toplevel/memory.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 23:09:05 on Nov 08,2016
-# vcom -reportprogress 300 -93 -work work /home/krishna/Desktop/Toplevel/memory.vhd 
+# Start time: 22:53:49 on Nov 19,2016
+# vcom -reportprogress 300 -93 -work work /home/krishna/GIT/Toplevel/memory.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling entity memory
 # -- Compiling architecture Structure of memory
-# End time: 23:09:05 on Nov 08,2016, Elapsed time: 0:00:00
+# End time: 22:53:49 on Nov 19,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {/home/krishna/Desktop/Toplevel/sixteen_bit_subtracter.vhd}
+# vcom -93 -work work {/home/krishna/GIT/Toplevel/controller.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 23:09:05 on Nov 08,2016
-# vcom -reportprogress 300 -93 -work work /home/krishna/Desktop/Toplevel/sixteen_bit_subtracter.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity sixteen_bit_subtracter
-# -- Compiling architecture formula of sixteen_bit_subtracter
-# End time: 23:09:05 on Nov 08,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {/home/krishna/Desktop/Toplevel/controller.vhd}
-# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 23:09:05 on Nov 08,2016
-# vcom -reportprogress 300 -93 -work work /home/krishna/Desktop/Toplevel/controller.vhd 
+# Start time: 22:53:49 on Nov 19,2016
+# vcom -reportprogress 300 -93 -work work /home/krishna/GIT/Toplevel/controller.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity controller
 # -- Compiling architecture Behave of controller
-# End time: 23:09:05 on Nov 08,2016, Elapsed time: 0:00:00
+# End time: 22:53:49 on Nov 19,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {/home/krishna/Desktop/Toplevel/mux41.vhd}
+# vcom -93 -work work {/home/krishna/GIT/Toplevel/mux41.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 23:09:05 on Nov 08,2016
-# vcom -reportprogress 300 -93 -work work /home/krishna/Desktop/Toplevel/mux41.vhd 
+# Start time: 22:53:49 on Nov 19,2016
+# vcom -reportprogress 300 -93 -work work /home/krishna/GIT/Toplevel/mux41.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity mux41
 # -- Compiling architecture Struct2 of mux41
-# End time: 23:09:05 on Nov 08,2016, Elapsed time: 0:00:00
+# End time: 22:53:49 on Nov 19,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {/home/krishna/Desktop/Toplevel/Components.vhd}
+# vcom -93 -work work {/home/krishna/GIT/Toplevel/Components.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 23:09:05 on Nov 08,2016
-# vcom -reportprogress 300 -93 -work work /home/krishna/Desktop/Toplevel/Components.vhd 
+# Start time: 22:53:49 on Nov 19,2016
+# vcom -reportprogress 300 -93 -work work /home/krishna/GIT/Toplevel/Components.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling package Components
-# End time: 23:09:05 on Nov 08,2016, Elapsed time: 0:00:00
+# End time: 22:53:49 on Nov 19,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {/home/krishna/Desktop/Toplevel/RegFile.vhd}
+# vcom -93 -work work {/home/krishna/GIT/Toplevel/RegFile.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 23:09:06 on Nov 08,2016
-# vcom -reportprogress 300 -93 -work work /home/krishna/Desktop/Toplevel/RegFile.vhd 
+# Start time: 22:53:49 on Nov 19,2016
+# vcom -reportprogress 300 -93 -work work /home/krishna/GIT/Toplevel/RegFile.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling entity RegFile
 # -- Compiling architecture Structure of RegFile
-# End time: 23:09:06 on Nov 08,2016, Elapsed time: 0:00:00
+# End time: 22:53:49 on Nov 19,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {/home/krishna/Desktop/Toplevel/PriorityEncoder.vhd}
+# vcom -93 -work work {/home/krishna/GIT/Toplevel/PriorityEncoder.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 23:09:06 on Nov 08,2016
-# vcom -reportprogress 300 -93 -work work /home/krishna/Desktop/Toplevel/PriorityEncoder.vhd 
+# Start time: 22:53:49 on Nov 19,2016
+# vcom -reportprogress 300 -93 -work work /home/krishna/GIT/Toplevel/PriorityEncoder.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity PriorityEncoder
 # -- Compiling architecture Structure of PriorityEncoder
-# End time: 23:09:06 on Nov 08,2016, Elapsed time: 0:00:00
+# End time: 22:53:49 on Nov 19,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {/home/krishna/Desktop/Toplevel/mux81.vhd}
+# vcom -93 -work work {/home/krishna/GIT/Toplevel/mux81.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 23:09:06 on Nov 08,2016
-# vcom -reportprogress 300 -93 -work work /home/krishna/Desktop/Toplevel/mux81.vhd 
+# Start time: 22:53:49 on Nov 19,2016
+# vcom -reportprogress 300 -93 -work work /home/krishna/GIT/Toplevel/mux81.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity mux81
 # -- Compiling architecture Struct3 of mux81
-# End time: 23:09:06 on Nov 08,2016, Elapsed time: 0:00:00
+# End time: 22:53:49 on Nov 19,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {/home/krishna/Desktop/Toplevel/Sign_Extender_by_10.vhd}
+# vcom -93 -work work {/home/krishna/GIT/Toplevel/Sign_Extender_by_10.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 23:09:06 on Nov 08,2016
-# vcom -reportprogress 300 -93 -work work /home/krishna/Desktop/Toplevel/Sign_Extender_by_10.vhd 
+# Start time: 22:53:49 on Nov 19,2016
+# vcom -reportprogress 300 -93 -work work /home/krishna/GIT/Toplevel/Sign_Extender_by_10.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity Sign_Extender_by_10
 # -- Compiling architecture Structure of Sign_Extender_by_10
-# End time: 23:09:06 on Nov 08,2016, Elapsed time: 0:00:00
+# End time: 22:53:49 on Nov 19,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {/home/krishna/Desktop/Toplevel/sixteen_bit_adder.vhd}
+# vcom -93 -work work {/home/krishna/GIT/Toplevel/sixteen_bit_adder.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 23:09:06 on Nov 08,2016
-# vcom -reportprogress 300 -93 -work work /home/krishna/Desktop/Toplevel/sixteen_bit_adder.vhd 
+# Start time: 22:53:49 on Nov 19,2016
+# vcom -reportprogress 300 -93 -work work /home/krishna/GIT/Toplevel/sixteen_bit_adder.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity sixteen_bit_adder
 # -- Compiling architecture Formula of sixteen_bit_adder
-# End time: 23:09:06 on Nov 08,2016, Elapsed time: 0:00:00
+# End time: 22:53:49 on Nov 19,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {/home/krishna/Desktop/Toplevel/mux21.vhd}
+# vcom -93 -work work {/home/krishna/GIT/Toplevel/mux21.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 23:09:06 on Nov 08,2016
-# vcom -reportprogress 300 -93 -work work /home/krishna/Desktop/Toplevel/mux21.vhd 
+# Start time: 22:53:49 on Nov 19,2016
+# vcom -reportprogress 300 -93 -work work /home/krishna/GIT/Toplevel/mux21.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity mux21
 # -- Compiling architecture Struct1 of mux21
-# End time: 23:09:06 on Nov 08,2016, Elapsed time: 0:00:00
+# End time: 22:53:49 on Nov 19,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {/home/krishna/Desktop/Toplevel/flag.vhd}
+# vcom -93 -work work {/home/krishna/GIT/Toplevel/flag.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 23:09:06 on Nov 08,2016
-# vcom -reportprogress 300 -93 -work work /home/krishna/Desktop/Toplevel/flag.vhd 
+# Start time: 22:53:49 on Nov 19,2016
+# vcom -reportprogress 300 -93 -work work /home/krishna/GIT/Toplevel/flag.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity flag
 # -- Compiling architecture Behave of flag
-# End time: 23:09:06 on Nov 08,2016, Elapsed time: 0:00:00
+# End time: 22:53:49 on Nov 19,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {/home/krishna/Desktop/Toplevel/final.vhd}
+# vcom -93 -work work {/home/krishna/GIT/Toplevel/final.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 23:09:06 on Nov 08,2016
-# vcom -reportprogress 300 -93 -work work /home/krishna/Desktop/Toplevel/final.vhd 
+# Start time: 22:53:49 on Nov 19,2016
+# vcom -reportprogress 300 -93 -work work /home/krishna/GIT/Toplevel/final.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package Components
 # -- Compiling entity Final
 # -- Compiling architecture Structf of Final
-# End time: 23:09:06 on Nov 08,2016, Elapsed time: 0:00:00
+# End time: 22:53:49 on Nov 19,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {/home/krishna/Desktop/Toplevel/ALU.vhd}
+# vcom -93 -work work {/home/krishna/GIT/Toplevel/sixteen_bit_subtracter.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 23:09:06 on Nov 08,2016
-# vcom -reportprogress 300 -93 -work work /home/krishna/Desktop/Toplevel/ALU.vhd 
+# Start time: 22:53:49 on Nov 19,2016
+# vcom -reportprogress 300 -93 -work work /home/krishna/GIT/Toplevel/sixteen_bit_subtracter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package Components
+# -- Compiling entity sixteen_bit_subtracter
+# -- Compiling architecture formula of sixteen_bit_subtracter
+# End time: 22:53:50 on Nov 19,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/krishna/GIT/Toplevel/ALU.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 22:53:50 on Nov 19,2016
+# vcom -reportprogress 300 -93 -work work /home/krishna/GIT/Toplevel/ALU.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package Components
 # -- Compiling entity ALU
 # -- Compiling architecture Struct of ALU
-# End time: 23:09:06 on Nov 08,2016, Elapsed time: 0:00:00
+# End time: 22:53:50 on Nov 19,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {/home/krishna/Desktop/Toplevel/Datapath.vhd}
+# vcom -93 -work work {/home/krishna/GIT/Toplevel/Datapath.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 23:09:06 on Nov 08,2016
-# vcom -reportprogress 300 -93 -work work /home/krishna/Desktop/Toplevel/Datapath.vhd 
+# Start time: 22:53:50 on Nov 19,2016
+# vcom -reportprogress 300 -93 -work work /home/krishna/GIT/Toplevel/Datapath.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package Components
 # -- Compiling entity datapath
 # -- Compiling architecture dataflow of datapath
-# End time: 23:09:06 on Nov 08,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
+# ** Warning: /home/krishna/GIT/Toplevel/Datapath.vhd(127): (vcom-1074) Non-locally static OTHERS choice is allowed only if it is the only choice of the only association.
+# End time: 22:53:50 on Nov 19,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
 # 
-# vcom -93 -work work {/home/krishna/Desktop/Toplevel/Testbench.vhd}
+# vcom -93 -work work {/home/krishna/GIT/Toplevel/Testbench.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 23:09:06 on Nov 08,2016
-# vcom -reportprogress 300 -93 -work work /home/krishna/Desktop/Toplevel/Testbench.vhd 
+# Start time: 22:53:50 on Nov 19,2016
+# vcom -reportprogress 300 -93 -work work /home/krishna/GIT/Toplevel/Testbench.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity Testbench
 # -- Compiling architecture Behave of Testbench
-# End time: 23:09:06 on Nov 08,2016, Elapsed time: 0:00:00
+# End time: 22:53:50 on Nov 19,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs="+acc"  Testbench
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs=""+acc"" Testbench 
-# Start time: 23:09:06 on Nov 08,2016
+# Start time: 22:53:50 on Nov 19,2016
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -282,28 +284,52 @@
 # .main_pane.objects.interior.cs.body.tree
 # run -all
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/DP/DUT7
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/DP/DUT_Mem
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 1  Instance: /testbench/dut/DP/DUT2
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/dut/DP/DUT_RegFile
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 1  Instance: /testbench/dut/DP/DUT2
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/dut/DP/DUT_RegFile
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 1  Instance: /testbench/dut/DP/DUT7
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/dut/DP/DUT_Mem
 # ** Note: simulation ran successfully 
 #    Time: 840 us  Iteration: 0  Instance: /testbench
 # 
 # stdin: <EOF>
+add wave -position insertpoint  \
+sim:/testbench/dut/CP/opcode
+add wave -position insertpoint  \
+sim:/testbench/dut/CP/fsm_state
+add wave -position insertpoint  \
+sim:/testbench/dut/CP/c
+add wave -position insertpoint  \
+sim:/testbench/dut/CP/z
+add wave -position insertpoint  \
+sim:/testbench/dut/DP/DUT_RegFile/T
 restart
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/DP/DUT_Mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/dut/DP/DUT_RegFile
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/dut/DP/DUT_RegFile
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/dut/DP/DUT_Mem
 restart
 run
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/DP/DUT7
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/DP/DUT_Mem
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 1  Instance: /testbench/dut/DP/DUT2
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/dut/DP/DUT_RegFile
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 1  Instance: /testbench/dut/DP/DUT2
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/dut/DP/DUT_RegFile
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 1  Instance: /testbench/dut/DP/DUT7
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/dut/DP/DUT_Mem
 run
 run
-# WARNING: No extended dataflow license exists
+run
+run
+run
+run
+# End time: 23:16:14 on Nov 19,2016, Elapsed time: 0:22:24
+# Errors: 0, Warnings: 12

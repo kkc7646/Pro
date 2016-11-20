@@ -9,7 +9,7 @@ entity datapath is
 			 Mem_mux                        : in std_logic_vector(1 downto 0);
 			 A1_mux                         : in std_logic;
 			 A2_mux                         : in std_logic_vector(1 downto 0);
-			 A3_mux                         : in std_logic_vector(1 downto 0);
+			 A3_mux                         : in std_logic_vector(2 downto 0);
 			 D3_mux                         : in std_logic_vector(1 downto 0);
 			 ALU_a_mux                      : in std_logic_vector(2 downto 0);
 			 ALU_b_mux                      : in std_logic_vector(2 downto 0);
@@ -115,6 +115,7 @@ DUT_SE7	         : Sign_Extender_by_7
 ---------------------------------ALU_a_mux-------------------------------------------------
 	ALU_amux <= "011" when (A1_mux_out ="111" and ALU_a_mux = "010")  else (ALU_a_mux);
 	DUT_ALU_a_mux_device: mux81
+		 generic map(data_width => 16)
 		 port map	(a0 => R7_out,a1 => T5_out, a2 => T1_out, a3 => T7_out,
 					a4 => T6_out, a5 =>(others => '1'), a6 => (others => '1'), a7 =>(others => '1') , c => Alu_a_mux_out,
 					s0 => ALU_amux(0), s1 => ALU_amux(1), s2 => ALU_amux(2));
@@ -122,6 +123,7 @@ DUT_SE7	         : Sign_Extender_by_7
 ----------------------------------ALU_b_mux-----------------------------------------------
 	ALU_bmux <= "001" when (A2_mux_out ="111" and ALU_b_mux = "000") else (ALU_b_mux);
 	DUT_ALU_b_mux: mux81 
+		generic map(data_width => 16)
 		port map (a0 => T2_out, a1 => T7_out, a2 => (0 => '1',others =>'0'),
 					a3 => Sign_extender_10_out, a4 => Shifter_out,
 					a5 => T8_out, a6 =>(others =>'0'), a7 => (others => '1') , c => Alu_b_mux_out,
@@ -143,9 +145,9 @@ DUT_SE7	         : Sign_Extender_by_7
 			port map(a0 => IR_out(11 downto 9), a1 => IR_out(8 downto 6), a2 => T10_out, a3 => (others => '1'), c => A2_mux_out, s0 => A2_mux(0), s1 => A2_mux(1));
 
 ------------------------------A3_mux---------------------------------------------------------		
-	DUT_A3_mux : mux41 
+	DUT_A3_mux : mux81 
 			generic map(data_width => 3)
-			port map(a0 => IR_out(5 downto 3), a1 => IR_out(11 downto 9), a2 => IR_out(8 downto 6), a3 => T10_out, c => A3_mux_out, s0 => A3_mux(0), s1 => A3_mux(1));
+			port map(a0 => IR_out(5 downto 3), a1 => IR_out(11 downto 9), a2 => IR_out(8 downto 6), a3 => T10_out,a4 =>"111",a5 =>"111",a6 =>"111",a7 =>"111", c => A3_mux_out, s0 => A3_mux(0), s1 => A3_mux(1), s2 => A3_mux(2));
 
 ----------------------------D3_mux---------------------------------------------------		
 	DUT_D3_mux : mux41  
